@@ -1,0 +1,121 @@
+@import "../../../P00l.css";
+.article {
+  z-index: 99;
+  background-size: cover;
+  max-width: 25ch;
+  margin: 1rem;
+  /* background-color: var(--grey-dark); */
+}
+.article:hover {
+  /* height: 16rem;
+  transform: translateY(20%); */
+}
+.article:hover .gradient {
+  /* transition: transform 500ms ease; */
+}
+.article:hover .tile-foot {
+  /* height: 4rem;
+  transform: translateY(60%);
+  transition: transform 500ms ease; */
+}
+.gradient {
+  /* z-index: 10; */
+  /* display: flex; */
+  width: fit-content;
+  margin: 1rem;
+  --padding: 0.4rem;
+  padding: var(--padding);
+  padding: 1rem 1rem 1rem 1rem;
+  background: linear-gradient(
+    hsla(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+  border-radius: 0.8rem;
+  /* overflow: hidden; */
+  transform: translateY(10%);
+  transition: transform 700ms ease;
+}
+.gradient:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+
+  /* interesting */
+  /* transform: scaleX(0); */
+  /* interesting */
+}
+.gradient:hover .tile-head:after {
+  transform: scaleY(1);
+}
+
+.tile-head {
+  position: relative;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.2vw;
+  height: max-content;
+  color: var(--secondary-color);
+  background-color: var(--black);
+}
+.tile-head:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background-color: var(--dev);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.tile-body {
+  /* padding-right: var(--padding); */
+  /* z-index: 100; */
+  /* color: rgb(255 255 255/0.5); */
+}
+.iframe > * {
+  /*iframe container*/
+  z-index: 0;
+  /* margin: 3rem; */
+  position: relative;
+  /* padding-left: 1vw; */
+  /* padding-right: 1vw; */
+  padding-bottom: -0.8vw;
+  height: max-content;
+  width: 14rem;
+  transform: translateX(0px);
+  transform-origin: top left;
+  /* width: 80%; */
+  height: 100%;
+}
+.cropratioratio {
+  /*irame settings*/
+}
+.tile-tools {
+}
+.tile-menu > * {
+  list-style-type: none;
+  justify-content: center;
+  align-content: center;
+}
+.btn-tile-menu {
+  z-index: 1;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  color: var(--white);
+  background-color: var(--grey-dark);
+  padding: 0.5em 1.25em;
+}
+.btn-tile-menu:hover,
+.btn-tile-menu:focus {
+  background-color: var(--grey-light);
+}
+.tile-foot {
+  background-color: aqua;
+  height: 0rem;
+  transform: translateY(0%);
+  transition: transform 500ms ease;
+}

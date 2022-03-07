@@ -1,0 +1,10 @@
+export const HOME = "/";
+export const SCOUTING = "/scouting";
+export const FEED = "/feed";
+export const FILM = "/film";
+export const FILM_LIBRARY = "/film-library";
+export const CATEGORY = "/category";
+export const CATEGORY_LIBRARY = "/category-library";
+export const FK_FILMXFK_CATE_LIBRARY = "/fk-filmXfk-cate-library";
+export const PROFILE = "/profile";
+export const GROUP_LIST = "/group-list";

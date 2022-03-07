@@ -1,0 +1,41 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: end;
+  /* margin: 12vh; */
+}
+.section-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 1rem; */
+  max-width: 100vw;
+  /* overflow: scroll; */
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}

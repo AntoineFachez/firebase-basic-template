@@ -1,0 +1,39 @@
+.category-widget {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+
+  padding: 1rem;
+  /* justify-content: stretch; */
+  /* max-width: 100vw; */
+  border-radius: 1rem;
+  background: linear-gradient(176deg, #333433 32%, #404140 58%, #585858 100%);
+  opacity: 0.6;
+  border: solid 0.2rem black;
+  box-shadow: 2px 5px 8px black;
+  color: white;
+}
+.small-widget > * {
+  width: 5vw;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  background-color: hotpink;
+  opacity: 0.6;
+  border: solid 0.2rem black;
+  box-shadow: 2px 5px 8px black;
+  color: white;
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-style: none;
+}
+.input {
+  width: 12ch;
+}

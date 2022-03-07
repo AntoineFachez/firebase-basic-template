@@ -1,0 +1,108 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* margin: 1rem; */
+  padding: 1rem;
+  width: fit-content;
+
+  /* max-width: 20vw; */
+  /* height: 10vh; */
+  border-radius: 1rem;
+  /* background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36); */
+  background: linear-gradient(176deg, #333433 32%, #404140 58%, #585858 100%);
+  opacity: 0.6;
+  border: solid 0.2rem black;
+  box-shadow: 2px 5px 8px black;
+  /* border-width: 3px; */
+  color: white;
+  /* overflow: scroll; */
+}
+.small-widget {
+  width: 10vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(176deg, #333433 32%, #404140 58%, #585858 100%);
+  opacity: 0.6;
+  border: solid 0.2rem black;
+  box-shadow: 2px 5px 8px black;
+  /* border-width: 3px; */
+  color: white;
+}
+.nav-links {
+  text-decoration: none;
+}
+.tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 3rem;
+  height: fit-content;
+}
+.list-container {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+
+  /* width: 80vw; */
+}
+.sideBar-film-library {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  margin: 1rem;
+  justify-content: start;
+  align-items: start;
+  height: fit-content;
+  overflow: scroll;
+  width: 100vw;
+  height: 20vh;
+}
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  overflow: hidden;
+}
+.grid-container:hover {
+  height: fit-content;
+}
+.grid-element {
+  margin: 1rem;
+  list-style: none;
+}
+.film-library-container {
+  /* display: flex; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  /* width: 80vw; */
+  overflow: scroll;
+}
+.form {
+  color: white;
+  border-style: none;
+}
+.btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-style: none;
+}
+.input {
+  width: 12ch;
+}

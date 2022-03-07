@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Router from "./constants/Router";
+import "./App.css";
+import { FilmProvider } from "./context/FilmContext";
+import { MainPlayerProvider, VimeoProvider } from "./context/VimeoContext";
+import { CategoryProvider } from "./context/CategoryContext";
+import { FkFilmXfkCateProvider } from "./context/FkFilmXfkCateContext";
+import { UserAuthContextProvider } from "./context/AuthContext";
 
+//FIXME: AuthProvider via getAuth() from firebase-config
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserAuthContextProvider>
+      <MainPlayerProvider>
+        <FkFilmXfkCateProvider>
+          <FilmProvider>
+            <CategoryProvider>
+              <Router />
+            </CategoryProvider>
+          </FilmProvider>
+        </FkFilmXfkCateProvider>
+      </MainPlayerProvider>
+    </UserAuthContextProvider>
   );
 }
 
 export default App;
+
+{
+  /* </VimeoProvider> */
+}
+{
+  /* <VimeoProvider> */
+}

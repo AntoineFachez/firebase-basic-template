@@ -1,0 +1,137 @@
+.slider-wrapper {
+  /* position: fixed; */
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: #333; */
+  display: flex;
+  flex-direction: column;
+  /* justify-self: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center; */
+  height: fit-content;
+}
+.slider:hover {
+  height: 12rem;
+}
+.slider {
+  /* border: 1px solid #111; */
+  margin-bottom: 1rem;
+  /* border: 2px solid white; */
+  /* width: 95vw; */
+  height: 12rem;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  /* height: 100%; */
+  /* width: 4000px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item {
+  display: flex;
+  /* padding: 0.5rem; */
+  /* margin: 1rem; */
+  position: relative;
+  /* width: 800%; */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  filter: grayscale(40%);
+  will-change: transform;
+  transition: all 1s;
+}
+/* .slider:hover */
+.slider-item:hover {
+  padding: 0 10rem 0 10rem;
+
+  /* width: fit-content; */
+  height: fit-content;
+  visibility: visible;
+  will-change: transform;
+  transition: all 1s;
+  /* object-fit: contain; */
+  /* display: flex; */
+  justify-content: center;
+  height: 12rem;
+}
+.slider-item:hover .menu {
+  /* margin: 8rem 0rem 0 15rem; */
+  opacity: 1;
+  top: 0%;
+  left: 5%;
+  position: absolute;
+  /* width: fit-content; */
+  visibility: visible;
+  will-change: transform;
+  transition: all 1s;
+  /* object-fit: contain; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.menu {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  top: 0%;
+  left: -80%;
+  position: absolute;
+  z-index: 99;
+  transition: all 1s;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-weight: 800;
+  visibility: hidden;
+}
+.menu-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 4rem;
+  height: 4rem;
+  border-style: none;
+  /* opacity: 0; */
+  color: rgb(231, 231, 231);
+  font-weight: 600;
+  /* width: 3rem;
+  height: 3rem; */
+}
+.menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.img-wrapper {
+  /* position: relative; */
+  /* width: 50%; */
+  /* height: 95%; */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+/* .img-div:hover {
+  will-change: transform;
+} */
+
+.img {
+  /* height: 30rem; */
+  /* width: fit-content; */
+  filter: grayscale(60%);
+  filter: contrast(95%);
+  filter: brightness(90%);
+  filter: blur(0.01rem);
+  object-fit: contain;
+  object-position: center center;
+  height: fit-content;
+  /* will-change: transform; */
+  transition: all 1s;
+  height: 9rem;
+}
+.img:hover {
+  filter: blur(0px);
+  filter: grayscale(0%);
+  filter: contrast(100%);
+  filter: brightness(100%);
+  /* will-change: transform; */
+  transition: all 1s;
+  height: 12rem;
+}

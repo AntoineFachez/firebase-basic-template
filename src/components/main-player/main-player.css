@@ -1,0 +1,78 @@
+.main-player-container {
+  /* flex-wrap: wrap; */
+  width: fit-content;
+  height: 100%;
+  /* display: flex; */
+  display: flex;
+
+  position: relative;
+  align-items: start;
+  /* justify-self: center; */
+  /* align-self: center; */
+  /* padding-right: 10vw; */
+}
+.category-widget {
+  display: flex;
+  position: relative;
+  align-items: start;
+  justify-content: space-between;
+}
+.player-wrapper {
+  color: aqua;
+  /* position: absolute; */
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: stretch;
+  align-items: stretch;
+  /* background-color: aqua; */
+}
+.player:hover {
+  /* width: 10vw; */
+  /* width: 100%; */
+  visibility: visible;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: end; */
+  /* align-items: center; */
+}
+
+/* .player-wrapper {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+} */
+.prev-next-btn {
+  display: flex;
+  width: 3rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border-style: none;
+  /* margin: 1rem; */
+  padding: 0.5rem;
+  /* justify-self: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* align-self: center; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
+}
+
+.pause-btn {
+  z-index: 99;
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 4rem;
+  height: 4rem;
+  border-style: none;
+  /* opacity: 0; */
+  color: rgb(231, 231, 231);
+  font-weight: 600;
+  /* width: 3rem;
+  height: 3rem; */
+}

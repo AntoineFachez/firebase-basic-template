@@ -1,0 +1,118 @@
+/* @import "../../../P00l.css"; */
+:root {
+  --width-stand-tile: 30vw;
+  /* --height-stand-tile: 10vh; */
+  --width-focus-stand-tile: 13rem;
+  --develop: #f04df0;
+}
+.article {
+  /* margin-top: 0.5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 0.5vw; */
+  /* width: var(--width-stand-tile); */
+  /* height: var(--height-stand-tile); */
+  /* width: 10vw; */
+}
+.article > * {
+  list-style-type: none;
+}
+.gradient {
+  z-index: var(--z-index-object-overlay);
+  position: relative;
+
+  /* overflow: hidden; */
+}
+
+.tile:nth-child(-n + 3) > .iframe {
+}
+.tile {
+  /* position: relative; */
+  /* margin: 2rem; */
+  width: var(--width-stand-tile);
+  background-color: black;
+  /* width: var(--width-stand-tile); */
+  /* height: 18vw; */
+}
+.tile-head {
+  box-shadow: -10px -10px -10px rgba(189, 188, 188, 0.5),
+    0 0 10px rgba(182, 177, 177, 0.5) inset;
+  flex: content;
+  /* padding: 1rem; */
+  border-radius: var(--tile-border-radius) var(--tile-border-radius) 0rem 0rem;
+  background-color: var(--secondary-color-dark);
+  /* background-color: black; */
+  color: var(--white);
+  text-align: center;
+  opacity: 1;
+  border: none;
+  stroke: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: wrap;
+  width: var(--width-stand-tile);
+}
+
+.tile:hover .tile-head {
+  z-index: 1;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.tile-menu {
+  position: absolute;
+
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, -20%);
+
+  /* top: -100; */
+  z-index: var(--z-index-object-menu);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0rem 0rem 0rem var(--tile-border-radius);
+  visibility: hidden;
+  /* border-style: hidden; */
+}
+.tile-menu > * {
+  /* justify-content: start;
+  align-content: start; */
+}
+.tile:hover .tile-menu {
+  width: fit-content;
+  height: 12rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: visible;
+}
+
+.btn-tile-menu {
+  padding: 0 0 0 1rem;
+  border-radius: var(--tile-border-radius) var(--tile-border-radius)
+    var(--tile-border-radius) var(--tile-border-radius);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--white);
+  border-style: none;
+  /* line-height: 3rem; */
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  list-style: none;
+}
+.btn-tile-menu:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+.tile-body {
+  /* position: absolute; */
+  /* transform: translate(0, -200); */
+  /* flex-direction: column; */
+  display: flex;
+  width: fit-content;
+  background-color: var(--black);
+  z-index: var(--z-index-object-body);
+  border-style: hidden;
+  background-color: var(--white);
+  border-radius: 0rem 0rem var(--tile-border-radius) var(--tile-border-radius);
+  border: 0;
+  /* height: 5vw; */
+}
