@@ -1,21 +1,23 @@
 .main-player-container {
   /* flex-wrap: wrap; */
-  width: fit-content;
+  width: 100vw;
   height: 100%;
   /* display: flex; */
   display: flex;
-
+  /* background-color: aqua; */
   position: relative;
-  align-items: start;
-  /* justify-self: center; */
+  align-items: center;
+  justify-content: center;
   /* align-self: center; */
   /* padding-right: 10vw; */
+  will-change: transform;
 }
 .category-widget {
   display: flex;
   position: relative;
   align-items: start;
   justify-content: space-between;
+  will-change: transform;
 }
 .player-wrapper {
   color: aqua;
@@ -26,11 +28,13 @@
   /* background-color: aqua; */
   justify-content: stretch;
   align-items: stretch;
+  will-change: transform;
   /* background-color: aqua; */
 }
-.player:hover {
+.player {
   /* width: 10vw; */
   /* width: 100%; */
+  will-change: transform;
   visibility: visible;
 }
 .btn-container {

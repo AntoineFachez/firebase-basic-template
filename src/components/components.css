@@ -18,6 +18,7 @@
   /* border-width: 3px; */
   color: white;
   /* overflow: scroll; */
+  will-change: transform;
 }
 .small-widget {
   width: 10vw;
@@ -50,7 +51,7 @@
   justify-content: space-around;
   align-items: center;
   height: fit-content;
-
+  will-change: transform;
   /* width: 80vw; */
 }
 .sideBar-film-library {
@@ -65,6 +66,7 @@
   overflow: scroll;
   width: 100vw;
   height: 20vh;
+  will-change: transform;
 }
 .grid-container {
   display: flex;
@@ -72,6 +74,7 @@
   flex-wrap: wrap;
   height: fit-content;
   overflow: hidden;
+  will-change: transform;
 }
 .grid-container:hover {
   height: fit-content;
@@ -79,6 +82,7 @@
 .grid-element {
   margin: 1rem;
   list-style: none;
+  will-change: transform;
 }
 .film-library-container {
   /* display: flex; */
@@ -91,6 +95,7 @@
   height: 80vh;
   /* width: 80vw; */
   overflow: scroll;
+  will-change: transform;
 }
 .form {
   color: white;
@@ -105,4 +110,5 @@
 }
 .input {
   width: 12ch;
+  will-change: transform;
 }

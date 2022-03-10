@@ -1,5 +1,5 @@
 .main-nav {
-  /* z-index: 99; */
+  z-index: 99;
   top: 0;
   position: fixed;
   display: flex;
@@ -22,30 +22,44 @@
   opacity: 0.75;
 }
 .logo {
-  z-index: 99;
+  z-index: 100;
   width: 4rem;
   display: flex;
   margin: 1rem;
+  align-items: center;
   /* align-items: center; */
-
   /* justify-content: start;
   align-items: start; */
 }
-.vimeo {
+.vimeo-container {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  /* right: 50vw; */
+  justify-content: center;
+  align-items: center;
   z-index: 99;
+  /* background-color: rgb(238, 255, 0); */
 }
 .nav-container {
   display: flex;
+  /* position: absolute; */
+  padding-right: 1rem;
+  /* right: 0; */
   /* justify-content: space-between; */
   /* align-items: center; */
+  /* background-color: aqua; */
+  /* will-change: auto; */
 }
 .nav-links {
   z-index: 99;
   width: fit-content;
   display: flex;
-  margin: 2rem;
+  margin: 1rem;
   /* justify-content: space-between; */
   /* align-items: center; */
   list-style: none;
   color: white;
+  font-size: 1rem;
+  font-weight: 600;
 }

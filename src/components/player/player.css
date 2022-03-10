@@ -1,0 +1,92 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  /* height: 5rem; */
+}
+.player:hover .btn-play {
+  visibility: visible;
+}
+.spinner {
+  display: flex;
+}
+.vimeo-loading {
+  z-index: 4;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.vimeo-loading svg {
+  fill: rgb(230, 230, 230);
+  transform-origin: 50% 50%;
+  -webkit-animation: spinner 0.8s infinite linear;
+  animation: spinner 0.8s infinite linear;
+}
+.btn-play {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left: 46%;
+  visibility: hidden;
+  color: white;
+  background-color: rgba(59, 59, 59, 0.479);
+}
+.marker {
+  margin: 20px, 0;
+  display: inline-Block;
+  padding: 1rem;
+}
+.marker--not-nearlycomplete {
+  background-color: gray;
+
+  color: darkgray;
+  visibility: hidden;
+}
+
+.marker--not-complete {
+  background-color: gray;
+
+  color: darkgray;
+  visibility: hidden;
+}
+.marker--is-complete {
+  background-color: rgb(17, 77, 17);
+  color: white;
+}
+
+@-moz-keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

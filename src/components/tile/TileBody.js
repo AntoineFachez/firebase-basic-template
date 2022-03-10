@@ -1,6 +1,6 @@
 // import { flexbox } from "@mui/system";
 import React from "react";
-import TilePlayer from "../Player";
+import TilePlayer from "../player/Player";
 import "./tile.css";
 
 function TileBody({ lightLoad, clipLink, width, height }) {

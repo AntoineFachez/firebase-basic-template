@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Player from "../Player";
+import Player from "../player/Player";
 import "../components.css";
 import "./main-player.css";
-import CategoryWidget from "../category/CategoryWidget";
 
 function MainPlayer({
   load,
@@ -14,6 +13,7 @@ function MainPlayer({
   playing,
   play,
   pause,
+  loadClipIntoPlayer,
 }) {
   // console.log(data[index].clip.link);
   // console.log(data);
@@ -40,12 +40,15 @@ function MainPlayer({
     pause();
     console.log(playing);
   };
+
   return (
     <div className="main-player-container">
       {/* <CategoryWidget /> */}
       <div className="player-wrapper">
         <Player
           width={width}
+          data={data}
+          index={index}
           // height={mainPlayerHeight}
           // height={height}
           light={false}

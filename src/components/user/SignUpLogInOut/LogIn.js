@@ -21,6 +21,10 @@ export default function LogIn() {
   const navigate = useNavigate();
   // console.log(user);
 
+  function Redirect() {
+    navigate("/profile");
+  }
+
   const logIn = async (e) => {
     e.preventDefault();
     try {
@@ -34,6 +38,7 @@ export default function LogIn() {
       // console.log(loggedIn);
       setErrorLogin("");
       setUser(loginEmail);
+      Redirect();
       // navigate.push("/profil");
       // return <Navigate to="/profil" />;
     } catch (errorLogIn) {
@@ -47,7 +52,7 @@ export default function LogIn() {
   };
 
   return (
-    <div className="container">
+    <div className="form">
       {/* Log In*/}
       <h2 className="header">{loggedIn ? "Welcome" : "Bye"}</h2>
       {loggedIn ? (

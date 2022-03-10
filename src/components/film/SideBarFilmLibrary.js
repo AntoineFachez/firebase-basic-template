@@ -1,6 +1,6 @@
 import React from "react";
-import Tile from "./tile/Tile";
-import "./components.css";
+import Tile from "../tile/Tile";
+import "../components.css";
 
 function SideBarFilmLibrary({
   data,
@@ -9,11 +9,12 @@ function SideBarFilmLibrary({
   getClipIndex,
   lightLoad,
 }) {
+  // console.log(data);
   return (
     <div>
-      {data.data ? (
+      {data ? (
         <ul className="sideBar-film-library">
-          {data.data.map((clip) => {
+          {data.map((clip) => {
             return (
               <div className="tile">
                 <Tile
@@ -36,11 +37,11 @@ function SideBarFilmLibrary({
           })}
           {/* <div className="tile">
               <Tile
-                key={data.data[0].clip.uri}
-                id={data.data[0].clip.id}
-                head={data.data[0].clip.name}
-                latLng={data.data[0].clip.latLng}
-                clipLink={data.data[0].clip.link}
+                key={data[0].clip.uri}
+                id={data[0].clip.id}
+                head={data[0].clip.name}
+                latLng={data[0].clip.latLng}
+                clipLink={data[0].clip.link}
               />
             </div> */}
         </ul>

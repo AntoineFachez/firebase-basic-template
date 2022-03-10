@@ -10,7 +10,7 @@ import { auth } from "../../../firebase/firebase-config";
 import "./auth.css";
 
 export default function Signup() {
-  const { signUp } = useUserAuth();
+  // const { signUp } = useUserAuth();
   const [dev, setDev] = useState(false);
   const history = useNavigate();
   // const [loggedIn, setLoggedIn] = useState(false);
@@ -28,29 +28,36 @@ export default function Signup() {
   const passwordConfirmRef = useRef();
   const [errorSubmit, setErrorSubmit] = useState("");
   const [errorRegister, setErrorRegister] = useState("");
-
-  // onAuthStateChanged(auth, (currentUser) => {
-  //   setUser(currentUser);
-  // });
-
-  // const signUp = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const user = await createUserWithEmailAndPassword(
-  //       auth,
-  //       registerEmail,
-  //       registerPassword
-  //     );
-  //     console.log(user);
-  //     setErrorRegister(null);
-  //     setRegisterEmail(null);
-  //     //   logIn(auth, registerEmail, registerPassword);
-  //   } catch (errorRegister) {
-  //     console.log(errorRegister.message);
-  //     setErrorRegister(errorRegister.message);
-  //   }
-  // };
   const navigate = useNavigate();
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+
+  // let navigate = useNavigate();
+  function Redirect() {
+    navigate("/profile");
+  }
+
+  const signUp = async (e) => {
+    e.preventDefault();
+    console.log("clicked");
+    try {
+      const user = await createUserWithEmailAndPassword(
+        auth,
+        registerEmail,
+        registerPassword
+      );
+      console.log(user);
+      setErrorRegister(null);
+      setRegisterEmail(null);
+      Redirect();
+      //   logIn(auth, registerEmail, registerPassword);
+    } catch (errorRegister) {
+      console.log(errorRegister.message);
+      setErrorRegister(errorRegister.message);
+    }
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -67,9 +74,11 @@ export default function Signup() {
       }
     }
   }
-
+  const clicked = () => {
+    console.log("clicked");
+  };
   return (
-    <div className="container">
+    <div className="form">
       {/* Sign Up*/}
       <h2 className="header">Sign Up</h2>
       {errorSubmit && <li>{errorSubmit}</li>}
@@ -119,9 +128,10 @@ export default function Signup() {
       </form>
       <button
         className="btn-submit"
-        disabled={loading}
+        // disabled={loading}
         type="submit"
-        // onClick={signUp}
+        onClick={signUp}
+        // onClick={clicked}
       >
         Sign Up
       </button>

@@ -1,26 +1,29 @@
 import React from "react";
 import Router from "./constants/Router";
 import "./App.css";
-import { FilmProvider } from "./context/FilmContext";
-import { MainPlayerProvider, VimeoProvider } from "./context/VimeoContext";
-import { CategoryProvider } from "./context/CategoryContext";
-import { FkFilmXfkCateProvider } from "./context/FkFilmXfkCateContext";
 import { UserAuthContextProvider } from "./context/AuthContext";
+import { VimeoProvider } from "./context/VimeoContext";
+import { FkFilmXfkCateProvider } from "./context/FkFilmXfkCateContext";
+import { FilmProvider } from "./context/FilmContext";
+import { CategoryProvider } from "./context/CategoryContext";
+import { MainPlayerProvider } from "./context/MainPlayerContext";
 
 //FIXME: AuthProvider via getAuth() from firebase-config
 function App() {
   return (
-    <UserAuthContextProvider>
-      <MainPlayerProvider>
+    <VimeoProvider>
+      <UserAuthContextProvider>
         <FkFilmXfkCateProvider>
           <FilmProvider>
             <CategoryProvider>
-              <Router />
+              <MainPlayerProvider>
+                <Router />
+              </MainPlayerProvider>
             </CategoryProvider>
           </FilmProvider>
         </FkFilmXfkCateProvider>
-      </MainPlayerProvider>
-    </UserAuthContextProvider>
+      </UserAuthContextProvider>
+    </VimeoProvider>
   );
 }
 

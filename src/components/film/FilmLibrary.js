@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 // import filmDetails from "./UniversitiyDetails";
-import { FilmContext } from "../context/FilmContext";
-import Tile from "./tile";
+import { FilmContext } from "../../context/FilmContext";
+import Tile from "../tile/Tile";
 import { Link, useNavigate } from "react-router-dom";
-import "./components.css";
+import "../components.css";
 
 const FilmLibrary = () => {
   const [films, setFilms] = useContext(FilmContext);

@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainNav from "../components/nav";
 import Home from "../view/pages/Home";
 import Scouting from "../view/pages/Scouting";
-import VimeoFeed from "../components/VimeoFeed";
-import Film from "../components/Film";
+import VimeoFeed from "../components/ScoutingTool";
+import Film from "../components/film/Film";
 import Category from "../components/category/Category";
-import CategoryLibrary from "../components/category/CategoryLibrary";
+import CategoryTable from "../components/category/CategoryTable";
 import FkFilmXfkCateLibrary from "../components/FkFilmXfkCateLibrary";
-import Profile from "../components/Profile";
-import GroupList from "../components/GroupList";
-import FilmLibrary from "../components/FilmLibrary";
+import Profile from "../components/group/Profile";
+import GroupList from "../components/group/GroupList";
+import FilmLibrary from "../components/film/FilmLibrary";
 import * as ROUTES from "./routes";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path={ROUTES.FILM} element={<Film />} />
         <Route path={ROUTES.FILM_LIBRARY} element={<FilmLibrary />} />
         <Route path={ROUTES.CATEGORY} element={<Category />} />
-        <Route path={ROUTES.CATEGORY_LIBRARY} element={<CategoryLibrary />} />
+        <Route path={ROUTES.CATEGORY_LIBRARY} element={<CategoryTable />} />
         <Route
           path={ROUTES.FK_FILMXFK_CATE_LIBRARY}
           element={<FkFilmXfkCateLibrary />}

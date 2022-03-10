@@ -1,11 +1,11 @@
 import React from "react";
 import Category from "../../components/category/Category";
 import CategoryWidget from "../../components/category/CategoryWidget";
-import VimeoFeed from "../../components/VimeoFeed";
-import Film from "../../components/Film";
-import GroupList from "../../components/GroupList";
+import VimeoFeed from "../../components/ScoutingTool";
+import Film from "../../components/film/Film";
+import GroupList from "../../components/group/GroupList";
 import "./pageLayout.css";
-import FilmLibrary from "../../components/FilmLibrary";
+import FilmLibrary from "../../components/film/FilmLibrary";
 import FkFilmXfkCateLibrary from "../../components/FkFilmXfkCateLibrary";
 import MainPlayer from "../../components/main-player/MainPlayer";
 

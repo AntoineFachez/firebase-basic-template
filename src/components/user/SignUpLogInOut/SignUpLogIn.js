@@ -3,7 +3,6 @@ import "./auth.css";
 import Signup from "./SignUp";
 import LogIn from "./LogIn";
 import { UserAuthContext } from "../../../context/AuthContext";
-
 import { ClickAwayListener } from "@mui/base";
 
 const SignUpLogIn = () => {
@@ -36,33 +35,27 @@ const SignUpLogIn = () => {
     // console.log(uiSignUp);
   };
   return (
-    <div className="container">
-      <button className="btn" onClick={openWidget}>
-        <li>login</li>
-      </button>
-      ;{/* <div className="form"></div> */}
-      <div className="signUp-logIn">
+    <div className="">
+      {/* <div className="form"></div> */}
+      <div className="">
         {openSignInLogInOut ? (
-          ""
+          <button className="btn-open-signUp-logIn" onClick={openWidget}>
+            <li>signUp / login</li>
+          </button>
         ) : (
-          <div>
-            <ClickAwayListener onClickAway={closeWidget}>
-              <div ref={logInRef} className="signUp-logIn">
-                <SignUpLogIn />
+          <ClickAwayListener onClickAway={closeWidget}>
+            {/* <SignUpLogIn /> */}
+            <div ref={logInRef} className="signUp-logIn">
+              <div className="signUp-logIn-menu">
+                <button className="btn-switch" onClick={uiContextSignUp}>
+                  {uiSignUp ? "Log in" : "Sign up"}
+                </button>
               </div>
-            </ClickAwayListener>
-          </div>
+              {uiSignUp && !loggedIn ? <Signup /> : <LogIn />}
+            </div>
+          </ClickAwayListener>
         )}
       </div>
-      ;
-      {loggedIn ? (
-        ""
-      ) : (
-        <button className="btn-switch" onClick={uiContextSignUp}>
-          {uiSignUp ? "Log in" : "Sign up"}
-        </button>
-      )}
-      {uiSignUp && !loggedIn ? <Signup /> : <LogIn />}
     </div>
   );
 };

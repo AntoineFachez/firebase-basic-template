@@ -1,3 +1,6 @@
+.page > * {
+  will-change: transform;
+}
 .page {
   display: flex;
   flex-direction: column;

@@ -1,9 +1,11 @@
 .body {
   height: fit-content;
+  will-change: transform;
 }
 .section-list {
   /* overflow: scroll; */
   width: 100vw;
+  will-change: transform;
 }
 .section1,
 .section2,
@@ -11,6 +13,7 @@
 .section4,
 .section5 {
   display: flex;
+  will-change: transform;
   /* margin: 1rem; */
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,5 +46,6 @@
 }
 
 .widget {
+  will-change: transform;
   /* margin: 1rem; */
 }

@@ -1,12 +1,38 @@
 import logo from "../../images/p00l glow Square small.png";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
-import Vimeo from "../../context/Vimeo";
+
 import "./main-nav.css";
 import SignUpLogIn from "../user/SignUpLogInOut/SignUpLogIn";
+import { VimeoLogIn } from "../VimeoLogIn";
 
 export default function MainNav() {
+  const [isShrunk, setShrunk] = useState(false);
+
+  // useEffect(() => {
+  //   const handler = () => {
+  //     setShrunk((isShrunk) => {
+  //       if (
+  //         !isShrunk &&
+  //         (document.body.scrollTop > 10 ||
+  //           document.documentElement.scrollTop > 10)
+  //       ) {
+  //         return true;
+  //       }
+  //       if (
+  //         isShrunk &&
+  //         document.body.scrollTop < 4 &&
+  //         document.documentElement.scrollTop < 4
+  //       ) {
+  //         return false;
+  //       }
+  //       return isShrunk;
+  //     });
+  //   };
+  //   // Previous logic.
+  // }, []);
+
   return (
     <nav className="main-nav">
       <div className="logo">
@@ -14,8 +40,10 @@ export default function MainNav() {
           <img className="logo" src={logo} alt="" />
         </Link>
       </div>
-      <div className="vimeo">
-        <Vimeo />
+      <div className="vimeo-container">
+        <div className="vimeo">
+          <VimeoLogIn />
+        </div>
       </div>
       {/* <SignUpLogIn /> */}
       <ul className="nav-container">

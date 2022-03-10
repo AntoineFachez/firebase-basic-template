@@ -1,9 +1,8 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 /*https://api.vimeo.com/oauth/authorize?response_type=token&client_id={client_id}&redirect_uri={redirect_uri}&state={state}&scope={scope_list} */
-// import vimeoLogoLoggedIn from "../images/vimeologgedIn.png";
-// import vimeoLogoLoggedOut from "../images/vimeologgedOut.png";
+import vimeoLogoLoggedIn from "../images/vimeologgedIn.png";
+import vimeoLogoLoggedOut from "../images/vimeologgedOut.png";
 // import axios from "axios";
-// import { auth } from "../context/AuthContext";
 
 export const VimeoContext = createContext();
 
@@ -16,39 +15,30 @@ const SERVER_REDIRECT_URL = "http://localhost:3000/scouting/";
 const STATE = [0];
 const SCOPES = ["me"];
 // const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
-// const vimeoLoggedIn = vimeoLogoLoggedIn;
-// const vimeoLoggedOut = vimeoLogoLoggedOut;
+const vimeoLoggedIn = vimeoLogoLoggedIn;
+const vimeoLoggedOut = vimeoLogoLoggedOut;
 // console.log(vimeoLogoLoggedOut);
 
-// const paramSplit = window.location.hash
-//   .substring(1)
-//   .split("&")
-//   .reduce((accumulater, currentValue) => {
-//     const [key, value] = currentValue.split("=");
-//     accumulater[key] = value;
-//     return accumulater;
-//   }, {});
-// const { access_token, token_type, scope, expires_in } = paramSplit;
-// localStorage.clear();
-// localStorage.setItem("accessToken", access_token);
-// localStorage.setItem("tokenType", token_type);
-// localStorage.setItem("scope", scope);
-// localStorage.setItem("expiresIn", expires_in);
+const paramSplit = window.location.hash
+  .substring(1)
+  .split("&")
+  .reduce((accumulater, currentValue) => {
+    const [key, value] = currentValue.split("=");
+    accumulater[key] = value;
+    return accumulater;
+  }, {});
+const { access_token, token_type, scope, expires_in } = paramSplit;
+localStorage.clear();
+localStorage.setItem("accessToken", access_token);
+localStorage.setItem("tokenType", token_type);
+localStorage.setItem("scope", scope);
+localStorage.setItem("expiresIn", expires_in);
 
 export const VimeoProvider = ({ children }) => {
-  // const { user } = useContext(auth);
   const [filmCategories, setFilmCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
   const [redirectURL, setRedirectURL] = useState(SERVER_REDIRECT_URL);
-
-  // useEffect(() => {
-  //   if (user) {
-  //     const handleLogIn = () => {
-  //       window.location = `${AUTH_URL}?response_type=token&client_id=${CLIENT_ID}&redirect_uri=${redirectURL}&state=${STATE}&scope=${SCOPES}`;
-  //     };
-  //   }
-  // }, [user]);
 
   // useEffect(() => {
   //   chooseHost();
@@ -80,9 +70,9 @@ export const VimeoProvider = ({ children }) => {
       value={[
         LOCALHOST_REDIRECT_URL,
         SERVER_REDIRECT_URL,
-        // vimeoLoggedIn,
-        // vimeoLoggedOut,
-        // access_token,
+        vimeoLoggedIn,
+        vimeoLoggedOut,
+        access_token,
         filmCategories,
         searchTerm,
         redirectURL,
