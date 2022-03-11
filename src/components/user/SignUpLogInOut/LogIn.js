@@ -52,7 +52,7 @@ export default function LogIn() {
   };
 
   return (
-    <div className="form">
+    <div className="">
       {/* Log In*/}
       <h2 className="header">{loggedIn ? "Welcome" : "Bye"}</h2>
       {loggedIn ? (
@@ -68,7 +68,7 @@ export default function LogIn() {
           {errorLogIn && <li>{errorLogIn}</li>}
           <input
             // ref={emailRef}
-            className="input"
+            className="input-signLog"
             type="email"
             name="email"
             id=""
@@ -80,7 +80,7 @@ export default function LogIn() {
           />
           <input
             // ref={passwordRef}
-            className="input"
+            className="input-signLog"
             type="password"
             name="password"
             id=""
@@ -90,12 +90,12 @@ export default function LogIn() {
             }}
             required
           />
+          <button className="btn-submit" onClick={loggedIn ? logOut : logIn}>
+            {" "}
+            {loggedIn ? "Log Out" : "Log In"}
+          </button>
         </form>
       )}
-      <button className="btn-submit" onClick={loggedIn ? logOut : logIn}>
-        {" "}
-        {loggedIn ? "Log Out" : "Log In"}
-      </button>
     </div>
   );
 }

@@ -41,15 +41,25 @@ export default function Signup() {
 
   const signUp = async (e) => {
     e.preventDefault();
-    console.log("clicked");
+    setErrorRegister(null);
+    setErrorSubmit(null);
+    if (passwordConfirmRef.current.value === "") {
+      return setErrorSubmit("please confirm your password");
+    } else if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+      return setErrorRegister("passwords do not match");
+    } else if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+      return setErrorRegister("Check your password confirmation");
+      console.log("clicked");
+    }
     try {
       const user = await createUserWithEmailAndPassword(
         auth,
         registerEmail,
         registerPassword
       );
-      console.log(user);
+      // console.log(user);
       setErrorRegister(null);
+      setErrorSubmit(null);
       setRegisterEmail(null);
       Redirect();
       //   logIn(auth, registerEmail, registerPassword);
@@ -59,38 +69,40 @@ export default function Signup() {
     }
   };
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setErrorSubmit("Passwords do not match");
-    } else {
-      setErrorSubmit("");
-      try {
-        await signUp(registerEmail, registerPassword);
-        // setLogIn(true);
-      } catch (err) {
-        setErrorSubmit(err.message);
-      }
-    }
-  }
+  // async function handleSubmit(e) {
+  //   e.preventDefault();
+  //   console.log(passwordRef.current.value);
+  //   if (passwordConfirmRef.current.length !== null) {
+  //     return setErrorRegister("Please confirm your password");
+  //   } else if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+  //     return setErrorRegister("Check your password confirmation");
+  //   } else {
+  //     setErrorRegister(null);
+  //     setErrorSubmit(null);
+  //     try {
+  //       await signUp(registerEmail, registerPassword);
+  //       // setLogIn(true);
+  //     } catch (err) {
+  //       setErrorSubmit(err.message);
+  //     }
+  //   }
+  // }
   const clicked = () => {
     console.log("clicked");
   };
   return (
-    <div className="form">
+    <div className="">
       {/* Sign Up*/}
       <h2 className="header">Sign Up</h2>
-      {errorSubmit && <li>{errorSubmit}</li>}
-      {errorRegister && <li>{errorRegister}</li>}
+
       <form
-        onSubmit={handleSubmit}
+        onSubmit={signUp}
         className="form"
         // afterSubmit={() => navigate("/")}
       >
         <input
           // ref={emailRef}
-          className="input"
+          className="input-signLog"
           type="email"
           name="email"
           id=""
@@ -102,7 +114,7 @@ export default function Signup() {
         />
         <input
           ref={passwordRef}
-          className="input"
+          className="input-signLog"
           type="password"
           name="password"
           // value=""
@@ -115,7 +127,7 @@ export default function Signup() {
         />
         <input
           ref={passwordConfirmRef}
-          className="input"
+          className="input-signLog"
           type="password"
           name="passwordConfirmation"
           id=""
@@ -125,16 +137,18 @@ export default function Signup() {
           }}
           required
         />
+        {errorSubmit && <li className="error">{errorSubmit}</li>}
+        {errorRegister && <li className="error">{errorRegister}</li>}
+        <button
+          className="btn-submit"
+          // disabled={loading}
+          type="submit"
+          onClick={signUp}
+          // onClick={clicked}
+        >
+          Sign Up
+        </button>
       </form>
-      <button
-        className="btn-submit"
-        // disabled={loading}
-        type="submit"
-        onClick={signUp}
-        // onClick={clicked}
-      >
-        Sign Up
-      </button>
     </div>
   );
 }

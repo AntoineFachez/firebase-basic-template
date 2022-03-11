@@ -35,13 +35,14 @@ const SignUpLogIn = () => {
     // console.log(uiSignUp);
   };
   return (
-    <div className="">
+    <div className="container">
+      <button className="btn-open-signUp-logIn" onClick={openWidget}>
+        <li>signUp / login</li>
+      </button>
       {/* <div className="form"></div> */}
       <div className="">
         {openSignInLogInOut ? (
-          <button className="btn-open-signUp-logIn" onClick={openWidget}>
-            <li>signUp / login</li>
-          </button>
+          <div></div>
         ) : (
           <ClickAwayListener onClickAway={closeWidget}>
             {/* <SignUpLogIn /> */}

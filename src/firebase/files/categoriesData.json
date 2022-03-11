@@ -1,0 +1,1885 @@
+{
+  "categories": [
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Storytelling",
+      "cate_ranking": "01",
+      "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": ""
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Vignette",
+      "cate_ranking": "",
+      "id_cate": "4F1AF410-C3DA-4074-9891-E486446AFBD9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": ""
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Comedy",
+      "cate_ranking": "01",
+      "id_cate": "A5287B37-860C-48AB-964F-7B5C4260C88D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": ""
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Fashion",
+      "cate_ranking": "01",
+      "id_cate": "B925EED8-4C74-4667-94CD-25FFA5074A29",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 20:31:19"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Car/ Automotiv",
+      "cate_ranking": "01",
+      "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 20:31:28"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Action",
+      "cate_ranking": "02",
+      "id_cate": "0510FAC0-A1EF-4C07-9932-707CB9A6D1F7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 20:31:33"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Food",
+      "cate_ranking": "01",
+      "id_cate": "0B190C7F-C082-4C6C-987E-3A55A2FEB42E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 20:31:40"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Life Style",
+      "cate_ranking": "01",
+      "id_cate": "18CBD42A-BC99-4CED-B9C9-8DAC91F4499A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 20:31:49"
+    },
+    {
+      "cateMaj": "Misc",
+      "cateMaj_ranking": "70",
+      "cateName": "Price Winning",
+      "cate_ranking": "01",
+      "id_cate": "17F74143-B102-4618-901A-8B07B007D245",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 21:49:29"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Surreal",
+      "cate_ranking": "02",
+      "id_cate": "354D13E0-0F81-44C5-B8B7-E3FFE8F0230C",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:04:18"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Fantasy",
+      "cate_ranking": "02",
+      "id_cate": "BD0741E6-A71E-4788-8893-C77D29E23B61",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:04:28"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Extreme ",
+      "cate_ranking": "01",
+      "id_cate": "4CB3479E-BB7D-401A-B602-51220EB3AC8D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:04:36"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Dialogue",
+      "cate_ranking": "",
+      "id_cate": "F618E4A3-9F94-40A7-8B44-E8CB5371B944",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:26:09"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Songvertising",
+      "cate_ranking": "03",
+      "id_cate": "D0C35A08-7E85-404A-A359-5B7654EA526A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:27:25"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Second Reality",
+      "cate_ranking": "02\r",
+      "id_cate": "79304FB3-B30B-4824-89A5-119CB13EE556",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.05.2016 22:37:32"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Sport",
+      "cate_ranking": "",
+      "id_cate": "2D5C8CBB-9073-47F1-B07B-621522C33B3D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:08:43"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Beauty",
+      "cate_ranking": "01",
+      "id_cate": "51842FF1-7E1C-4AB7-9F50-20892C028916",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:29:34"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Pop",
+      "cate_ranking": "03",
+      "id_cate": "164F6DCC-B26A-4780-AF66-3E723CE9A2E8",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:31:14"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Beverages",
+      "cate_ranking": "01",
+      "id_cate": "E0BBB5FA-FCAC-4B44-9F55-A5F5FE9FDDE2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:39:23"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Dance",
+      "cate_ranking": "",
+      "id_cate": "7D3B03F1-51F1-4781-B607-2A7B5A9E7427",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:44:08"
+    },
+    {
+      "cateMaj": "Performance",
+      "cateMaj_ranking": "",
+      "cateName": "Choreography",
+      "cate_ranking": "",
+      "id_cate": "97A43E5C-F5B7-46FC-8CD9-BDA0A3DC290F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:44:12"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "CGI",
+      "cate_ranking": "",
+      "id_cate": "F7F4534E-7062-4B95-ACC4-45604A1B378E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 00:45:38"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "One Shot",
+      "cate_ranking": "01",
+      "id_cate": "A64D517F-3111-46B0-BFB1-74F34EDED87B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 01:20:41"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Celebrity",
+      "cate_ranking": "01",
+      "id_cate": "119251AD-FA2A-43DB-93A1-605A19988CC3",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 12:30:29"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Animals",
+      "cate_ranking": "01",
+      "id_cate": "75F91EBD-3F9E-4E8B-8FCD-DF32B6BB479E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 13:12:46"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Child",
+      "cate_ranking": "",
+      "id_cate": "BF24E1F3-B69B-4933-A02B-76C7B336C4EB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 14:42:01"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Cast",
+      "cate_ranking": "00",
+      "id_cate": "C599640B-8919-4180-896D-BFC3B16AB2B5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 15:23:59"
+    },
+    {
+      "cateMaj": "History",
+      "cateMaj_ranking": "11",
+      "cateName": "Avantgarde",
+      "cate_ranking": "01",
+      "id_cate": "FF2A9D40-E59F-4E5A-92D1-23C3DDE3D7E9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 15:45:49"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Horror",
+      "cate_ranking": "03",
+      "id_cate": "0E25D220-B987-46BA-A3C6-2CD33503D32E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 15:48:28"
+    },
+    {
+      "cateMaj": "Prod Value",
+      "cateMaj_ranking": "02",
+      "cateName": "Big Picture",
+      "cate_ranking": "01",
+      "id_cate": "30080439-794B-4A08-B30B-53D6B8BC3E70",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:09:43"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Iconic",
+      "cate_ranking": "01",
+      "id_cate": "2BE83385-8D3B-47C2-99D3-1F72CAB2C1F9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:14:52"
+    },
+    {
+      "cateMaj": "Misc",
+      "cateMaj_ranking": "70",
+      "cateName": "Very Special",
+      "cate_ranking": "02",
+      "id_cate": "C34CB8A7-9A48-4C49-8FBB-3E06E775B641",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:15:14"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Historic",
+      "cate_ranking": "02",
+      "id_cate": "756DF7C4-4359-4FF3-B65D-F582CE797163",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:26:33"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Art Depart.",
+      "cate_ranking": "01",
+      "id_cate": "A5D90E8E-52B4-426A-9B0B-A51475A42820",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:26:53"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Family",
+      "cate_ranking": "02",
+      "id_cate": "D72E479E-D8F7-4A22-96E2-C0792FA03F2A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 16:28:30"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Cadrage",
+      "cate_ranking": "02",
+      "id_cate": "905137D6-45B6-4D4A-B819-E445892B595A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 17:31:37"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Music",
+      "cate_ranking": "01",
+      "id_cate": "8CC604EE-6625-4145-A3CA-29D1B36FCB8F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 17:32:15"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "VFX",
+      "cate_ranking": "01",
+      "id_cate": "86B96305-02F5-4A56-B224-ED62393300A0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2016 17:33:17"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "Landscapes ",
+      "cate_ranking": "01",
+      "id_cate": "AAFF0EE1-A817-4586-BA37-9D0B43650933",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 01:10:40"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "People",
+      "cate_ranking": "01",
+      "id_cate": "75FF3947-B378-4E11-AF7B-4C4312BA3E41",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 10:52:54"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Dramatic",
+      "cate_ranking": "02",
+      "id_cate": "EF09B991-3416-4BC9-8A70-66763BA967C2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 12:39:54"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Grading",
+      "cate_ranking": "01",
+      "id_cate": "EFE58241-B004-453E-8403-23F7E1EF3B51",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 12:39:58"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Travel",
+      "cate_ranking": "01",
+      "id_cate": "E0B026FA-6177-4530-91FE-648592F41328",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 14:37:06"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Social / Educational",
+      "cate_ranking": "01",
+      "id_cate": "63457324-926A-4127-87CE-9907AB76F670",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 15:52:04"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "How it's done",
+      "cate_ranking": "02",
+      "id_cate": "B2DE4C9C-F58D-4BA0-A3CC-1B0D708AB3DA",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 16:17:09"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Media Mix",
+      "cate_ranking": "02",
+      "id_cate": "6BEA9090-7377-439D-AC67-4A52E922C370",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 16:45:12"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Epic",
+      "cate_ranking": "01",
+      "id_cate": "40EABEC6-64CB-440A-BD57-B10D26F5B4CD",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 16:45:34"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Arty",
+      "cate_ranking": "01",
+      "id_cate": "BBCF790B-3719-4381-AF7E-907DEE066945",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 16:52:23"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Abstract",
+      "cate_ranking": "03",
+      "id_cate": "22454E1A-D7D9-4DFD-9926-D8595BEFFC83",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 18:23:20"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Collage",
+      "cate_ranking": "",
+      "id_cate": "A3993D51-B9C2-4B89-8695-3EFF141BA5A2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.05.2016 18:26:06"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Liquids",
+      "cate_ranking": "01",
+      "id_cate": "D90E608E-662E-44BF-864F-7F9B9658E39A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:22:01"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Table Top",
+      "cate_ranking": "01",
+      "id_cate": "20C594AD-5C94-4AB0-A1C2-FFC4F58022AE",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:23:01"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Happy Feeling",
+      "cate_ranking": "01",
+      "id_cate": "E6E31F49-E12F-4676-9918-C49EDCB04631",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:31:45"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Documentery ",
+      "cate_ranking": "01",
+      "id_cate": "63B36035-EFFD-4F57-84F6-B006AFE2FC16",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:35:25"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Advertising",
+      "cate_ranking": "01",
+      "id_cate": "1EF5A3B2-EE59-452E-981C-B5316E6D2727",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:42:28"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Prank",
+      "cate_ranking": "02",
+      "id_cate": "399561B0-6253-49DB-B7E5-66EA351D87A1",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:44:27"
+    },
+    {
+      "cateMaj": "Image",
+      "cateMaj_ranking": "",
+      "cateName": "Graphic",
+      "cate_ranking": "01",
+      "id_cate": "3C49F3BB-17CB-41FA-A59E-E28089CFE76D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 16:46:57"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Technique",
+      "cate_ranking": "00",
+      "id_cate": "C13F632E-EBB8-41A3-9502-E6AFC52A61EF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 17:39:41"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "Architecture",
+      "cate_ranking": "01",
+      "id_cate": "17C81C6D-4135-4917-848D-E8AECC8DC872",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 17:41:28"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Monolog ",
+      "cate_ranking": "01",
+      "id_cate": "9B9A220F-0E21-44F7-8380-D376A0B08B48",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "23.05.2016 17:43:20"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Case Study",
+      "cate_ranking": "01",
+      "id_cate": "4027613B-049F-48AF-8F79-6BE88690E1CB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 09:56:08"
+    },
+    {
+      "cateMaj": "Image",
+      "cateMaj_ranking": "",
+      "cateName": "Cinematic",
+      "cate_ranking": "01",
+      "id_cate": "D9FC0540-97A6-467A-9073-0B8505157F4D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 10:46:18"
+    },
+    {
+      "cateMaj": "History",
+      "cateMaj_ranking": "11",
+      "cateName": "Classics",
+      "cate_ranking": "01",
+      "id_cate": "131A86DB-5CBB-4241-A215-0F1D0927EFA5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 10:48:18"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Couple",
+      "cate_ranking": "02",
+      "id_cate": "084BF5D7-F4E4-44D1-B8D7-2F00D05C4EDE",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 11:10"
+    },
+    {
+      "cateMaj": "History",
+      "cateMaj_ranking": "11",
+      "cateName": "Vintage",
+      "cate_ranking": "02",
+      "id_cate": "23B6EBEC-B08F-49D9-B6EE-43C16923AFD3",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 11:46:06"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Twen",
+      "cate_ranking": "02",
+      "id_cate": "F6B24E1B-6D30-4B48-8406-4A53ABB514C0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 11:46:35"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "Location",
+      "cate_ranking": "00",
+      "id_cate": "37C62D4F-7806-4985-8A32-FEB69A095C34",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 20:46:13"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Trick your Mind",
+      "cate_ranking": "03",
+      "id_cate": "AD078736-FC07-416A-9A5C-9069B483CDD8",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.05.2016 23:58:13"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Luxury",
+      "cate_ranking": "01",
+      "id_cate": "F7ACA9CC-1FE0-41AC-BF2D-5882BF648F59",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 00:58:02"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "High Class/ Glamour",
+      "cate_ranking": "01",
+      "id_cate": "1C147B6B-DF4E-472C-ACE1-45B3EDF873C0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 00:58:10"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Household",
+      "cate_ranking": "02",
+      "id_cate": "23D603B7-0098-4005-BA03-201845A43140",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 01:00:09"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Electronics",
+      "cate_ranking": "02",
+      "id_cate": "D6571BE8-965A-4F83-B1AF-8DCFFC0087FD",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 01:03"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Portrait",
+      "cate_ranking": "03",
+      "id_cate": "C1889CA6-07A3-42BC-B1E7-F8C006D21B4F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 01:06:30"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Feminin",
+      "cate_ranking": "02",
+      "id_cate": "5F8CE81C-2E07-4142-AD94-DB030BBE48AF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 01:10:28"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Stop Trick",
+      "cate_ranking": "02",
+      "id_cate": "7FC356D0-61BC-4CCC-9246-8984DB0A0C9F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 01:11:51"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Baby",
+      "cate_ranking": "02",
+      "id_cate": "1FF5E992-E715-4BEE-9480-95B21CAE6ADA",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 13:37:46"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Masculin",
+      "cate_ranking": "02",
+      "id_cate": "7D993CEA-F58E-4C88-90C9-699F358E9A80",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 16:49:24"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "SciFi",
+      "cate_ranking": "03",
+      "id_cate": "5EFD2C24-3E73-4CE6-B1FC-24711B4FABEC",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 18:40:18"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Industrial Film ",
+      "cate_ranking": "02",
+      "id_cate": "D952ED14-B9AC-4FF8-8BFD-91D45E82DE7B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.05.2016 18:51:22"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Teens",
+      "cate_ranking": "02",
+      "id_cate": "D1505768-E3EE-495B-B79E-1F8F79A15D5C",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "30.05.2016 11:03:02"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Motion Graphic",
+      "cate_ranking": "02",
+      "id_cate": "93B93DB9-C824-41C4-A60E-395860B98360",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.06.2016 17:44:25"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Sound Design",
+      "cate_ranking": "01",
+      "id_cate": "15172CC5-7358-4589-A6F6-053998162FC2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.06.2016 17:58"
+    },
+    {
+      "cateMaj": "Misc",
+      "cateMaj_ranking": "70",
+      "cateName": "Something Missing",
+      "cate_ranking": "02",
+      "id_cate": "B9BE9C27-EC48-4C79-A4A1-1B74AB32D97F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.06.2016 13:01:09"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Dynamic",
+      "cate_ranking": "01",
+      "id_cate": "AE125928-21AE-4F29-8108-2122DB3D6696",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "15.06.2016 15:13:49"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Speed Ramps/ Time Laps/ Slow Motion",
+      "cate_ranking": "01",
+      "id_cate": "377853E6-E73C-496C-B468-FE5A1D57FAE0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "15.06.2016 16:57:24"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Narrator",
+      "cate_ranking": "01",
+      "id_cate": "9E99EEE6-6224-4D66-8C65-AEC2F919F95E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "16.06.2016 12:33:41"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Trash",
+      "cate_ranking": "01",
+      "id_cate": "506EDC04-F830-4825-B9A7-98760F0CDD38",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "29.06.2016 14:08:45"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Testimonial",
+      "cate_ranking": "01",
+      "id_cate": "DBE79188-1CC7-492A-9F68-09589A20719C",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.07.2016 11:38:13"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Senior",
+      "cate_ranking": "02",
+      "id_cate": "EC87309D-5450-44B7-BA5F-EC4A5FBC5E62",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.07.2016 12:31:59"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Interview",
+      "cate_ranking": "01",
+      "id_cate": "3722876D-A48A-4ACB-89BB-FCB969B3668D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.07.2016 12:58:47"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Twinkle in the Eye",
+      "cate_ranking": "02",
+      "id_cate": "FE517EC8-94D5-4FFA-AFFE-485C215F17BF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "10.08.2016 16:27:35"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Health",
+      "cate_ranking": "02",
+      "id_cate": "E171773C-7DAB-4E67-963E-9FDFFB110DF5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.08.2016 16:50:26"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Insurance",
+      "cate_ranking": "02",
+      "id_cate": "56048DDD-5CDD-45B1-882B-C9DEF7CA92AD",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.10.2016 17:37:16"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Furniture\r",
+      "cate_ranking": "",
+      "id_cate": "2EBFDE1A-574D-4AE8-859C-33CF5A4BDEE1",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.10.2016 10:35:53"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Adult",
+      "cate_ranking": "03",
+      "id_cate": "FBFC5849-E6AB-4ED7-9F95-4BBD099725E7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.10.2016 10:39:19"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Erotic",
+      "cate_ranking": "02",
+      "id_cate": "39DFB63E-A512-4213-924D-4AC8A10E4435",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.10.2016 11:42:59"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Authentic",
+      "cate_ranking": "01",
+      "id_cate": "7FBCBB92-1D21-417D-828B-85F2A29ED1DF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.10.2016 14:53:34"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Finances",
+      "cate_ranking": "02",
+      "id_cate": "A3060D49-4347-46F9-95E9-39943317B573",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.10.2016 18:28:55"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Branded Content",
+      "cate_ranking": "01",
+      "id_cate": "63ADFA8A-795D-4FEB-9F1B-39A463F746D4",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.10.2016 12:58:55"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Thriller/ Crime",
+      "cate_ranking": "03",
+      "id_cate": "1EA482E6-5B49-489C-B20E-0B85C42AF959",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.10.2016 12:59:26"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Meaning",
+      "cate_ranking": "02",
+      "id_cate": "1E8F234B-84BF-4208-BE79-6C5603B81D22",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.10.2016 15:10:03"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Twist",
+      "cate_ranking": "02",
+      "id_cate": "9188BD00-F62E-4334-A27B-27FD0CF32555",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.10.2016 16:48:13"
+    },
+    {
+      "cateMaj": "Misc",
+      "cateMaj_ranking": "70",
+      "cateName": "Quote a Film",
+      "cate_ranking": "02",
+      "id_cate": "D004045F-C951-4AD5-9A7C-36E499991B61",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "26.10.2016 16:35"
+    },
+    {
+      "cateMaj": "Season",
+      "cateMaj_ranking": "42",
+      "cateName": "Winter",
+      "cate_ranking": "01",
+      "id_cate": "93896D8F-5789-4064-9D8B-B863615AFAEA",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "04.11.2016 11:10:24"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Build Up",
+      "cate_ranking": "02",
+      "id_cate": "7EEA7E52-0AEF-4414-A2DB-ED4D0C96A0FB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 10:31:14"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Emotions",
+      "cate_ranking": "01",
+      "id_cate": "77EF1C64-AC37-4150-8DAA-CFAEE2B009F7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 10:31:40"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Cause and Effect",
+      "cate_ranking": "03",
+      "id_cate": "BA6D89C1-3BCE-4C86-8477-2747EB4FAF66",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 12:54:03"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Interactive",
+      "cate_ranking": "02",
+      "id_cate": "F134ED6B-818F-4C99-A2D8-18A8AFBA03B0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 16:16:32"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "DIY",
+      "cate_ranking": "02",
+      "id_cate": "B555C404-F96A-429F-B554-29F16E5F6888",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 16:55:27"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Road Movie",
+      "cate_ranking": "03",
+      "id_cate": "7168C176-A4E3-469B-83DD-DEC47E79FDD6",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 22:30:37"
+    },
+    {
+      "cateMaj": "Prod Value",
+      "cateMaj_ranking": "02",
+      "cateName": "Low Budget",
+      "cate_ranking": "01",
+      "id_cate": "405A9722-A8D3-480B-B5C9-64AE8785E588",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 22:48:35"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Viral",
+      "cate_ranking": "01",
+      "id_cate": "586ABB8D-7E01-4EE9-AC84-80939D96533D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 22:59:24"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Visual Storytelling",
+      "cate_ranking": "02",
+      "id_cate": "E27F6C92-9529-4C58-9CD7-435C4CDF2BA9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 23:07:44"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Without words",
+      "cate_ranking": "02",
+      "id_cate": "9A2DC293-3316-4AFF-99A3-C1265B8497D7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.11.2016 23:08:18"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "Studio",
+      "cate_ranking": "01",
+      "id_cate": "2FF4F6FA-27B8-44D6-8711-28B28EE1DE45",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "08.11.2016 00:25:37"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Dreamy",
+      "cate_ranking": "02",
+      "id_cate": "6DA24EED-5E97-4D1E-AD49-414EC0C7155D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "12.11.2016 21:19:47"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Parallel Montage",
+      "cate_ranking": "02",
+      "id_cate": "62266C8E-7A7C-4FFE-BC8D-4522E6E347CB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 01:34:50"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Matching Cuts",
+      "cate_ranking": "02",
+      "id_cate": "B70EB45B-05C9-4045-92CC-4A41ADF31D6B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 01:35:08"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Transitions",
+      "cate_ranking": "02",
+      "id_cate": "40DBAD85-965A-42DD-9F8F-9DE1F2460FA7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 01:35:27"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Communication",
+      "cate_ranking": "02",
+      "id_cate": "F5D903C6-0562-4F44-A7B1-EE08401737B2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 03:16:22"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Social Network",
+      "cate_ranking": "02",
+      "id_cate": "591D6C2B-6ACF-4295-B7DF-1B13E007DDCB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 03:17:30"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Web Services & Trades",
+      "cate_ranking": "01",
+      "id_cate": "50C9A24E-14AE-497D-A47F-425DBCBFBE76",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 03:22:25"
+    },
+    {
+      "cateMaj": "Season",
+      "cateMaj_ranking": "42",
+      "cateName": "Christmas",
+      "cate_ranking": "02",
+      "id_cate": "8BC617A5-2CED-4E28-9084-2F304543041E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 03:34:27"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Rough",
+      "cate_ranking": "01",
+      "id_cate": "981AB50C-84E8-4F51-8F89-52DCDFB5DD66",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 03:52:41"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Product Range",
+      "cate_ranking": "00",
+      "id_cate": "43EF6585-59A4-4D2D-B783-100466AE004F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 11:17:55"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Genre",
+      "cate_ranking": "00",
+      "id_cate": "64C89049-39F4-4839-98E2-C3158055C1DD",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:02:50"
+    },
+    {
+      "cateMaj": "Prod Value",
+      "cateMaj_ranking": "02",
+      "cateName": "Prod Value",
+      "cate_ranking": "00",
+      "id_cate": "649D9566-B3A5-45A1-BB42-D1DDF08D8FA9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:03:15"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Function",
+      "cate_ranking": "00",
+      "id_cate": "961306C0-5E34-4371-BFDB-C32F45A5CB17",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:03:22"
+    },
+    {
+      "cateMaj": "History",
+      "cateMaj_ranking": "11",
+      "cateName": "History",
+      "cate_ranking": "00",
+      "id_cate": "A1666416-2A9B-4653-93CF-8F3A7A2D131A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:03:47"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Dramaturgy",
+      "cate_ranking": "00",
+      "id_cate": "C5B9609F-19F5-4074-8460-F4601D0F5275",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:03:55"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Style",
+      "cate_ranking": "00",
+      "id_cate": "F3F1B92D-5CA5-45EE-9CBC-43F78EF142D5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:04:01"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Intensity",
+      "cate_ranking": "00",
+      "id_cate": "CDB6BF7B-FF85-480C-86CC-9970D232A34D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:04:16"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Narrative",
+      "cate_ranking": "00",
+      "id_cate": "130C4265-5E56-4B12-AD93-7F3C9366824F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:04:23"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Camera",
+      "cate_ranking": "00",
+      "id_cate": "F88DBE08-323D-4978-BB10-9CF0990B4503",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:04:58"
+    },
+    {
+      "cateMaj": "Season",
+      "cateMaj_ranking": "42",
+      "cateName": "Season",
+      "cate_ranking": "00",
+      "id_cate": "6B547030-D2AC-440E-8801-D86421266B5A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:05:49"
+    },
+    {
+      "cateMaj": "Misc",
+      "cateMaj_ranking": "70",
+      "cateName": "Misc",
+      "cate_ranking": "00",
+      "id_cate": "E3A912FE-61AD-4762-9671-45E0E28C212B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2016 14:06:26"
+    },
+    {
+      "cateMaj": "Image",
+      "cateMaj_ranking": "",
+      "cateName": "Dark",
+      "cate_ranking": "01",
+      "id_cate": "82B1DB22-BE3E-46C7-BCB6-861C3695BE99",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.11.2016 15:37:19"
+    },
+    {
+      "cateMaj": "Image",
+      "cateMaj_ranking": "",
+      "cateName": "Bright",
+      "cate_ranking": "01",
+      "id_cate": "F2AFCD31-F2D8-4E64-AE13-7CA8C97B6CFE",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.11.2016 15:39:27"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Life Action",
+      "cate_ranking": "01",
+      "id_cate": "6DE5F735-4EF2-4E47-8E3F-A44F145AC990",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.11.2016 22:53:25"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Lottery",
+      "cate_ranking": "03",
+      "id_cate": "DF1C957C-B121-4B85-82C0-57A17035ABE5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "15.11.2016 18:27:09"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Design",
+      "cate_ranking": "03",
+      "id_cate": "9CAE32EE-FDE0-4182-9AA8-EDDF32B7EF3D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.11.2016 23:40:32"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Image Film",
+      "cate_ranking": "02",
+      "id_cate": "5FBB585A-1BCC-4E42-B177-94DD7FEFA7CB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.11.2016 23:42:58"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "In Camera ",
+      "cate_ranking": "01",
+      "id_cate": "1D4B6B72-5881-49B1-81B2-5D8DBE532D9D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.11.2016 23:43:48"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "MoCo/ Time Slice/ Bullet Time",
+      "cate_ranking": "",
+      "id_cate": "50B2CA6E-B27D-45DB-B4DF-E49C3BE08150",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.11.2016 23:46:10"
+    },
+    {
+      "cateMaj": "Performance",
+      "cateMaj_ranking": "",
+      "cateName": "Perform",
+      "cate_ranking": "",
+      "id_cate": "14121786-AABE-4979-B3B7-BCB9C813BEBE",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:09:34"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Short",
+      "cate_ranking": "",
+      "id_cate": "5C4C6443-E880-4A7C-9AFF-533915793CE7",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:35:14"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "SFX",
+      "cate_ranking": "",
+      "id_cate": "685A497C-946B-49CA-8407-93D0EA693640",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:38:09"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Styling",
+      "cate_ranking": "01",
+      "id_cate": "4B42E86F-A1AC-4BA1-A633-C0FC5E439601",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:45:52"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Titles",
+      "cate_ranking": "02",
+      "id_cate": "54ADB4BD-0F81-42F9-A9EE-BB13CCAD6E03",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:52:22"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Unordinary normal",
+      "cate_ranking": "03",
+      "id_cate": "3711CB71-0BE3-4920-A270-4C2CD821EEC8",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.12.2016 23:55:33"
+    },
+    {
+      "cateMaj": "Technique",
+      "cateMaj_ranking": "60",
+      "cateName": "Cinemagraph",
+      "cate_ranking": "",
+      "id_cate": "7AB2677D-5080-4A4D-A03E-4C48EA44A8B3",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.12.2016 13:44:22"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Science",
+      "cate_ranking": "03",
+      "id_cate": "14F8B498-B38F-46B7-8FC8-5C55A8BA9372",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.12.2016 21:27:56"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Television",
+      "cate_ranking": "02",
+      "id_cate": "BF9B6D66-AF67-43A1-B9E2-F84C77E35AA6",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "26.01.2017 14:06:09"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Feel for Object",
+      "cate_ranking": "03",
+      "id_cate": "3B2FD83F-2E92-4FBE-AFEB-65B21A10F08A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "03.02.2017 00:04:55"
+    },
+    {
+      "cateMaj": "Performance",
+      "cateMaj_ranking": "",
+      "cateName": "Stage",
+      "cate_ranking": "",
+      "id_cate": "4ED48BF8-A2BF-4D10-A321-32136F41AD58",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.02.2017 12:33:11"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Fast Cuts",
+      "cate_ranking": "02",
+      "id_cate": "3D655731-B713-4F63-A08D-66CD232DFB9A",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.02.2017 12:37:44"
+    },
+    {
+      "cateMaj": "Image",
+      "cateMaj_ranking": "",
+      "cateName": "Image",
+      "cate_ranking": "00",
+      "id_cate": "DB96E0C3-277B-4136-BFD4-25780D7F6830",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "20.02.2017 17:30:20"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Edit & Post",
+      "cate_ranking": "00",
+      "id_cate": "47C51226-916E-4778-9580-1B6715656E2C",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "21.02.2017 10:22:02"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "English",
+      "cate_ranking": "02",
+      "id_cate": "F9A995D2-7B24-4E22-A70A-D15581406798",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.02.2017 18:44:14"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "German",
+      "cate_ranking": "02",
+      "id_cate": "4AB74F86-4AE7-4287-B8D4-617A43F03786",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.02.2017 18:44:24"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "French",
+      "cate_ranking": "03",
+      "id_cate": "9ACA8CAC-10AA-40FC-8637-F5EB2230EB55",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.02.2017 18:44:30"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Spanish",
+      "cate_ranking": "03",
+      "id_cate": "685C5CED-6EB8-4F9F-A84C-40187D8F4812",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.02.2017 18:44:37"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Music Video",
+      "cate_ranking": "",
+      "id_cate": "0B15FC0C-7141-47AD-8327-FA3F92F802EA",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.02.2017 23:15:04"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Energy",
+      "cate_ranking": "01",
+      "id_cate": "0CD283F2-0B50-4140-90EB-F84BE866F3DB",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "16.03.2017 11:26:38"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Fairy Tale",
+      "cate_ranking": "",
+      "id_cate": "B475FF6D-512B-4C8C-89E8-6257A0503697",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.03.2017 14:00:59"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "Under Water",
+      "cate_ranking": "",
+      "id_cate": "B5D61096-51D0-4899-A49D-CAD642899B63",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.03.2017 16:43:48"
+    },
+    {
+      "cateMaj": "Function",
+      "cateMaj_ranking": "10",
+      "cateName": "Installation",
+      "cate_ranking": "",
+      "id_cate": "24238ABC-4DBC-4FCB-9641-D4E55A20BF86",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.03.2017 16:46:50"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Little Scene",
+      "cate_ranking": "01",
+      "id_cate": "8198191C-AD97-497C-AEED-03CE817692DE",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "05.09.2017 12:04:22"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Games",
+      "cate_ranking": "02",
+      "id_cate": "E45202CB-D304-48DE-BB46-D330651DB91D",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.09.2017 10:41:34"
+    },
+    {
+      "cateMaj": "Narrative",
+      "cateMaj_ranking": "23",
+      "cateName": "Speech",
+      "cate_ranking": "",
+      "id_cate": "4C739E63-D06B-40C6-93BC-8AE37140D738",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.09.2017 10:51:47"
+    },
+    {
+      "cateMaj": "Product Range",
+      "cateMaj_ranking": "00",
+      "cateName": "Supermarket",
+      "cate_ranking": "01",
+      "id_cate": "54438408-D6F8-480E-81ED-8E083297F80E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "17.09.2017 21:55:24"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Mystery",
+      "cate_ranking": "",
+      "id_cate": "58C67942-1ED2-4C38-88A5-BCB88B9C2D96",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "18.09.2017 12:57:45"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Punsh Line",
+      "cate_ranking": "",
+      "id_cate": "91DEE353-C02B-4C36-82B2-DD2734E94FA0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.09.2017 14:23:35"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Macro",
+      "cate_ranking": "",
+      "id_cate": "CDB4CE4F-F346-48E5-B073-F7E475C5C27C",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.11.2017 13:10:36"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Split Screen",
+      "cate_ranking": "",
+      "id_cate": "4B534705-4342-419B-89C5-D7C786A47DE0",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.11.2017 15:13:54"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Slice of life",
+      "cate_ranking": "",
+      "id_cate": "845B9EA9-C15A-43B6-9C31-9A3EA6651490",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "16.02.2018 18:22:46"
+    },
+    {
+      "cateMaj": "History",
+      "cateMaj_ranking": "11",
+      "cateName": "Retro",
+      "cate_ranking": "",
+      "id_cate": "E665E0CA-8726-4B82-9295-03B75DAD6495",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "26.02.2018 15:36:37"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Loop",
+      "cate_ranking": "",
+      "id_cate": "8A588061-E7E6-41AA-8416-E0334C2950A8",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "26.02.2018 16:11:53"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "POV/ BodyCam",
+      "cate_ranking": "",
+      "id_cate": "EE41B4BE-392F-4F22-8402-06D7F49BD534",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "27.02.2018 21:15:09"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Same Action",
+      "cate_ranking": "",
+      "id_cate": "DD0F0D5C-DB6B-45D0-8709-9D00D1773035",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "22.03.2018 11:57:37"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Friendship",
+      "cate_ranking": "01",
+      "id_cate": "0D486A40-2B02-4015-B049-284E0A8F55E4",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "30.10.2018 11:43:15"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Cool",
+      "cate_ranking": "",
+      "id_cate": "13FCE319-5DAC-4014-B842-0EE688B715E6",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "30.10.2018 11:43:25"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Key Visual",
+      "cate_ranking": "",
+      "id_cate": "6A1926F6-AD5E-49AE-94D2-3CA558301AE2",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "02.11.2018 15:21:40"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Stunt",
+      "cate_ranking": "",
+      "id_cate": "3D3E97F0-2969-4B06-BB04-59A958BE5BDA",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "02.11.2018 15:32:20"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Same Form",
+      "cate_ranking": "",
+      "id_cate": "EBE708CE-96A8-4441-AEB4-B25FDBC3ECE3",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "15.11.2018 15:01:37"
+    },
+    {
+      "cateMaj": "Art Department",
+      "cateMaj_ranking": "50",
+      "cateName": "Same Object",
+      "cate_ranking": "",
+      "id_cate": "575D2548-8E2E-4E2F-89CE-7978EBD0DFA1",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "07.12.2018 17:04:32"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Animation",
+      "cate_ranking": "",
+      "id_cate": "F4CCDC0E-38A1-42C3-B5C5-0C48358AC35B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "01.02.2019 11:40:14"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Symbolism",
+      "cate_ranking": "",
+      "id_cate": "E868D1D1-69E7-4ABD-8ED0-BF217E0AE26E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "21.06.2019 12:17:52"
+    },
+    {
+      "cateMaj": "Location",
+      "cateMaj_ranking": "41",
+      "cateName": "City",
+      "cate_ranking": "",
+      "id_cate": "BE743D6B-0CA6-4572-B55A-967A8E14F873",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "28.06.2019 14:43:37"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Griddy",
+      "cate_ranking": "",
+      "id_cate": "4AD0066E-BB80-431C-AE7B-5D57B9A329F6",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "02.08.2019 16:23:32"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "backwards",
+      "cate_ranking": "",
+      "id_cate": "6B8F0192-356A-43A0-9C98-57F3D956FE88",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "10.09.2019 17:52:33"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Character Design",
+      "cate_ranking": "",
+      "id_cate": "DA59E2F2-E9E7-42DD-9E46-6F34E4A26F1B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "25.10.2019 14:46:33"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Mockumentary",
+      "cate_ranking": "",
+      "id_cate": "E39212EF-20F3-4E6D-942A-0F816F038F67",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "11.11.2019 15:12:32"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Wake Up",
+      "cate_ranking": "",
+      "id_cate": "2E4B6722-D1FE-41D9-9859-428295E0339E",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2019 14:53:14"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Same Angle",
+      "cate_ranking": "",
+      "id_cate": "733DEBD6-323E-44E0-A93A-2D5BE0C5ACE5",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "13.11.2019 17:21:30"
+    },
+    {
+      "cateMaj": "Style",
+      "cateMaj_ranking": "21",
+      "cateName": "Queer",
+      "cate_ranking": "",
+      "id_cate": "E624CD30-C65A-47C3-94DA-8655DF7A578B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.11.2019 12:22:39"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "On Screen Text Message/ Desktop FIlm",
+      "cate_ranking": "",
+      "id_cate": "B7F27F44-5AD4-421A-B5F4-9A0F15F8E5FF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "27.11.2019 13:49:46"
+    },
+    {
+      "cateMaj": "Genre",
+      "cateMaj_ranking": "01",
+      "cateName": "Life Journey",
+      "cate_ranking": "",
+      "id_cate": "3A90DFDB-9AD0-44C6-B828-962A90D9C4B6",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "29.11.2019 14:35:17"
+    },
+    {
+      "cateMaj": "Camera",
+      "cateMaj_ranking": "30",
+      "cateName": "Hidden Cam",
+      "cate_ranking": "",
+      "id_cate": "1CCA8868-6A96-4889-BF85-03C698B786FF",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "02.12.2019 16:05:53"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Sad",
+      "cate_ranking": "",
+      "id_cate": "E500CE6B-6723-40EA-BC8A-4455F125EA55",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.01.2020 16:29:04"
+    },
+    {
+      "cateMaj": "Edit & Post",
+      "cateMaj_ranking": "61",
+      "cateName": "Moving Still",
+      "cate_ranking": "",
+      "id_cate": "3B0AE19F-4888-467D-AD65-AE373327AF58",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "14.01.2020 16:40:10"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Silent",
+      "cate_ranking": "",
+      "id_cate": "E3942FAD-F363-4DB6-A6FE-B8097BFEADA4",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "16.01.2020 15:54:24"
+    },
+    {
+      "cateMaj": "Intensity",
+      "cateMaj_ranking": "22",
+      "cateName": "Loud",
+      "cate_ranking": "",
+      "id_cate": "6768E2B9-5DC8-4C1B-A140-2CEFE3BCEE61",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "16.01.2020 15:55:28"
+    },
+    {
+      "cateMaj": "Dramaturgy",
+      "cateMaj_ranking": "20",
+      "cateName": "Lockdown",
+      "cate_ranking": "",
+      "id_cate": "81C66012-519C-4547-A4D2-BDFE6F0C211B",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2020 09:38:35"
+    },
+    {
+      "cateMaj": "",
+      "cateMaj_ranking": "",
+      "cateName": "Interior",
+      "cate_ranking": "",
+      "id_cate": "3E83370B-403C-425E-A362-202330012DFD",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2020 09:52:20"
+    },
+    {
+      "cateMaj": "",
+      "cateMaj_ranking": "",
+      "cateName": "Black&White",
+      "cate_ranking": "",
+      "id_cate": "30B140E9-E8D5-4737-9420-2377920459D4",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "19.05.2020 11:07:25"
+    },
+    {
+      "cateMaj": "",
+      "cateMaj_ranking": "",
+      "cateName": "Work",
+      "cate_ranking": "",
+      "id_cate": "A49C8B16-7346-49F5-922C-C03BA1140D7F",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "09.06.2020 13:28:02"
+    },
+    {
+      "cateMaj": "cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Diverse",
+      "cate_ranking": "01",
+      "id_cate": "BBE446E0-F0FB-4C9B-BF4D-1E6A15C8BAD9",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "24.03.2021 17:45:38"
+    },
+    {
+      "cateMaj": "Cast",
+      "cateMaj_ranking": "40",
+      "cateName": "Inclusive",
+      "cate_ranking": "01",
+      "id_cate": "D0EAD0FA-4698-448E-A1DF-5857F7E11DD4",
+      "jsonChildAnker": "FILMXCATE",
+      "originalTimeCreation": "01.04.2021 14:29:35"
+    }
+  ]
+}
