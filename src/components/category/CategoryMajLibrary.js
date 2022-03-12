@@ -9,7 +9,7 @@ function CategoryMajLibrary({
   filterCateByCateMaj,
 }) {
   const history = useNavigate();
-
+  console.log(categories);
   const shorterArray = [];
   categories.forEach((element) => {
     if (!shorterArray.includes(element.cateMaj)) {
@@ -17,11 +17,11 @@ function CategoryMajLibrary({
     }
   });
 
-  console.log(shorterArray);
-  console.log(categories);
+  // console.log(shorterArray);
+  // console.log(categories);
   return (
     <div>
-      <ul className="category-list">
+      <ul className="categoryMaj-list">
         {shorterArray.map((cateMaj, index) => {
           return (
             <div
@@ -33,9 +33,8 @@ function CategoryMajLibrary({
                 to={`/categories/${id}`}
                 onClick={() => history(`/categories/${id}`)}
               />
-              <li className="category-major"></li>
               <li
-                className="category"
+                className="element"
                 onClick={(e) => filterCateByCateMaj(cateMaj)}
               >
                 {cateMaj}

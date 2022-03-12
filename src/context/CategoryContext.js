@@ -7,19 +7,18 @@ export const CategoryContext = createContext();
 
 export const CategoryProvider = (props) => {
   // const [categories, setcategories] = useState([
-  const categoriesCollectionRef = collection(db, "category");
+  const categoriesCollectionRef = collection(db, "categories");
   const [categories, setCategories] = useState([]);
   const [alert, setAlert] = useState({
     open: false,
     message: "",
     type: "success",
   });
-  // console.log(categories);
+  console.log(categories);
   useEffect(() => {
     const getcategories = async () => {
       const data = await getDocs(categoriesCollectionRef);
       setCategories(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      // console.log(data);
     };
     getcategories();
   }, []);

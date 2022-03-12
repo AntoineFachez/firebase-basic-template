@@ -16,7 +16,7 @@ const CategoryTable = ({ hide, clearCategories }) => {
   const [search, setSearch] = useState();
   const [id, setid] = useState();
   const history = useNavigate();
-  console.log(categoryAction);
+  console.log(categories);
   const filterCateByCateMaj = (e) => {
     const cateMaj = e.trim();
     setSearchTerm(cateMaj);
@@ -65,13 +65,13 @@ const CategoryTable = ({ hide, clearCategories }) => {
       {hide ? (
         ""
       ) : (
-        <div className="category-table">
+        <>
           <div className="category-menu"></div>
           {/* <div className="tools">
           <Accordion />
         </div>{" "} */}
           {error}
-          <div className="category-element">
+          <div className="">
             <input
               className="input"
               type="text"
@@ -96,7 +96,7 @@ const CategoryTable = ({ hide, clearCategories }) => {
             />
           </div>
           <p>{filmCategories}</p>
-        </div>
+        </>
       )}
     </div>
   );

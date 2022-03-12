@@ -86,7 +86,7 @@ function CategoryWidget({ hide, openWidget }) {
           <button className="btn">add category</button>
         </div>
       ) : (
-        <div className="category-table">
+        <div className="">
           <button className="btn" onClick={clearCategories}>
             clear
           </button>

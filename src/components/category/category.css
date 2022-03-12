@@ -4,21 +4,23 @@
   color: white;
   background-color: rgb(25, 46, 116);
   justify-content: start;
+  max-width: 100vw;
 }
 .small-widget {
   color: white;
   /* background-color: rgb(116, 25, 93); */
 }
-.category-table {
-  /* background-color: rgb(99, 116, 25); */
-  display: flex;
-  flex-direction: row;
-}
 .category-menu {
   display: flex;
-  flex-direction: row;
+
   /* background-color: rgb(116, 25, 86); */
   /* justify-self: start; */
+}
+.category-table {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(99, 116, 25);
+  max-width: 100vw;
 }
 .btn {
   width: 3rem;
@@ -27,28 +29,25 @@
   color: white;
   border-style: none;
 }
-.category-library {
-  /* background-color: rgb(107, 75, 44); */
+.categoryMaj-list {
   display: flex;
-  flex-direction: column;
-  /* background-color: rgb(14, 87, 87); */
+  flex-direction: row;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  list-style: none;
 }
-.category-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
+
 .category-list {
   display: flex;
   flex-direction: row;
+  max-width: 100vw;
+  flex-wrap: wrap;
   justify-content: start;
-  /* background-color: rgb(87, 86, 14); */
+  background-color: rgb(173, 154, 46);
 }
 
-.category-major {
+.element {
   list-style: none;
-}
-.category {
-  list-style: none;
-  margin: 1rem;
+  margin: 0.5rem;
+  font-size: 0.8rem;
 }

@@ -44,46 +44,27 @@ const CategoryLibrary = ({
   // console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
   // console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
   return (
-    <div className="category-table">
+    <div className="">
       {/* <p className="dev-note">hello from categoriesProvider</p> */}
 
       {hide ? (
         ""
       ) : (
         <div>
-          <div className="category-menu">
-            {/* <button className="btn" onClick={clearCategories}>
-              clear
-            </button> */}
-          </div>
-          {/* <p>{filmCategories}</p> */}
+          <div className="category-menu"></div>
+
           {/* <div className="tools">
           <Accordion />
         </div>{" "} */}
           {error}
-          <div className="category-element">
-            {/* <input
-              className="input"
-              type="text"
-              placeholder="search"
-              value={searchTerm}
-              onChange={(e) => {
-                setSearchTermMaj(e.target.value);
-              }}
-            /> */}
-
-            {/* <CategoryLibrary
-              selectCategory={selectCategory}
-              categories={categories}
-              searchTerm={searchTerm}
-            /> */}
+          <div className="">
             <ul className="category-list">
               {categories
                 .filter((value) => {
                   if (searchTerm === "") {
                     return value;
                   } else if (
-                    value.category
+                    value.cateName
                       .toLowerCase()
                       .includes(searchTerm.toLowerCase())
                   ) {
@@ -108,26 +89,12 @@ const CategoryLibrary = ({
                         onClick={() => history(`/categories/${id}`)}
                       />
                       <li
-                        className="category"
-                        // value={(uniq = category.cateMaj) => [
-                        //   ...new Set(category.cateMaj),
-                        // ]}
-                      >
-                        {/* {category.cateMaj} */}
-                        {/* {(uniq = category.cateMaj) => [
-                      ...new Set(category.cateMaj),
-                    ]} */}
-                      </li>
-                      <li
-                        className="category"
-                        // onClick={(e) =>
-                        //   selectCategory(category.id, category.cateMaj)
-                        // }
+                        className="element"
                         onClick={(e) =>
-                          selectCategory(category.id, category.category)
+                          selectCategory(category.id, category.cateName)
                         }
                       >
-                        {category.category}
+                        {category.cateName}
                       </li>
                     </div>
                   );
