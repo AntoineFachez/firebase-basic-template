@@ -20,8 +20,11 @@ const Tile = ({
   lightLoad,
   clipLink,
   getClipIndex,
+  data,
+  index,
 }) => {
-  // console.log(clipLink);
+  console.log(clipLink);
+  console.log(head);
   const history = useNavigate();
 
   return (
@@ -39,6 +42,8 @@ const Tile = ({
         />
         <TileBody
           clipLink={clipLink}
+          data={data}
+          index={index}
           width={width}
           height={height}
           lightLoad={lightLoad}

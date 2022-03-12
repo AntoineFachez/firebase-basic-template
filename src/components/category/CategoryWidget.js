@@ -9,7 +9,7 @@ import "./category.css";
 function CategoryWidget({ hide, openWidget }) {
   // const [categories, setCategories] = useContext(CategoryContext);
   const categoryAction = useContext(CategoryContext);
-  console.log(categoryAction[2]);
+  // console.log(categoryAction[2]);
   const [showForm, setShowForm] = useState(false);
   // const [openCategoryWidget, setOpenCategoryWidget] = useState(false);
   const [filmCategories, setFilmCategories] = useState([]);

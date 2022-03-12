@@ -21,7 +21,7 @@ const CategoryTable = ({
   // const [search, setSearch] = useState();
   const [id, setid] = useState();
   // const history = useNavigate();
-  console.log(categories);
+  // console.log(categories);
 
   const filterCateByCateMaj = (e) => {
     const cateMaj = e.trim();

@@ -1,12 +1,11 @@
 // import { flexbox } from "@mui/system";
 import React from "react";
-import { FilmContext } from "../../context/FilmContext";
 import Player from "../player/Player";
 import "./tile.css";
 
-function TileBody({ lightLoad, clipLink, width, height }) {
+function TileBody({ data, index, lightLoad, clipLink, width, height }) {
   // const cities = CitiesData;
-  // console.log(clipLink);
+  console.log(clipLink);
   return (
     <div
       className="tile-body"
@@ -31,16 +30,17 @@ function TileBody({ lightLoad, clipLink, width, height }) {
       > */}
       <div className="player-wrapper">
         <Player
-          width={width}
-          // data={data}
-          // index={index}
           // height={mainPlayerHeight}
           // height={height}
+          width={width}
           light={false}
+          data={data}
+          index={index}
           // autoPlay={playing}
           // controls={controls}
           // playing={playing}
-          volume={0.0}
+          // volume={0.0}
+          // clipLink={data[index].clip.link}
           clipLink={clipLink}
         />
       </div>{" "}

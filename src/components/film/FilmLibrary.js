@@ -9,6 +9,7 @@ import "../components.css";
 const FilmLibrary = () => {
   const [films, setFilms] = useContext(FilmContext);
   // const [id, setid] = useState();
+  const data = films;
   const history = useNavigate();
   const tileWidth = "30vw";
   return (
@@ -22,31 +23,29 @@ const FilmLibrary = () => {
         </div>{" "} */}
         {/* <ul className="list-container"> */}
         <ul className="film-library-container">
-          {films.map((film) => {
-            console.log(films[0].film.title);
+          {films.slice(0, 9).map((film, index) => {
+            {
+              /* console.log(films[index].film.link); */
+            }
+
             return (
               <div className="tile">
-                {/* <div className="tile" key={film.id}> */}
+                {/* <div className="tile" key={films.film.id}> */}
                 {/* <Link
                   to={`/films/${id}`}
                   onClick={() => history(`/films/${id}`)}
                 /> */}
 
                 <Tile
-                  key={film.id_film}
-                  // head={film.title}
-                  head={film.title}
-                  // latLng={film.latLng}
-                  clipLink={"https://vimeo.com/532350645"}
+                  key={index}
+                  id={film.id_film}
+                  head={film.film.title}
+                  clipLink={film.film.link}
+                  // latLng={film.film.latLng}
+                  // clipLink={"https://vimeo.com/532350645"}
                   width={tileWidth}
-                  // id,
-                  // width,
-                  // height,
-                  // head,
-                  // footer,
-                  // lightLoad,
-                  // clipLink,
-                  // getClipIndex,
+                  data={data}
+                  index={index}
                 />
               </div>
             );

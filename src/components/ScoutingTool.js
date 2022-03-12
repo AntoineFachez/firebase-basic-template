@@ -65,7 +65,7 @@ const FeedList = () => {
         console.log(err);
       });
   };
-  // console.log(data.data);
+  console.log(data.data);
   useEffect(
     () => {
       loadVimeo();

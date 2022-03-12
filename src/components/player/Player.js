@@ -16,8 +16,8 @@ const Player = ({
   data,
   index,
 }) => {
-  console.log(data);
-  const link = data[index].clip.link;
+  console.log(clipLink);
+  // const link = data[index].clip.link;
   // console.log(films[0].film.link);
   // console.log(clipLink);
   // const [loaded, setLoaded] = useState(false);
@@ -31,20 +31,20 @@ const Player = ({
     const text = playing ? buttonTexts[0] : buttonTexts[1];
   };
 
-  useEffect(() => {
-    setWatchComplete(false);
-    setPlayedTime("");
-    setDuration("");
+  // useEffect(() => {
+  //   setWatchComplete(false);
+  //   setPlayedTime("");
+  //   setDuration("");
 
-    const id = link.split("com/")[1];
-    // console.log(id);
-    fetch(`https://vimeo.com/api/v2/video/${id}.json`).then((response) =>
-      response.json()
-    );
-    // .then((data) => console.log(data));
+  //   const id = link.split("com/")[1];
+  //   // console.log(id);
+  //   fetch(`https://vimeo.com/api/v2/video/${id}.json`).then((response) =>
+  //     response.json()
+  //   );
+  //   // .then((data) => console.log(data));
 
-    // setLoaded(false);
-  }, [clipLink]);
+  //   // setLoaded(false);
+  // }, [clipLink]);
 
   const handleMediaData = ({ onDuration, played, playedSeconds }) => {
     if (played <= 0.4 && !watchComplete) {
