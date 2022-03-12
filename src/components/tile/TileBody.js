@@ -1,6 +1,7 @@
 // import { flexbox } from "@mui/system";
 import React from "react";
-import TilePlayer from "../player/Player";
+import { FilmContext } from "../../context/FilmContext";
+import Player from "../player/Player";
 import "./tile.css";
 
 function TileBody({ lightLoad, clipLink, width, height }) {
@@ -28,7 +29,22 @@ function TileBody({ lightLoad, clipLink, width, height }) {
           referrerpolicy: "strict-origin",
         }}
       > */}
-      <TilePlayer
+      <div className="player-wrapper">
+        <Player
+          width={width}
+          // data={data}
+          // index={index}
+          // height={mainPlayerHeight}
+          // height={height}
+          light={false}
+          // autoPlay={playing}
+          // controls={controls}
+          // playing={playing}
+          volume={0.0}
+          clipLink={clipLink}
+        />
+      </div>{" "}
+      {/* <Player
         clipLink={clipLink}
         controls="true"
         onProgress="played"
@@ -38,7 +54,7 @@ function TileBody({ lightLoad, clipLink, width, height }) {
         // style={{ height: height }}
         height={height}
         light={lightLoad}
-      />
+      /> */}
       {/* <iframe className="crop ratio ratio-1:1" src={clipLink}></iframe> */}
       {/* </div> */}
     </div>

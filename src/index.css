@@ -1,5 +1,6 @@
 :root {
   --height-onHover: 12rem;
+  --height-thumbnailOnHover: 11rem;
   --height-outHover: 9rem;
 }
 * {
@@ -9,8 +10,12 @@
   /* will-change: contents; */
   /* will-change: transform; */
 }
+#root {
+  width: 100vw;
+}
 body {
   margin-top: 5rem;
+  /* padding: 1rem; */
   background: #191a19;
   background: rgb(51, 52, 51);
   background: rgb(0, 0, 0);

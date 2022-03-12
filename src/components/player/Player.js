@@ -16,9 +16,10 @@ const Player = ({
   data,
   index,
 }) => {
-  // console.log(data);
+  console.log(data);
   const link = data[index].clip.link;
-
+  // console.log(films[0].film.link);
+  // console.log(clipLink);
   // const [loaded, setLoaded] = useState(false);
   const [duration, setDuration] = useState("");
   const [playing, setPlaying] = useState(false);

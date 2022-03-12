@@ -12,7 +12,7 @@ import TileFoot from "./TileFoot";
 import "./tile.css";
 
 const Tile = ({
-  key,
+  id,
   width,
   height,
   head,
@@ -25,14 +25,14 @@ const Tile = ({
   const history = useNavigate();
 
   return (
-    <article className="article" key={key}>
+    <article className="article" key={id}>
       {" "}
       <div className="gradient">
         {/* <h3>{head}</h3> */}
         {/* <h3>{footer}</h3> */}
         <TileHead head={head} />
         <TileMenu
-          key={key}
+          key={id}
           getClipIndex={getClipIndex}
           clipLink={clipLink}
           footer={footer}

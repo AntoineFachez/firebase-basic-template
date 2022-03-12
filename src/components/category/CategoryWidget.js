@@ -7,11 +7,11 @@ import { CategoryContext } from "../../context/CategoryContext";
 import "./category.css";
 
 function CategoryWidget({ hide, openWidget }) {
-  const [categories, setCategories] = useContext(CategoryContext);
+  // const [categories, setCategories] = useContext(CategoryContext);
   const categoryAction = useContext(CategoryContext);
   console.log(categoryAction[2]);
   const [showForm, setShowForm] = useState(false);
-  const [openCategoryWidget, setOpenCategoryWidget] = useState(false);
+  // const [openCategoryWidget, setOpenCategoryWidget] = useState(false);
   const [filmCategories, setFilmCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
@@ -27,13 +27,13 @@ function CategoryWidget({ hide, openWidget }) {
     setError(null);
   }
 
-  const filterCateByCateMaj = (e) => {
-    const cateMaj = e.trim();
-    setSearchTerm(cateMaj);
-  };
+  // const filterCateByCateMaj = (e) => {
+  //   const cateMaj = e.trim();
+  //   setSearchTerm(cateMaj);
+  // };
 
-  function selectCategory(id, category) {
-    // console.log(id);
+  const selectCategory = (id, category) => {
+    console.log(id);
     const elementID = id;
     const elementName = category;
     if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
@@ -55,8 +55,8 @@ function CategoryWidget({ hide, openWidget }) {
         elementID + " ",
       ]);
     }
-  }
-  // console.log(openCategoryWidget);
+  };
+
   return (
     <div className="category-widget">
       {/* {categoryAction[2]} */}
@@ -81,7 +81,9 @@ function CategoryWidget({ hide, openWidget }) {
           {
             //TODO: generic Form with generative entries
           }
-          <CategoryForm />
+          <CategoryForm
+          // filterCateByCateMaj={filterCateByCateMaj}
+          />
           {/* <input type="text" placeholder="new category" /> */}
           <button className="btn">add category</button>
         </div>
@@ -90,7 +92,11 @@ function CategoryWidget({ hide, openWidget }) {
           <button className="btn" onClick={clearCategories}>
             clear
           </button>
-          <CategoryTable hide={hide} clearCategories={clearCategories} />
+          <CategoryTable
+            hide={hide}
+            selectCategory={selectCategory}
+            clearCategories={clearCategories}
+          />
           <Link to="/category-library"></Link>
           {/* <li className="nav-links">Category Library</li> */}
         </div>

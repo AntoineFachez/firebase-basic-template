@@ -14,7 +14,7 @@ export const CategoryProvider = (props) => {
     message: "",
     type: "success",
   });
-  console.log(categories);
+  // console.log(categories);
   useEffect(() => {
     const getcategories = async () => {
       const data = await getDocs(categoriesCollectionRef);

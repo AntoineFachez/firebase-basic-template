@@ -34,7 +34,7 @@ function CategoryMajLibrary({
                 onClick={() => history(`/categories/${id}`)}
               />
               <li
-                className="element"
+                className="element-maj"
                 onClick={(e) => filterCateByCateMaj(cateMaj)}
               >
                 {cateMaj}

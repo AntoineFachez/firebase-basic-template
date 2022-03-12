@@ -53,9 +53,9 @@ export default function MainNav() {
         {/* <Link className="nav-links" to={ROUTES.FEED}>
           <li>Feed</li>
         </Link> */}
-        {/* <Link className="nav-links" to={ROUTES.FILM_LIBRARY}>
+        <Link className="nav-links" to={ROUTES.FILM_LIBRARY}>
           <li>Film Library</li>
-        </Link> */}
+        </Link>
         <Link className="nav-links" to={ROUTES.PROFILE}>
           <li>Profile</li>
         </Link>

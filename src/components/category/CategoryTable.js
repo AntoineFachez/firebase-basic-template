@@ -6,23 +6,29 @@ import CategoryLibrary from "./CategoryLibrary";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import "./category.css";
 
-const CategoryTable = ({ hide, clearCategories }) => {
+const CategoryTable = ({
+  hide,
+  // filterCateByCateMaj,
+  clearCategories,
+  // selectCategory,
+}) => {
   // console.log(hide);
   const [categories, setCategories] = useContext(CategoryContext);
   const { categoryAction } = useContext(CategoryContext);
   const [filmCategories, setFilmCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
-  const [search, setSearch] = useState();
+  // const [search, setSearch] = useState();
   const [id, setid] = useState();
-  const history = useNavigate();
+  // const history = useNavigate();
   console.log(categories);
+
   const filterCateByCateMaj = (e) => {
     const cateMaj = e.trim();
     setSearchTerm(cateMaj);
   };
 
-  function selectCategory(id, category) {
+  const selectCategory = (id, category) => {
     console.log(id);
     const elementID = id;
     const elementName = category;
@@ -45,7 +51,7 @@ const CategoryTable = ({ hide, clearCategories }) => {
         elementID + " ",
       ]);
     }
-  }
+  };
   // function clearCategories() {
   //   setFilmCategories("");
   //   setSearchTerm("");
@@ -88,12 +94,16 @@ const CategoryTable = ({ hide, clearCategories }) => {
               filterCateByCateMaj={filterCateByCateMaj}
               clearCategories={clearCategories}
             />
-            <CategoryLibrary
-              selectCategory={selectCategory}
-              categories={categories}
-              searchTerm={searchTerm}
-              clearCategories={clearCategories}
-            />
+            {searchTerm ? (
+              <CategoryLibrary
+                selectCategory={selectCategory}
+                categories={categories}
+                searchTerm={searchTerm}
+                clearCategories={clearCategories}
+              />
+            ) : (
+              ""
+            )}
           </div>
           <p>{filmCategories}</p>
         </>
