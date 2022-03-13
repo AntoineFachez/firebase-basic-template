@@ -5,7 +5,7 @@ import "./tile.css";
 
 function TileBody({ data, index, lightLoad, clipLink, width, height }) {
   // const cities = CitiesData;
-  console.log(clipLink);
+  // console.log(clipLink);
   return (
     <div
       className="tile-body"

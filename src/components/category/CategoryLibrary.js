@@ -8,6 +8,8 @@ const CategoryLibrary = ({
   hide,
   searchTerm,
   selectCategory,
+  selectedFilmCategoriesID,
+  selectedFilmCategoriesNames,
   // clearCategories,
 }) => {
   // console.log(hide);
@@ -25,9 +27,29 @@ const CategoryLibrary = ({
     // setCategories();
   }, []);
 
+  const sortedByRankingCategories = categories.sort((a, b) =>
+    a.cate_ranking > b.cate_ranking ? 1 : -1
+  );
+
+  const pickCategory = (id_cate, cateName) => {
+    selectCategory(id_cate, cateName);
+    console.log(id_cate);
+
+    if (selectedFilmCategoriesID.includes(id_cate)) {
+      console.log(true);
+      document.getElementById(id_cate).classList.remove("element-highlighted");
+    } else {
+      document.getElementById(id_cate).classList.add("element-highlighted");
+    }
+    // .classList.add("element-highlighted");
+    // element.style.backgroundColor = "yellow";
+    // document.getElementById(id_cate).style.color = "red";
+  };
+
+  console.log(selectedFilmCategoriesID);
   const filterCateByCate = (e) => {
-    const category = e.trim();
-    searchTermCategory(category);
+    const sortedByRankingCategories = e.trim();
+    searchTermCategory(sortedByRankingCategories);
   };
 
   function clearCategories() {
@@ -39,7 +61,7 @@ const CategoryLibrary = ({
    * Filter array items based on search criteria (query)
    */
 
-  console.log(searchTerm);
+  // console.log(searchTerm);
   // console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
   // console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
   return (
@@ -58,7 +80,7 @@ const CategoryLibrary = ({
           {error}
           <div className="">
             <ul className="category-list">
-              {categories
+              {sortedByRankingCategories
                 .filter((value) => {
                   if (searchTerm === "") {
                     return value;
@@ -77,28 +99,59 @@ const CategoryLibrary = ({
                   }
                 })
                 .map((category, index) => {
-                  return (
-                    <div
-                      className=""
-                      key={index}
-                      // onClick={selectCategory}
-                    >
-                      <Link
-                        to={`/categories/${id}`}
-                        onClick={() => history(`/categories/${id}`)}
-                      />
-                      <li
-                        className="element"
-                        onClick={(e) =>
-                          selectCategory(category.id, category.cateName)
-                        }
+                  if (selectedFilmCategoriesID.includes(id)) {
+                    return (
+                      <div
+                        className=""
+                        key={index}
+                        // onClick={selectCategory}
                       >
-                        {category.cateName}
-                      </li>
-                    </div>
-                  );
+                        <Link
+                          to={`/categories/${id}`}
+                          onClick={() => history(`/categories/${id}`)}
+                        />
+
+                        <li
+                          style={{ backgroundColor: "blue" }}
+                          // style={hightLighted}
+                          id={category.id}
+                          className="element"
+                          onClick={(e) =>
+                            pickCategory(category.id_cate, category.cateName)
+                          }
+                        >
+                          {category.cateName}
+                        </li>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div
+                        className=""
+                        key={index}
+                        // onClick={selectCategory}
+                      >
+                        <Link
+                          to={`/categories/${id}`}
+                          onClick={() => history(`/categories/${id}`)}
+                        />
+
+                        <li
+                          id={category.id}
+                          className="element"
+                          onClick={(e) =>
+                            pickCategory(category.id_cate, category.cateName)
+                          }
+                        >
+                          {category.cateName}
+                        </li>
+                      </div>
+                    );
+                  }
                 })}
             </ul>
+            {JSON.stringify(selectedFilmCategoriesNames)}
+            {/* {JSON.stringify(selectedFilmCategoriesID)} */}
           </div>
         </div>
       )}

@@ -71,3 +71,6 @@
   padding: 0.5rem;
   background-color: grey;
 }
+.element-highlighted {
+  background-color: yellow;
+}

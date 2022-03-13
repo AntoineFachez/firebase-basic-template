@@ -23,8 +23,8 @@ const Tile = ({
   data,
   index,
 }) => {
-  console.log(clipLink);
-  console.log(head);
+  // console.log(clipLink);
+  // console.log(head);
   const history = useNavigate();
 
   return (

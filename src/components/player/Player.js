@@ -16,7 +16,7 @@ const Player = ({
   data,
   index,
 }) => {
-  console.log(clipLink);
+  // console.log(clipLink);
   // const link = data[index].clip.link;
   // console.log(films[0].film.link);
   // console.log(clipLink);
@@ -25,6 +25,8 @@ const Player = ({
   const [playing, setPlaying] = useState(false);
   const [playedTime, setPlayedTime] = useState("");
   const [watchComplete, setWatchComplete] = useState(false);
+  const title = true;
+  const background = true;
   const [nearlyWatchComplete, setNearlyWatchComplete] = useState(false);
   const buttonTexts = ["play", "pause"];
   const buttonText = () => {
@@ -95,12 +97,12 @@ const Player = ({
         light={light}
         loaded={<Spinner />}
         // speed={true}
-        title={true}
+        title={title}
         // transparent={true}
         // pip={true}
         // autoPlay={false}
         // autopause={true}
-        background={true}
+        background={background}
       />
       {duration}
       {playedTime}

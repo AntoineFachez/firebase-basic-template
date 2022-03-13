@@ -9,11 +9,15 @@ function CategoryMajLibrary({
   filterCateByCateMaj,
 }) {
   const history = useNavigate();
-  console.log(categories);
+  // console.log(categories);
   const shorterArray = [];
-  categories.forEach((element) => {
-    if (!shorterArray.includes(element.cateMaj)) {
-      shorterArray.push(element.cateMaj);
+
+  const sortedByRankingMajCategories = categories.sort((a, b) =>
+    a.cateMaj_ranking > b.cateMaj_ranking ? 1 : -1
+  );
+  const filteredCategories = categories.forEach((category) => {
+    if (!shorterArray.includes(category.cateMaj)) {
+      shorterArray.push(category.cateMaj);
     }
   });
 

@@ -15,7 +15,9 @@ const CategoryTable = ({
   // console.log(hide);
   const [categories, setCategories] = useContext(CategoryContext);
   const { categoryAction } = useContext(CategoryContext);
-  const [filmCategories, setFilmCategories] = useState([]);
+  const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
+  const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
+    useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
   // const [search, setSearch] = useState();
@@ -28,30 +30,35 @@ const CategoryTable = ({
     setSearchTerm(cateMaj);
   };
 
-  const selectCategory = (id, category) => {
-    console.log(id);
+  const selectCategory = (id, cateName) => {
     const elementID = id;
-    const elementName = category;
-    if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
+    const elementName = cateName;
+    if (JSON.stringify(selectedFilmCategoriesID).indexOf(elementID) !== -1) {
       setError("prevent redundancy");
 
-      var filteredArray = filmCategories.filter(
+      var filteredArrayID = selectedFilmCategoriesID.filter(
         (ele) => ele.trim() !== elementID.trim()
       );
-      // console.log(element);
-      // console.log(filmCategories[0]);
-      // console.log(filteredArray);
-      // console.log(element);
-      setFilmCategories(filteredArray);
-      setSearchTerm("");
+      var filteredArrayNames = selectedFilmCategoriesNames.filter(
+        (ele) => ele.trim() !== cateName.trim()
+      );
+
+      setSelectedFilmCategoriesID(filteredArrayID);
+      setSelectedFilmCategoriesNames(filteredArrayNames);
       setError(null);
     } else {
-      setFilmCategories((filmCategories) => [
-        ...filmCategories,
-        elementID + " ",
+      setSelectedFilmCategoriesID((filmCategoriesID) => [
+        ...filmCategoriesID,
+        elementID,
+      ]);
+      setSelectedFilmCategoriesNames((filmCategoriesNames) => [
+        ...filmCategoriesNames,
+        cateName,
       ]);
     }
   };
+  // console.log(selectedFilmCategoriesID);
+  // console.log(selectedFilmCategoriesNames);
   // function clearCategories() {
   //   setFilmCategories("");
   //   setSearchTerm("");
@@ -96,16 +103,18 @@ const CategoryTable = ({
             />
             {searchTerm ? (
               <CategoryLibrary
-                selectCategory={selectCategory}
                 categories={categories}
+                selectCategory={selectCategory}
                 searchTerm={searchTerm}
+                selectedFilmCategoriesID={selectedFilmCategoriesID}
+                selectedFilmCategoriesNames={selectedFilmCategoriesNames}
                 clearCategories={clearCategories}
               />
             ) : (
               ""
             )}
           </div>
-          <p>{filmCategories}</p>
+          {/* <p>{selectedFilmCategories}</p> */}
         </>
       )}
     </div>

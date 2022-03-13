@@ -33,7 +33,7 @@ function CategoryWidget({ hide, openWidget }) {
   // };
 
   const selectCategory = (id, category) => {
-    console.log(id);
+    // console.log(id);
     const elementID = id;
     const elementName = category;
     if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {

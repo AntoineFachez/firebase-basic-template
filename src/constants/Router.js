@@ -10,7 +10,7 @@ import CategoryTable from "../components/category/CategoryTable";
 import FkFilmXfkCateLibrary from "../components/FkFilmXfkCateLibrary";
 import Profile from "../components/group/Profile";
 import GroupList from "../components/group/GroupList";
-import FilmLibrary from "../components/film/FilmLibrary";
+import FilmLibrary from "../view/pages/Films";
 import * as ROUTES from "./routes";
 
 function App() {
