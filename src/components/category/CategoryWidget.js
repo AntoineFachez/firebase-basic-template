@@ -11,6 +11,7 @@ function CategoryWidget({
   openWidget,
 
   // filterCateByCateMaj,
+  getSelectedCategories,
   clearCategories,
   selectCategory,
   selectedFilmCategoriesID,
@@ -109,6 +110,7 @@ function CategoryWidget({
             hide={hide}
             selectCategory={selectCategory}
             clearCategories={clearCategories}
+            getSelectedCategories={getSelectedCategories}
           />
           <Link to="/category-library"></Link>
           {/* <li className="nav-links">Category Library</li> */}

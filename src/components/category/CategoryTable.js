@@ -11,6 +11,7 @@ const CategoryTable = ({
   hide,
   // filterCateByCateMaj,
   clearCategories,
+  getSelectedCategories,
   // selectCategory,
 }) => {
   // console.log(hide);
@@ -61,6 +62,7 @@ const CategoryTable = ({
         ...filmCategoriesID,
         selectedElementID,
       ]);
+      getSelectedCategories(selectedFilmCategoriesID);
       setSelectedFilmCategoriesNames((filmCategoriesNames) => [
         ...filmCategoriesNames,
         cateName,
