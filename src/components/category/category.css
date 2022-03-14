@@ -1,3 +1,6 @@
+.dev {
+  background-color: hotpink;
+}
 .category-widget {
   display: flex;
   flex-direction: row;
@@ -72,5 +75,5 @@
   background-color: grey;
 }
 .element-highlighted {
-  background-color: yellow;
+  background-color: rgb(123, 179, 35);
 }

@@ -16,37 +16,35 @@ const CategoryLibrary = ({
   const searchTermMaj = searchTerm;
   const [categories, setCategories] = useContext(CategoryContext);
   const [filmCategories, setFilmCategories] = useState([]);
+  const [classNameCategory, setClassNameCategory] = useState("element");
   // const [searchTermMay, setSearchTermMaj] = useState("");
   const [searchTermCategory, setSearchTermCategory] = useState("");
   const [search, setSearch] = useState();
-  const [id, setid] = useState();
+  const [id_cate, setId_cate] = useState();
   const [error, setError] = useState(null);
   const history = useNavigate();
 
-  useEffect(() => {
-    // setCategories();
-  }, []);
+  useEffect(() => {}, [id_cate]);
 
+  console.log(selectedFilmCategoriesID);
   const sortedByRankingCategories = categories.sort((a, b) =>
     a.cate_ranking > b.cate_ranking ? 1 : -1
   );
 
   const pickCategory = (id_cate, cateName) => {
     selectCategory(id_cate, cateName);
-    console.log(id_cate);
 
-    if (selectedFilmCategoriesID.includes(id_cate)) {
-      console.log(true);
-      document.getElementById(id_cate).classList.remove("element-highlighted");
-    } else {
-      document.getElementById(id_cate).classList.add("element-highlighted");
-    }
-    // .classList.add("element-highlighted");
-    // element.style.backgroundColor = "yellow";
-    // document.getElementById(id_cate).style.color = "red";
+    // setId_cate(id_cate);
+    console.log(id_cate);
+    // highLightedCategory();
+
+    // document
+    //   .getElementById("EBE708CE-96A8-4441-AEB4-B25FDBC3ECE3")
+    //   .classList.add("element-highlighted");
   };
 
-  console.log(selectedFilmCategoriesID);
+  // console.log(selectedFilmCategoriesID);
+
   const filterCateByCate = (e) => {
     const sortedByRankingCategories = e.trim();
     searchTermCategory(sortedByRankingCategories);
@@ -61,7 +59,8 @@ const CategoryLibrary = ({
    * Filter array items based on search criteria (query)
    */
 
-  // console.log(searchTerm);
+  // console.log(id_cate);
+
   // console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
   // console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
   return (
@@ -98,56 +97,36 @@ const CategoryLibrary = ({
                     return value;
                   }
                 })
-                .map((category, index) => {
-                  if (selectedFilmCategoriesID.includes(id)) {
-                    return (
-                      <div
-                        className=""
-                        key={index}
-                        // onClick={selectCategory}
-                      >
-                        <Link
-                          to={`/categories/${id}`}
-                          onClick={() => history(`/categories/${id}`)}
-                        />
+                .map((category, id_cate) => {
+                  return (
+                    <div
+                      className={classNameCategory}
+                      key={id_cate}
+                      id={category.id_cate}
+                      onClick={(e) =>
+                        pickCategory(category.id_cate, category.cateName)
+                      }
+                      // onClick={selectCategory}
+                    >
+                      <Link
+                        to={`/categories/${category.cateName}`}
+                        onClick={() =>
+                          history(`/categories/${category.cateName}`)
+                        }
+                      />
 
-                        <li
-                          style={{ backgroundColor: "blue" }}
-                          // style={hightLighted}
-                          id={category.id}
-                          className="element"
-                          onClick={(e) =>
-                            pickCategory(category.id_cate, category.cateName)
-                          }
-                        >
-                          {category.cateName}
-                        </li>
-                      </div>
-                    );
-                  } else {
-                    return (
-                      <div
-                        className=""
-                        key={index}
-                        // onClick={selectCategory}
-                      >
-                        <Link
-                          to={`/categories/${id}`}
-                          onClick={() => history(`/categories/${id}`)}
-                        />
+                      {/* // style={{ backgroundColor: "blue" }}
+                      // style={hightLighted}
+                      // id={category.id_cate}
+                      // className="element"
+                      // onClick={(e) =>
+                      //   pickCategory(category.id_cate, category.cateName)
+                      // } */}
 
-                        <li
-                          id={category.id}
-                          className="element"
-                          onClick={(e) =>
-                            pickCategory(category.id_cate, category.cateName)
-                          }
-                        >
-                          {category.cateName}
-                        </li>
-                      </div>
-                    );
-                  }
+                      {category.cateName}
+                      {/* {category.id_cate} */}
+                    </div>
+                  );
                 })}
             </ul>
             {JSON.stringify(selectedFilmCategoriesNames)}

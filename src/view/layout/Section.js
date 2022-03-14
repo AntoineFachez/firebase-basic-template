@@ -1,7 +1,7 @@
 import React from "react";
 import Category from "../../components/category/Category";
 import CategoryWidget from "../../components/category/CategoryWidget";
-import VimeoFeed from "../../components/ScoutingTool";
+import ScoutingTool from "../../components/ScoutingTool";
 import Film from "../../components/film/Film";
 import GroupList from "../../components/group/GroupList";
 import "./pageLayout.css";
@@ -14,7 +14,7 @@ function Section() {
     <div className="">
       {/* <h4>Section 1</h4> */}
       <section className="section1">
-        <VimeoFeed />
+        <ScoutingTool />
         {/* <GroupList /> */}
         {/* <CategoryWidget /> */}
       </section>

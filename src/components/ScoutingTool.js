@@ -25,7 +25,11 @@ const FeedList = () => {
   const [controls, setControls] = useState(false);
   const [playing, setPlaying] = useState();
   const [hide, setHide] = useState(true);
-
+  const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
+  const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
+    useState([]);
+  const [selectedid_cate, setSelectedid_cate] = useState();
+  const [error, setError] = useState(null);
   const tileWidth = "30vw";
   const tileHeight = "7vh";
   const mainPlayerWidth = "200%";
@@ -101,6 +105,41 @@ const FeedList = () => {
 
     // openCategoryWidget ? setWidth("15vw") : setWidth("20vw");
   };
+  const selectCategory = (selectedElementID, cateName) => {
+    console.log(selectedElementID);
+    setSelectedid_cate(selectedElementID);
+    if (
+      JSON.stringify(selectedFilmCategoriesID).indexOf(selectedElementID) !== -1
+    ) {
+      setError("prevent redundancy");
+
+      var filteredArrayID = selectedFilmCategoriesID.filter(
+        (ele) => ele.trim() !== selectedElementID.trim()
+      );
+      var filteredArrayNames = selectedFilmCategoriesNames.filter(
+        (ele) => ele.trim() !== cateName.trim()
+      );
+
+      setSelectedFilmCategoriesID(filteredArrayID);
+      setSelectedFilmCategoriesNames(filteredArrayNames);
+      setError(null);
+    } else {
+      document
+        .getElementById(selectedElementID)
+        .classList.add("element-highlighted");
+
+      setSelectedFilmCategoriesID((filmCategoriesID) => [
+        ...filmCategoriesID,
+        selectedElementID,
+      ]);
+      setSelectedFilmCategoriesNames((filmCategoriesNames) => [
+        ...filmCategoriesNames,
+        cateName,
+      ]);
+      // .classList.add("element-highlighted");
+    }
+  };
+
   return (
     <div className="scout-container">
       {/* //TODO: pull out LOADING and into NavBar next to Vimeo or around the VimeoLogo */}
@@ -134,7 +173,11 @@ const FeedList = () => {
           </section>
           <section className="low">
             <div className="category-widget">
-              <CategoryWidget hide={hide} openWidget={openWidget} />
+              <CategoryWidget
+                hide={hide}
+                openWidget={openWidget}
+                selectedFilmCategoriesID={selectedFilmCategoriesID}
+              />
             </div>
             <div className="main-player">
               <MainPlayer

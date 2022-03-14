@@ -6,7 +6,20 @@ import CategoryForm from "./CategoryForm";
 import { CategoryContext } from "../../context/CategoryContext";
 import "./category.css";
 
-function CategoryWidget({ hide, openWidget }) {
+function CategoryWidget({
+  hide,
+  openWidget,
+
+  // filterCateByCateMaj,
+  clearCategories,
+  selectCategory,
+  selectedFilmCategoriesID,
+  setSelectedFilmCategoriesID,
+  selectedid_cate,
+  setSelectedid_cate,
+  selectedFilmCategoriesNames,
+  error,
+}) {
   // const [categories, setCategories] = useContext(CategoryContext);
   const categoryAction = useContext(CategoryContext);
   // console.log(categoryAction[2]);
@@ -14,7 +27,7 @@ function CategoryWidget({ hide, openWidget }) {
   // const [openCategoryWidget, setOpenCategoryWidget] = useState(false);
   const [filmCategories, setFilmCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   // const width = "10vw";
 
   const openForm = () => {
@@ -24,7 +37,7 @@ function CategoryWidget({ hide, openWidget }) {
   function clearCategories() {
     setFilmCategories("");
     setSearchTerm("");
-    setError(null);
+    // setError(null);
   }
 
   // const filterCateByCateMaj = (e) => {
@@ -32,30 +45,30 @@ function CategoryWidget({ hide, openWidget }) {
   //   setSearchTerm(cateMaj);
   // };
 
-  const selectCategory = (id, category) => {
-    // console.log(id);
-    const elementID = id;
-    const elementName = category;
-    if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
-      setError("prevent redundancy");
+  // const selectCategory = (id, category) => {
+  //   // console.log(id);
+  //   const elementID = id;
+  //   const elementName = category;
+  //   if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
+  //     setError("prevent redundancy");
 
-      var filteredArray = filmCategories.filter(
-        (ele) => ele.trim() !== elementID.trim()
-      );
-      // console.log(element);
-      // console.log(filmCategories[0]);
-      // console.log(filteredArray);
-      // console.log(element);
-      setFilmCategories(filteredArray);
-      setSearchTerm("");
-      setError(null);
-    } else {
-      setFilmCategories((filmCategories) => [
-        ...filmCategories,
-        elementID + " ",
-      ]);
-    }
-  };
+  //     var filteredArray = filmCategories.filter(
+  //       (ele) => ele.trim() !== elementID.trim()
+  //     );
+  //     // console.log(element);
+  //     // console.log(filmCategories[0]);
+  //     // console.log(filteredArray);
+  //     // console.log(element);
+  //     setFilmCategories(filteredArray);
+  //     setSearchTerm("");
+  //     setError(null);
+  //   } else {
+  //     setFilmCategories((filmCategories) => [
+  //       ...filmCategories,
+  //       elementID + " ",
+  //     ]);
+  //   }
+  // };
 
   return (
     <div className="category-widget">

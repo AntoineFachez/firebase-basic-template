@@ -3,6 +3,7 @@ import Router from "./constants/Router";
 import "./App.css";
 import { UserAuthContextProvider } from "./context/AuthContext";
 import { VimeoProvider } from "./context/VimeoContext";
+import { ScoutingProvider } from "./context/ScoutingContext";
 import { FkFilmXfkCateProvider } from "./context/FkFilmXfkCateContext";
 import { FilmProvider } from "./context/FilmContext";
 import { CategoryProvider } from "./context/CategoryContext";
@@ -13,15 +14,17 @@ function App() {
   return (
     <VimeoProvider>
       <UserAuthContextProvider>
-        <FkFilmXfkCateProvider>
-          <FilmProvider>
-            <CategoryProvider>
-              <MainPlayerProvider>
-                <Router />
-              </MainPlayerProvider>
-            </CategoryProvider>
-          </FilmProvider>
-        </FkFilmXfkCateProvider>
+        <ScoutingProvider>
+          <FkFilmXfkCateProvider>
+            <FilmProvider>
+              <CategoryProvider>
+                <MainPlayerProvider>
+                  <Router />
+                </MainPlayerProvider>
+              </CategoryProvider>
+            </FilmProvider>
+          </FkFilmXfkCateProvider>
+        </ScoutingProvider>
       </UserAuthContextProvider>
     </VimeoProvider>
   );

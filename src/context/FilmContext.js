@@ -7,7 +7,7 @@ export const FilmContext = createContext();
 export const FilmProvider = (props) => {
   // const [films, setFilms] = useState([
   const filmsCollectionRef = collection(db, "films");
-  const [films, setFilms] = useState([]);
+  const [filmDB, setFilmDB] = useState([]);
   // console.log(films[1].film.title);
   const [alert, setAlert] = useState({
     open: false,
@@ -17,14 +17,14 @@ export const FilmProvider = (props) => {
   useEffect(() => {
     const getFilms = async () => {
       const data = await getDocs(filmsCollectionRef);
-      setFilms(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setFilmDB(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       // console.log(data);
     };
     getFilms();
   }, []);
 
   return (
-    <FilmContext.Provider value={[films, setFilms]}>
+    <FilmContext.Provider value={[filmDB, setFilmDB]}>
       {props.children}
     </FilmContext.Provider>
   );

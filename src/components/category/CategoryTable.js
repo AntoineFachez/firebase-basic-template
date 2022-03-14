@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { CategoryContext } from "../../context/CategoryContext";
+import { ScoutingContext } from "../../context/ScoutingContext";
 import CategoryMajLibrary from "./CategoryMajLibrary";
 import CategoryLibrary from "./CategoryLibrary";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
@@ -13,15 +14,18 @@ const CategoryTable = ({
   // selectCategory,
 }) => {
   // console.log(hide);
+  // const [filmDB, setfilmDB] = useContext(ScoutingContext);
   const [categories, setCategories] = useContext(CategoryContext);
   const { categoryAction } = useContext(CategoryContext);
   const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
   const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
     useState([]);
+  // const [selectedElementID, setSelectedElementID] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedid_cate, setSelectedid_cate] = useState();
   const [error, setError] = useState(null);
   // const [search, setSearch] = useState();
-  const [id, setid] = useState();
+  const [id, setId] = useState();
   // const history = useNavigate();
   // console.log(categories);
 
@@ -30,14 +34,16 @@ const CategoryTable = ({
     setSearchTerm(cateMaj);
   };
 
-  const selectCategory = (id, cateName) => {
-    const elementID = id;
-    const elementName = cateName;
-    if (JSON.stringify(selectedFilmCategoriesID).indexOf(elementID) !== -1) {
+  const selectCategory = (selectedElementID, cateName) => {
+    console.log(selectedElementID);
+    setSelectedid_cate(selectedElementID);
+    if (
+      JSON.stringify(selectedFilmCategoriesID).indexOf(selectedElementID) !== -1
+    ) {
       setError("prevent redundancy");
 
       var filteredArrayID = selectedFilmCategoriesID.filter(
-        (ele) => ele.trim() !== elementID.trim()
+        (ele) => ele.trim() !== selectedElementID.trim()
       );
       var filteredArrayNames = selectedFilmCategoriesNames.filter(
         (ele) => ele.trim() !== cateName.trim()
@@ -47,30 +53,28 @@ const CategoryTable = ({
       setSelectedFilmCategoriesNames(filteredArrayNames);
       setError(null);
     } else {
+      document
+        .getElementById(selectedElementID)
+        .classList.add("element-highlighted");
+
       setSelectedFilmCategoriesID((filmCategoriesID) => [
         ...filmCategoriesID,
-        elementID,
+        selectedElementID,
       ]);
       setSelectedFilmCategoriesNames((filmCategoriesNames) => [
         ...filmCategoriesNames,
         cateName,
       ]);
+      // .classList.add("element-highlighted");
     }
   };
-  // console.log(selectedFilmCategoriesID);
-  // console.log(selectedFilmCategoriesNames);
-  // function clearCategories() {
-  //   setFilmCategories("");
-  //   setSearchTerm("");
-  //   setError(null);
-  // }
-  /**
-   * Filter array items based on search criteria (query)
-   */
+  if (selectedFilmCategoriesID.includes(selectedid_cate)) {
+    const id = selectedid_cate;
+    console.log(selectedFilmCategoriesID.includes(selectedid_cate));
+  } else {
+    console.log(selectedFilmCategoriesID.includes(selectedid_cate));
+  }
 
-  // console.log(searchTerm);
-  // console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
-  // console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
   return (
     <div className="category-table">
       {/* <p className="dev-note">hello from categoriesProvider</p> */}
@@ -105,6 +109,7 @@ const CategoryTable = ({
               <CategoryLibrary
                 categories={categories}
                 selectCategory={selectCategory}
+                setSelectedid_cate={setSelectedid_cate}
                 searchTerm={searchTerm}
                 selectedFilmCategoriesID={selectedFilmCategoriesID}
                 selectedFilmCategoriesNames={selectedFilmCategoriesNames}

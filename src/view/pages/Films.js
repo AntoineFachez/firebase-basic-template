@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import CategoryWidget from "../../components/category/CategoryWidget";
-import FilmLibrary from "../../components/film/FilmLibrary";
+import FilmWidget from "../../components/film/FilmLibrary";
+import { CategoryContext } from "../../context/CategoryContext";
+import { FilmContext } from "../../context/FilmContext";
 
 function Films() {
+  const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
+  const [filmDB, setFilmDB] = useContext(FilmContext);
   return (
     <div>
       <h1>FilmLibrary</h1>
-      <CategoryWidget />
-      <FilmLibrary />
+      <CategoryWidget
+        categoriesDB={categoriesDB}
+        setCategoriesDB={setCategoriesDB}
+      />
+      <FilmWidget filmDB={filmDB} setFilmDB={setFilmDB} />
     </div>
   );
 }
