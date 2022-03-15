@@ -17,13 +17,16 @@ function Films() {
   const filterFilmDBByCategory = () => {
     console.log("filmDB: ", filmDB);
     console.log("selected Categories: ", selectedCategories);
-    console.log("filtered DB: ", filteredFilmDB);
+    console.log("filtered DB: ", filteredFilmDBIDs);
     for (var h = 0, lengthFilmDB = filmDB.length; h < lengthFilmDB; h++) {
       const id_film = filmDB[h].film.id_film;
 
       const subResult = findNested(filmDB[h], "id_cate", selectedCategories[0]);
       if (subResult !== undefined) {
-        setFilteredFilmDBIDs((filteredFilmDBIDs)) => [...filteredFilmDB, subResult]);
+        setFilteredFilmDBIDs((filteredFilmDBIDs) => [
+          ...filteredFilmDBIDs,
+          subResult,
+        ]);
       }
       findNested(filmDB[h], "id_cate", selectedCategories[0]);
 
@@ -52,17 +55,15 @@ function Films() {
       }
     }
   };
-const filteredList=()=>{
-  const results = filmDB.filter((obj) => {
-    return obj.id === filteredFilmDB;
-  });
-  set
-}
+  const filteredList = () => {
+    const results = filmDB.filter((obj) => {
+      return obj.id === filteredFilmDBIDs;
+    });
+  };
 
   useEffect(() => {
-    setFilteredFilmDB([]);
+    setFilteredFilmDBIDs([]);
     filterFilmDBByCategory(filmDB);
-    
   }, [selectedCategories]);
 
   return (
@@ -75,7 +76,7 @@ const filteredList=()=>{
         getSelectedCategories={getSelectedCategories}
       />
       <p>{selectedCategories}</p>
-      <FilmWidget filteredFilmDB={results} setFilmDB={setFilmDB} />
+      <FilmWidget filteredFilmDB={filmDB} setFilmDB={setFilmDB} />
     </div>
   );
 }
