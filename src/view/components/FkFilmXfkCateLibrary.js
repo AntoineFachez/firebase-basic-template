@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 // import fk_filmXfk_cateDetails from "./UniversitiyDetails";
-import { FkFilmXfkCateContext } from "../context/FkFilmXfkCateContext";
-import { CategoryContext } from "../context/CategoryContext";
+import { FkFilmXfkCateContext } from "../../context/FkFilmXfkCateContext";
+import { CategoryContext } from "../../context/CategoryContext";
 import Tile from "./tile/Tile";
 import { Link, useNavigate } from "react-router-dom";
 

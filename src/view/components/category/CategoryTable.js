@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { CategoryContext } from "../../context/CategoryContext";
-import { ScoutingContext } from "../../context/ScoutingContext";
+import { CategoryContext } from "../../../context/CategoryContext";
+import { ScoutingContext } from "../../../context/ScoutingContext";
 import CategoryMajLibrary from "./CategoryMajLibrary";
 import CategoryLibrary from "./CategoryLibrary";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
@@ -49,7 +49,7 @@ const CategoryTable = ({
       var filteredArrayNames = selectedFilmCategoriesNames.filter(
         (ele) => ele.trim() !== cateName.trim()
       );
-
+      getSelectedCategories(filteredArrayID);
       setSelectedFilmCategoriesID(filteredArrayID);
       setSelectedFilmCategoriesNames(filteredArrayNames);
       setError(null);
@@ -57,12 +57,14 @@ const CategoryTable = ({
       document
         .getElementById(selectedElementID)
         .classList.add("element-highlighted");
-
+      getSelectedCategories((filmCategoriesID) => [
+        ...filmCategoriesID,
+        selectedElementID,
+      ]);
       setSelectedFilmCategoriesID((filmCategoriesID) => [
         ...filmCategoriesID,
         selectedElementID,
       ]);
-      getSelectedCategories(selectedFilmCategoriesID);
       setSelectedFilmCategoriesNames((filmCategoriesNames) => [
         ...filmCategoriesNames,
         cateName,
@@ -76,6 +78,7 @@ const CategoryTable = ({
   } else {
     console.log(selectedFilmCategoriesID.includes(selectedid_cate));
   }
+  // ;
 
   return (
     <div className="category-table">

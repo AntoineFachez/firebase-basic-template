@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import { CategoryContext } from "../../context/CategoryContext";
+import { CategoryContext } from "../../../context/CategoryContext";
 import { Link, useNavigate } from "react-router-dom";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import "./category.css";
@@ -26,7 +26,7 @@ const CategoryLibrary = ({
 
   useEffect(() => {}, [id_cate]);
 
-  console.log(selectedFilmCategoriesID);
+  // console.log(selectedFilmCategoriesID);
   const sortedByRankingCategories = categories.sort((a, b) =>
     a.cate_ranking > b.cate_ranking ? 1 : -1
   );
@@ -35,7 +35,7 @@ const CategoryLibrary = ({
     selectCategory(id_cate, cateName);
 
     // setId_cate(id_cate);
-    console.log(id_cate);
+    // console.log(id_cate);
     // highLightedCategory();
 
     // document

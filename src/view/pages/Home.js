@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "./pages.css";
 import Body from "../layout/Body";
 import VimeoContext from "../../context/VimeoContext";
-import VimeoFeed from "../../components/ScoutingTool";
-import SignUpLogIn from "../../components/user/SignUpLogInOut/SignUpLogIn";
+import ScoutingTool from "../components/scouting-tool/ScoutingTool";
+import SignUpLogIn from "../components/user/SignUpLogInOut/SignUpLogIn";
 import Footer from "../layout/Footer";
 
 function Home() {

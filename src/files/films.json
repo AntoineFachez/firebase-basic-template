@@ -1,0 +1,1152 @@
+[
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/744130415-ba7d9072a5dbd8a46ffbc859e946c66f293844191a2416eb1865947eb8420c29-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/744130415-ba7d9072a5dbd8a46ffbc859e946c66f293844191a2416eb1865947eb8420c29-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":744130415\r\rduration: \r\"raw\":51\r\"formatted\":\"00:51\"\r\rclip: \r\"id\":303472448\r\"title\":\"ACV – Vorstellung\"\r\"description\":\"\rDirector: Tim Stoffel\rClient: ACV\r\r\"\r\"uploaded_on\":\"2018-11-29 06:11:26\"\r\"uploaded_on_relative\":\"3 years ago\"\r\"uploaded_on_full\":\"Thursday\r November 29\r 2018 at 6:11 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Film Deluxe\"\r\"url\":\"https://vimeo.com/filmdeluxe\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/303472448\"}\r\"duration\":\"PT00H00M51S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":137\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe\"\r\"name\":\"Film Deluxe\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Twinkle in the Eye",
+            "cate_ranking": "02",
+            "id_cate": "FE517EC8-94D5-4FFA-AFFE-485C215F17BF",
+            "originalTimeCreation": "10.08.2016 16:27:35"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Insurance",
+            "cate_ranking": "02",
+            "id_cate": "56048DDD-5CDD-45B1-882B-C9DEF7CA92AD",
+            "originalTimeCreation": "14.10.2016 17:37:16"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Advertising",
+            "cate_ranking": "01",
+            "id_cate": "1EF5A3B2-EE59-452E-981C-B5316E6D2727",
+            "originalTimeCreation": "23.05.2016 16:42:28"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Edit & Post",
+            "cateMaj_ranking": "61",
+            "cateName": "Animation",
+            "cate_ranking": "",
+            "id_cate": "F4CCDC0E-38A1-42C3-B5C5-0C48358AC35B",
+            "originalTimeCreation": "01.02.2019 11:40:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Art Department",
+            "cateMaj_ranking": "50",
+            "cateName": "Animals",
+            "cate_ranking": "01",
+            "id_cate": "75F91EBD-3F9E-4E8B-8FCD-DF32B6BB479E",
+            "originalTimeCreation": "19.05.2016 13:12:46"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Little Scene",
+            "cate_ranking": "01",
+            "id_cate": "8198191C-AD97-497C-AEED-03CE817692DE",
+            "originalTimeCreation": "05.09.2017 12:04:22"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Narrative",
+            "cateMaj_ranking": "23",
+            "cateName": "Dialogue",
+            "cate_ranking": "",
+            "id_cate": "F618E4A3-9F94-40A7-8B44-E8CB5371B944",
+            "originalTimeCreation": "18.05.2016 22:26:09"
+          }
+        }
+      ],
+      "dateUpload": "2018-11-29 06:11:26",
+      "description": "",
+      "id_film": "3541F74C-C149-43E4-A55C-07CA379B6B40",
+      "length": "00:51",
+      "link": "http://www.vimeo.com/303472448",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "65D18294-D4B3-4F3C-8525-9D98D00B1C52",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "7F094257-56E5-4A87-96F6-9E5DFA4B3D1E",
+          "name": "Tim Stoffel",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "303472448"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/780666127-66e13883b771ae6c81897f0cfbdc8a12ffd545db6a7a772eb1c3f4dc39244e83-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/780666127-66e13883b771ae6c81897f0cfbdc8a12ffd545db6a7a772eb1c3f4dc39244e83-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":780666127\r\rduration: \r\"raw\":25\r\"formatted\":\"00:25\"\r\rclip: \r\"id\":297945914\r\"title\":\"Ferrero – Maxi K\"\r\"description\":\"\rDirector: Kay Kienzler\rAgency: Marbles Berlin\rClient: Ferrero\rDOP: Bjorn Haneld\rPost: Film Deluxe\rProduction: Film Deluxe\r\r\"\r\"uploaded_on\":\"2018-10-30 10:09:26\"\r\"uploaded_on_relative\":\"3 years ago\"\r\"uploaded_on_full\":\"Tuesday\r October 30\r 2018 at 10:09 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Film Deluxe\"\r\"url\":\"https://vimeo.com/filmdeluxe\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/297945914\"}\r\"duration\":\"PT00H00M25S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":448\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe\"\r\"name\":\"Film Deluxe\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Misc",
+            "cateMaj_ranking": "70",
+            "cateName": "Quote a Film",
+            "cate_ranking": "02",
+            "id_cate": "D004045F-C951-4AD5-9A7C-36E499991B61",
+            "originalTimeCreation": "26.10.2016 16:35"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Image",
+            "cateMaj_ranking": "",
+            "cateName": "Bright",
+            "cate_ranking": "01",
+            "id_cate": "F2AFCD31-F2D8-4E64-AE13-7CA8C97B6CFE",
+            "originalTimeCreation": "14.11.2016 15:39:27"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Child",
+            "cate_ranking": "",
+            "id_cate": "BF24E1F3-B69B-4933-A02B-76C7B336C4EB",
+            "originalTimeCreation": "19.05.2016 14:42:01"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Twinkle in the Eye",
+            "cate_ranking": "02",
+            "id_cate": "FE517EC8-94D5-4FFA-AFFE-485C215F17BF",
+            "originalTimeCreation": "10.08.2016 16:27:35"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Vignette",
+            "cate_ranking": "",
+            "id_cate": "4F1AF410-C3DA-4074-9891-E486446AFBD9",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Pop",
+            "cate_ranking": "03",
+            "id_cate": "164F6DCC-B26A-4780-AF66-3E723CE9A2E8",
+            "originalTimeCreation": "19.05.2016 00:31:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Food",
+            "cate_ranking": "01",
+            "id_cate": "0B190C7F-C082-4C6C-987E-3A55A2FEB42E",
+            "originalTimeCreation": "18.05.2016 20:31:40"
+          }
+        }
+      ],
+      "dateUpload": "2018-10-30 10:09:26",
+      "description": "",
+      "id_film": "C99817D9-948D-4467-8F34-05E276353107",
+      "length": "00:25",
+      "link": "http://www.vimeo.com/297945914",
+      "reel": [
+        {
+          "active": "",
+          "brof": "Film Deluxe",
+          "fk_brof": "9755CBB8-19FD-4961-A05A-8CD249E6F375",
+          "fk_comp": "5A71F06D-764E-4494-B429-22AFBE33C082",
+          "fk_fipe": "FAEEF163-F957-4300-880B-A140CCD85858",
+          "fk_prof": "78F04F19-64FD-453A-B451-7CDE65B0E061",
+          "id_group": "9777F99D-BEA1-4CB5-93E1-3BB38E20ACD2",
+          "name": "Carolin Voigtländer",
+          "prof": "Producer"
+        },
+        {
+          "active": "",
+          "brof": "Bite Management, Esther",
+          "fk_brof": "B326CAE5-632C-421B-8ED0-221961CFCFF4",
+          "fk_comp": "C7E5E45B-E3FF-4910-A8AD-A7A0789648E9",
+          "fk_fipe": "9217E596-9253-4EA4-9B64-55B80FE322F7",
+          "fk_prof": "CCD3BA6D-96E5-4EC4-A889-9A928AE0CE27",
+          "id_group": "F5F3FFFA-EEF2-4B0D-959B-4C9EDA37A1B2",
+          "name": "Björn Haneld",
+          "prof": "DoP"
+        },
+        {
+          "active": "",
+          "brof": "Film Deluxe",
+          "fk_brof": "9755CBB8-19FD-4961-A05A-8CD249E6F375",
+          "fk_comp": "5A71F06D-764E-4494-B429-22AFBE33C082",
+          "fk_fipe": "6A479CD7-06F9-4A9B-8218-D0CC5AE53CDA",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "DAB56082-79F6-4B90-8E29-2290FD0AF459",
+          "name": "Kay Kienzler",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "297945914"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/825210451-bfd5e1f062b40ceea23581126b7bffb3df48b39bf07876499f84e75da4ec147c-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/825210451-bfd5e1f062b40ceea23581126b7bffb3df48b39bf07876499f84e75da4ec147c-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":825210451\r\rduration: \r\"raw\":66\r\"formatted\":\"01:06\"\r\rclip: \r\"id\":359766926\r\"title\":\"VodaFone - The Bucket List\"\r\"description\":\"\rDirected by Christopher Riggert\r\r\"\r\"uploaded_on\":\"2019-09-13 08:17:15\"\r\"uploaded_on_relative\":\"2 years ago\"\r\"uploaded_on_full\":\"Friday\r September 13\r 2019 at 8:17 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"ANORAK Film GmbH\"\r\"url\":\"https://vimeo.com/user102114655\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/359766926\"}\r\"duration\":\"PT00H01M06S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":19}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":318\r\r\"keywords\":\"[anorak]\"\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/user102114655\"\r\"name\":\"ANORAK Film GmbH\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/user102114655/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Visual Storytelling",
+            "cate_ranking": "02",
+            "id_cate": "E27F6C92-9529-4C58-9CD7-435C4CDF2BA9",
+            "originalTimeCreation": "07.11.2016 23:07:44"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Misc",
+            "cateMaj_ranking": "70",
+            "cateName": "Very Special",
+            "cate_ranking": "02",
+            "id_cate": "C34CB8A7-9A48-4C49-8FBB-3E06E775B641",
+            "originalTimeCreation": "19.05.2016 16:15:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Cast",
+            "cate_ranking": "00",
+            "id_cate": "C599640B-8919-4180-896D-BFC3B16AB2B5",
+            "originalTimeCreation": "19.05.2016 15:23:59"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Epic",
+            "cate_ranking": "01",
+            "id_cate": "40EABEC6-64CB-440A-BD57-B10D26F5B4CD",
+            "originalTimeCreation": "20.05.2016 16:45:34"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Prod Value",
+            "cateMaj_ranking": "02",
+            "cateName": "Big Picture",
+            "cate_ranking": "01",
+            "id_cate": "30080439-794B-4A08-B30B-53D6B8BC3E70",
+            "originalTimeCreation": "19.05.2016 16:09:43"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Happy Feeling",
+            "cate_ranking": "01",
+            "id_cate": "E6E31F49-E12F-4676-9918-C49EDCB04631",
+            "originalTimeCreation": "23.05.2016 16:31:45"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Twen",
+            "cate_ranking": "02",
+            "id_cate": "F6B24E1B-6D30-4B48-8406-4A53ABB514C0",
+            "originalTimeCreation": "24.05.2016 11:46:35"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Collage",
+            "cate_ranking": "",
+            "id_cate": "A3993D51-B9C2-4B89-8695-3EFF141BA5A2",
+            "originalTimeCreation": "20.05.2016 18:26:06"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Travel",
+            "cate_ranking": "01",
+            "id_cate": "E0B026FA-6177-4530-91FE-648592F41328",
+            "originalTimeCreation": "20.05.2016 14:37:06"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Communication",
+            "cate_ranking": "02",
+            "id_cate": "F5D903C6-0562-4F44-A7B1-EE08401737B2",
+            "originalTimeCreation": "13.11.2016 03:16:22"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Location",
+            "cateMaj_ranking": "41",
+            "cateName": "Landscapes ",
+            "cate_ranking": "01",
+            "id_cate": "AAFF0EE1-A817-4586-BA37-9D0B43650933",
+            "originalTimeCreation": "20.05.2016 01:10:40"
+          }
+        }
+      ],
+      "dateUpload": "2019-09-13 08:17:15",
+      "description": "",
+      "id_film": "033F2FB8-31E6-4A7F-8DB8-1BC08249791E",
+      "length": "01:06",
+      "link": "http://www.vimeo.com/359766926",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "7FF74F16-D7AF-45F9-A1BE-235503888F14",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "6CB871BB-CC15-4180-AA02-DB825A2D157F",
+          "name": "Christopher Riggert",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "359766926"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/962522596-2e11c6c2b2cb9567ecaa29aabcfea672110299f8e6d40b8189d8bb1c7d10b883-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/962522596-2e11c6c2b2cb9567ecaa29aabcfea672110299f8e6d40b8189d8bb1c7d10b883-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":962522596\r\rduration: \r\"raw\":92\r\"formatted\":\"01:32\"\r\rclip: \r\"id\":460898259\r\"title\":\"MERCEDES BENZ 'BLOWFISH’ // PANTERA\"\r\"description\":\"\rProduction Company BWGTBLD GmbH\rDirector PANTERA\rDirector of Photography NICOLAS KARAKATSANIS\rExecutive Producer - PHILIPP RAMHOFER\rProducer - JULIANE GEUSENDAM\rPost Production Producer - PHILIPP WEINRICH\rProduction Coordinator - BRITTA LIESEN\rCasting - DES HAMILTON\rStyling - BRATSK\rProduction Design - JASON HOUGAARD\rEditor - CHRISTIAN ZIMMERMANN\rColor - Alex Bickel\r\rn\r\rVFX Company bEPIC\rVFX Supervisor - BASTIAN KONRADT & RADOSLAW JAMROG\rVFX Producer bEPIC - LION GRAF & COLEBATCH\rDigital Artist - FELIX HÖHNE\r ROMAN NEUGEBAUER\r FLORIAN FRIEDMANN\r ANDREAS ROHNE\r\r\rn\r\rAgency Antoni\rExecutive Creative Director - VEIT MOELLER\rCreative Director - LUCAS SCHNEIDER\rCreative Director - MALTE BÜLSKÄMPER\rAccount Manager - HELENA SCHILKE\r\rn\r\rClient Merzedes Benz\rDAMIR MARIC\r KATJA OHLY-NAUBER\r\r\"\r\"uploaded_on\":\"2020-09-23 05:40:42\"\r\"uploaded_on_relative\":\"1 year ago\"\r\"uploaded_on_full\":\"Wednesday\r September 23\r 2020 at 5:40 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Christian Zimmermann\"\r\"url\":\"https://vimeo.com/user3619728\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/460898259\"}\r\"duration\":\"PT00H01M32S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":5}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":81}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":1327\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/user3619728\"\r\"name\":\"Christian Zimmermann\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/user3619728/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Misc",
+            "cateMaj_ranking": "70",
+            "cateName": "Very Special",
+            "cate_ranking": "02",
+            "id_cate": "C34CB8A7-9A48-4C49-8FBB-3E06E775B641",
+            "originalTimeCreation": "19.05.2016 16:15:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Twist",
+            "cate_ranking": "02",
+            "id_cate": "9188BD00-F62E-4334-A27B-27FD0CF32555",
+            "originalTimeCreation": "25.10.2016 16:48:13"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Dramatic",
+            "cate_ranking": "02",
+            "id_cate": "EF09B991-3416-4BC9-8A70-66763BA967C2",
+            "originalTimeCreation": "20.05.2016 12:39:54"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Comedy",
+            "cate_ranking": "01",
+            "id_cate": "A5287B37-860C-48AB-964F-7B5C4260C88D",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Edit & Post",
+            "cateMaj_ranking": "61",
+            "cateName": "Character Design",
+            "cate_ranking": "",
+            "id_cate": "DA59E2F2-E9E7-42DD-9E46-6F34E4A26F1B",
+            "originalTimeCreation": "25.10.2019 14:46:33"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Edit & Post",
+            "cateMaj_ranking": "61",
+            "cateName": "CGI",
+            "cate_ranking": "",
+            "id_cate": "F7F4534E-7062-4B95-ACC4-45604A1B378E",
+            "originalTimeCreation": "19.05.2016 00:45:38"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Visual Storytelling",
+            "cate_ranking": "02",
+            "id_cate": "E27F6C92-9529-4C58-9CD7-435C4CDF2BA9",
+            "originalTimeCreation": "07.11.2016 23:07:44"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Cast",
+            "cate_ranking": "00",
+            "id_cate": "C599640B-8919-4180-896D-BFC3B16AB2B5",
+            "originalTimeCreation": "19.05.2016 15:23:59"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Child",
+            "cate_ranking": "",
+            "id_cate": "BF24E1F3-B69B-4933-A02B-76C7B336C4EB",
+            "originalTimeCreation": "19.05.2016 14:42:01"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Car/ Automotiv",
+            "cate_ranking": "01",
+            "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
+            "originalTimeCreation": "18.05.2016 20:31:28"
+          }
+        }
+      ],
+      "dateUpload": "2020-09-23 05:40:42",
+      "description": "",
+      "id_film": "DE78E24C-CB8C-410C-9999-D1A94C4DFFBC",
+      "length": "01:32",
+      "link": "http://www.vimeo.com/460898259",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "22444B23-E408-4777-8539-49CF537ED177",
+          "fk_prof": "B6D4C058-7E22-49EF-8F3C-DAAA146415A4",
+          "id_group": "048267CA-BCCC-459D-BAA4-CBB906BA33E3",
+          "name": "Christian Zimmermann",
+          "prof": "Editor"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "A8B6083A-ADA9-45BF-8005-3707929B1962",
+          "fk_prof": "CCD3BA6D-96E5-4EC4-A889-9A928AE0CE27",
+          "id_group": "078E9E89-CC81-41D7-B68B-F96C67CECB89",
+          "name": "Nicolas Karakatsanis",
+          "prof": "DoP"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "EE7BF6E1-4EA9-4743-8D36-6C0F3DF327CA",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "CC126BB6-6A6A-44EB-8BD1-026BFD14F974",
+          "name": "Philipp Ramhofer",
+          "prof": "Director"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "F2383E8F-5D2E-4A64-8425-AC17B27AA371",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "56C1AA65-8071-48BC-A5F0-651E54A28714",
+          "name": "Pato Martinez",
+          "prof": "Director"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "14407D5E-C2C5-4E3C-868C-73497D111DAD",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "DDE8E758-505B-42D0-AD49-9670B3B76284",
+          "name": "Francisco Canton",
+          "prof": "Director"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "732384BA-667B-4796-8B79-97F24BF4F7F1",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "6B44CB22-938E-42D0-B272-259E3995F3E3",
+          "name": "Brian Kazez",
+          "prof": "Director"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "77E9BCFD-EC42-4E55-89F2-1D00ECC40309",
+          "fk_prof": "2A45797E-A8FC-448F-A152-450CD8CB4C70",
+          "id_group": "50311881-209E-494D-9457-DD685B1EBE7D",
+          "name": "Veit Moeller",
+          "prof": "Creative Art"
+        }
+      ],
+      "title": "",
+      "vimeoID": "460898259"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/684064971-a1ae562804320064c156f9408e406687b94911faf97f67c7bbcbce1d5785f176-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/684064971-a1ae562804320064c156f9408e406687b94911faf97f67c7bbcbce1d5785f176-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":684064971\r\rduration: \r\"raw\":99\r\"formatted\":\"01:39\"\r\rclip: \r\"id\":254830093\r\"title\":\"Volkswagen – Glückstag\"\r\"description\":\"\rDirector: Kay Kienzler\rAgency: DDB Berlin GmbH\rClient: Volkswagen\rDOP: Casey Campbell\rPost: Film Deluxe\rProduction: Film Deluxe\r\r\"\r\"uploaded_on\":\"2018-02-08 05:47:43\"\r\"uploaded_on_relative\":\"3 years ago\"\r\"uploaded_on_full\":\"Thursday\r February 8\r 2018 at 5:47 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Film Deluxe\"\r\"url\":\"https://vimeo.com/filmdeluxe\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/254830093\"}\r\"duration\":\"PT00H01M39S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":529\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe\"\r\"name\":\"Film Deluxe\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Image",
+            "cateMaj_ranking": "",
+            "cateName": "Bright",
+            "cate_ranking": "01",
+            "id_cate": "F2AFCD31-F2D8-4E64-AE13-7CA8C97B6CFE",
+            "originalTimeCreation": "14.11.2016 15:39:27"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Advertising",
+            "cate_ranking": "01",
+            "id_cate": "1EF5A3B2-EE59-452E-981C-B5316E6D2727",
+            "originalTimeCreation": "23.05.2016 16:42:28"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Cause and Effect",
+            "cate_ranking": "03",
+            "id_cate": "BA6D89C1-3BCE-4C86-8477-2747EB4FAF66",
+            "originalTimeCreation": "07.11.2016 12:54:03"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Camera",
+            "cateMaj_ranking": "30",
+            "cateName": "Cadrage",
+            "cate_ranking": "02",
+            "id_cate": "905137D6-45B6-4D4A-B819-E445892B595A",
+            "originalTimeCreation": "19.05.2016 17:31:37"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Wake Up",
+            "cate_ranking": "",
+            "id_cate": "2E4B6722-D1FE-41D9-9859-428295E0339E",
+            "originalTimeCreation": "13.11.2019 14:53:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Car/ Automotiv",
+            "cate_ranking": "01",
+            "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
+            "originalTimeCreation": "18.05.2016 20:31:28"
+          }
+        }
+      ],
+      "dateUpload": "2018-02-08 05:47:43",
+      "description": "",
+      "id_film": "9123A73B-D09C-4A95-98F7-4203EC133A23",
+      "length": "01:39",
+      "link": "http://www.vimeo.com/254830093",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "C046D6A7-A70E-445A-B1A4-32BB023A568C",
+          "fk_prof": "CCD3BA6D-96E5-4EC4-A889-9A928AE0CE27",
+          "id_group": "0B166673-BD3E-44B4-B40B-CC09A5281B0F",
+          "name": "Casey Campbell",
+          "prof": "DoP"
+        },
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "6A479CD7-06F9-4A9B-8218-D0CC5AE53CDA",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "97B72652-0672-42E7-A84A-62726F44E447",
+          "name": "Kay Kienzler",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "254830093"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/621001318-cd7b3ab6a3897bf5141160c42df6e207c8522f6a2fdfeb3d9cd568dee443ebbe-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/621001318-cd7b3ab6a3897bf5141160c42df6e207c8522f6a2fdfeb3d9cd568dee443ebbe-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":621001318\r\rduration: \r\"raw\":241\r\"formatted\":\"04:01\"\r\rclip: \r\"id\":206077103\r\"title\":\"Volkswagen Car-Net – Security & Service\"\r\"description\":\"\rDirector: Kay Kienzler\rAgency: DDB\rClient: Volkswagen Car-Net\rDOP: Casey Cambell\rPost: Film Deluxe\rProduction: Film Deluxe\r\r\"\r\"uploaded_on\":\"2017-02-28 10:24:07\"\r\"uploaded_on_relative\":\"4 years ago\"\r\"uploaded_on_full\":\"Tuesday\r February 28\r 2017 at 10:24 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Film Deluxe\"\r\"url\":\"https://vimeo.com/filmdeluxe\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/206077103\"}\r\"duration\":\"PT00H04M01S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":631\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe\"\r\"name\":\"Film Deluxe\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/filmdeluxe/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Visual Storytelling",
+            "cate_ranking": "02",
+            "id_cate": "E27F6C92-9529-4C58-9CD7-435C4CDF2BA9",
+            "originalTimeCreation": "07.11.2016 23:07:44"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Little Scene",
+            "cate_ranking": "01",
+            "id_cate": "8198191C-AD97-497C-AEED-03CE817692DE",
+            "originalTimeCreation": "05.09.2017 12:04:22"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Image",
+            "cateMaj_ranking": "",
+            "cateName": "Bright",
+            "cate_ranking": "01",
+            "id_cate": "F2AFCD31-F2D8-4E64-AE13-7CA8C97B6CFE",
+            "originalTimeCreation": "14.11.2016 15:39:27"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Comedy",
+            "cate_ranking": "01",
+            "id_cate": "A5287B37-860C-48AB-964F-7B5C4260C88D",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Car/ Automotiv",
+            "cate_ranking": "01",
+            "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
+            "originalTimeCreation": "18.05.2016 20:31:28"
+          }
+        }
+      ],
+      "dateUpload": "2017-02-28 10:24:07",
+      "description": "",
+      "id_film": "FE40FDF5-D2E2-4168-AD07-97FC12711086",
+      "length": "04:01",
+      "link": "http://www.vimeo.com/206077103",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "C046D6A7-A70E-445A-B1A4-32BB023A568C",
+          "fk_prof": "CCD3BA6D-96E5-4EC4-A889-9A928AE0CE27",
+          "id_group": "0B166673-BD3E-44B4-B40B-CC09A5281B0F",
+          "name": "Casey Campbell",
+          "prof": "DoP"
+        },
+        {
+          "active": "",
+          "brof": "Film Deluxe",
+          "fk_brof": "9755CBB8-19FD-4961-A05A-8CD249E6F375",
+          "fk_comp": "5A71F06D-764E-4494-B429-22AFBE33C082",
+          "fk_fipe": "6A479CD7-06F9-4A9B-8218-D0CC5AE53CDA",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "DAB56082-79F6-4B90-8E29-2290FD0AF459",
+          "name": "Kay Kienzler",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "206077103"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/1281502227-bd02dc57217db842737f259f25906852f75a6e813fa6f90f2_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/1281502227-bd02dc57217db842737f259f25906852f75a6e813fa6f90f2_380x214\"\r\"width\":190\r\"height\":107\r\"id\":1281502227\r\rduration: \r\"raw\":40\r\"formatted\":\"00:40\"\r\rclip: \r\"id\":637812439\r\"title\":\"Gilette // JJ Keith\"\r\"description\":null\r\"uploaded_on\":\"2021-10-22 06:17:15\"\r\"uploaded_on_relative\":\"1 day ago\"\r\"uploaded_on_full\":\"Friday\r October 22\r 2021 at 6:17 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"FoxDevil Films\"\r\"url\":\"https://vimeo.com/foxdevilfilms\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/637812439\"}\r\"duration\":\"PT00H00M40S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":1}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":12\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/foxdevilfilms\"\r\"name\":\"FoxDevil Films\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/foxdevilfilms/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Second Reality",
+            "cate_ranking": "02\r",
+            "id_cate": "79304FB3-B30B-4824-89A5-119CB13EE556",
+            "originalTimeCreation": "18.05.2016 22:37:32"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Pop",
+            "cate_ranking": "03",
+            "id_cate": "164F6DCC-B26A-4780-AF66-3E723CE9A2E8",
+            "originalTimeCreation": "19.05.2016 00:31:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Masculin",
+            "cate_ranking": "02",
+            "id_cate": "7D993CEA-F58E-4C88-90C9-699F358E9A80",
+            "originalTimeCreation": "25.05.2016 16:49:24"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Beauty",
+            "cate_ranking": "01",
+            "id_cate": "51842FF1-7E1C-4AB7-9F50-20892C028916",
+            "originalTimeCreation": "19.05.2016 00:29:34"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Comedy",
+            "cate_ranking": "01",
+            "id_cate": "A5287B37-860C-48AB-964F-7B5C4260C88D",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Style",
+            "cateMaj_ranking": "21",
+            "cateName": "Surreal",
+            "cate_ranking": "02",
+            "id_cate": "354D13E0-0F81-44C5-B8B7-E3FFE8F0230C",
+            "originalTimeCreation": "18.05.2016 22:04:18"
+          }
+        }
+      ],
+      "dateUpload": "2021-10-22 06:17:15",
+      "description": "",
+      "id_film": "C81B6848-C4CF-4898-BEBD-A017DFEA9E69",
+      "length": "00:40",
+      "link": "http://www.vimeo.com/637812439",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "A27387E6-8D31-46F4-97D5-AAF0CB963D75",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "E424EB60-2741-4970-9C81-A2F771FB76A4",
+          "name": "JJ Keith",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "637812439"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/933056618-f48b84ed69e288bc3d690329cd6ad146888609c264cc45b6dfc63994d48b5259-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/933056618-f48b84ed69e288bc3d690329cd6ad146888609c264cc45b6dfc63994d48b5259-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":933056618\r\rduration: \r\"raw\":53\r\"formatted\":\"00:53\"\r\rclip: \r\"id\":443451185\r\"title\":\"This is (not) Beethoven - Fight\"\r\"description\":null\r\"uploaded_on\":\"2020-07-31 13:52:58\"\r\"uploaded_on_relative\":\"1 year ago\"\r\"uploaded_on_full\":\"Friday\r July 31\r 2020 at 1:52 PM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Til Obladen\"\r\"url\":\"https://vimeo.com/user47686663\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/443451185\"}\r\"duration\":\"PT00H00M53S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":63\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/user47686663\"\r\"name\":\"Til Obladen\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/user47686663/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Little Scene",
+            "cate_ranking": "01",
+            "id_cate": "8198191C-AD97-497C-AEED-03CE817692DE",
+            "originalTimeCreation": "05.09.2017 12:04:22"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Dramatic",
+            "cate_ranking": "02",
+            "id_cate": "EF09B991-3416-4BC9-8A70-66763BA967C2",
+            "originalTimeCreation": "20.05.2016 12:39:54"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Silent",
+            "cate_ranking": "",
+            "id_cate": "E3942FAD-F363-4DB6-A6FE-B8097BFEADA4",
+            "originalTimeCreation": "16.01.2020 15:54:24"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Rough",
+            "cate_ranking": "01",
+            "id_cate": "981AB50C-84E8-4F51-8F89-52DCDFB5DD66",
+            "originalTimeCreation": "13.11.2016 03:52:41"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Image",
+            "cateMaj_ranking": "",
+            "cateName": "Cinematic",
+            "cate_ranking": "01",
+            "id_cate": "D9FC0540-97A6-467A-9073-0B8505157F4D",
+            "originalTimeCreation": "24.05.2016 10:46:18"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Action",
+            "cate_ranking": "02",
+            "id_cate": "0510FAC0-A1EF-4C07-9932-707CB9A6D1F7",
+            "originalTimeCreation": "18.05.2016 20:31:33"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Camera",
+            "cateMaj_ranking": "30",
+            "cateName": "Speed Ramps/ Time Laps/ Slow Motion",
+            "cate_ranking": "01",
+            "id_cate": "377853E6-E73C-496C-B468-FE5A1D57FAE0",
+            "originalTimeCreation": "15.06.2016 16:57:24"
+          }
+        }
+      ],
+      "dateUpload": "2020-07-31 13:52:58",
+      "description": "",
+      "id_film": "410714B2-7044-4569-8752-8F3B548BAFE0",
+      "length": "00:53",
+      "link": "http://www.vimeo.com/443451185",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "E64970BF-9E0B-4019-9710-AEBD71FCBE10",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "72B674D6-C04E-4E99-8C81-8AC6BFB49DE3",
+          "name": "Til Obladen",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "443451185"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/909845481-9a7cb04f25561886379b20b430e6a154194f3fe579f15a5b7eb96aa9e216a20d-d_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/909845481-9a7cb04f25561886379b20b430e6a154194f3fe579f15a5b7eb96aa9e216a20d-d_380x214\"\r\"width\":190\r\"height\":107\r\"id\":909845481\r\rduration: \r\"raw\":33\r\"formatted\":\"00:33\"\r\rclip: \r\"id\":429663372\r\"title\":\"EURO Parlament\"\r\"description\":null\r\"uploaded_on\":\"2020-06-16 11:26:25\"\r\"uploaded_on_relative\":\"1 year ago\"\r\"uploaded_on_full\":\"Tuesday\r June 16\r 2020 at 11:26 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Til Obladen\"\r\"url\":\"https://vimeo.com/user47686663\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/429663372\"}\r\"duration\":\"PT00H00M33S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":38\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/user47686663\"\r\"name\":\"Til Obladen\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/user47686663/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Loud",
+            "cate_ranking": "",
+            "id_cate": "6768E2B9-5DC8-4C1B-A140-2CEFE3BCEE61",
+            "originalTimeCreation": "16.01.2020 15:55:28"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Comedy",
+            "cate_ranking": "01",
+            "id_cate": "A5287B37-860C-48AB-964F-7B5C4260C88D",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Narrative",
+            "cateMaj_ranking": "23",
+            "cateName": "Dialogue",
+            "cate_ranking": "",
+            "id_cate": "F618E4A3-9F94-40A7-8B44-E8CB5371B944",
+            "originalTimeCreation": "18.05.2016 22:26:09"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Little Scene",
+            "cate_ranking": "01",
+            "id_cate": "8198191C-AD97-497C-AEED-03CE817692DE",
+            "originalTimeCreation": "05.09.2017 12:04:22"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        }
+      ],
+      "dateUpload": "2020-06-16 11:26:25",
+      "description": "",
+      "id_film": "304A598A-37BC-4D52-A62A-81B09E556610",
+      "length": "00:33",
+      "link": "http://www.vimeo.com/429663372",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "E64970BF-9E0B-4019-9710-AEBD71FCBE10",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "72B674D6-C04E-4E99-8C81-8AC6BFB49DE3",
+          "name": "Til Obladen",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "429663372"
+    }
+  },
+  {
+    "film": {
+      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/1266734389-14fa83e89ee6c1fd69a7b7b9f00246f7b6e4cea9de5d920db_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/1266734389-14fa83e89ee6c1fd69a7b7b9f00246f7b6e4cea9de5d920db_380x214\"\r\"width\":190\r\"height\":107\r\"id\":1266734389\r\rduration: \r\"raw\":82\r\"formatted\":\"01:22\"\r\rclip: \r\"id\":624438902\r\"title\":\"Audi X FC Bayern - Experience Progress\"\r\"description\":null\r\"uploaded_on\":\"2021-10-06 08:23:53\"\r\"uploaded_on_relative\":\"2 months ago\"\r\"uploaded_on_full\":\"Wednesday\r October 6\r 2021 at 8:23 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Alex Schiller\"\r\"url\":\"https://vimeo.com/ajschiller\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/624438902\"}\r\"duration\":\"PT00H01M22S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":2}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":21\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/ajschiller\"\r\"name\":\"Alex Schiller\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/ajschiller/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
+      "categories": [
+        {
+          "cate": {
+            "cateMaj": "Cast",
+            "cateMaj_ranking": "40",
+            "cateName": "Celebrity",
+            "cate_ranking": "01",
+            "id_cate": "119251AD-FA2A-43DB-93A1-605A19988CC3",
+            "originalTimeCreation": "19.05.2016 12:30:29"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Dramaturgy",
+            "cateMaj_ranking": "20",
+            "cateName": "Build Up",
+            "cate_ranking": "02",
+            "id_cate": "7EEA7E52-0AEF-4414-A2DB-ED4D0C96A0FB",
+            "originalTimeCreation": "07.11.2016 10:31:14"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Genre",
+            "cateMaj_ranking": "01",
+            "cateName": "Storytelling",
+            "cate_ranking": "01",
+            "id_cate": "91211C10-0C58-413A-BF21-E16CFF99A67B",
+            "originalTimeCreation": ""
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Intensity",
+            "cateMaj_ranking": "22",
+            "cateName": "Dynamic",
+            "cate_ranking": "01",
+            "id_cate": "AE125928-21AE-4F29-8108-2122DB3D6696",
+            "originalTimeCreation": "15.06.2016 15:13:49"
+          }
+        },
+        {
+          "cate": {
+            "cateMaj": "Product Range",
+            "cateMaj_ranking": "00",
+            "cateName": "Car/ Automotiv",
+            "cate_ranking": "01",
+            "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
+            "originalTimeCreation": "18.05.2016 20:31:28"
+          }
+        }
+      ],
+      "dateUpload": "2021-10-06 08:23:53",
+      "description": "",
+      "id_film": "E852E368-B95D-4ECE-8F64-359FF893FF54",
+      "length": "01:22",
+      "link": "http://www.vimeo.com/624438902",
+      "reel": [
+        {
+          "active": "",
+          "brof": "",
+          "fk_brof": "",
+          "fk_comp": "",
+          "fk_fipe": "91E5EB57-F9FB-4DBF-B0C4-B2359861CA40",
+          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
+          "id_group": "24A05838-6E45-4AFF-9F7C-6454E0F3C8F6",
+          "name": "Alex Schiller",
+          "prof": "Director"
+        }
+      ],
+      "title": "",
+      "vimeoID": "624438902"
+    }
+  }
+]

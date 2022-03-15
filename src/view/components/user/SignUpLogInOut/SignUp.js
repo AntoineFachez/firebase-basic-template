@@ -2,11 +2,11 @@
 //https://www.youtube.com/watch?v=9bXhf_TELP4
 
 import React, { useEffect, useRef, useState } from "react";
-import { useAuth, useUserAuth } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../../firebase/firebase-config";
+import { useAuth, useUserAuth } from "../../../../context/AuthContext";
+import { auth } from "../../../../firebase/firebase-config";
 import "./auth.css";
 
 export default function Signup() {
@@ -48,8 +48,8 @@ export default function Signup() {
     } else if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setErrorRegister("passwords do not match");
     } else if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setErrorRegister("Check your password confirmation");
       console.log("clicked");
+      return setErrorRegister("Check your password confirmation");
     }
     try {
       const user = await createUserWithEmailAndPassword(

@@ -97,12 +97,12 @@ const Player = ({
         light={light}
         loaded={<Spinner />}
         // speed={true}
-        title={title}
+        // title={title}
         // transparent={true}
         // pip={true}
         // autoPlay={false}
         // autopause={true}
-        background={background}
+        // background={background}
       />
       {duration}
       {playedTime}

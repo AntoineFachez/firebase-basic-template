@@ -1,25 +1,22 @@
 import React, { useState, useContext, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import SideBarFilmLibrary from "./film/SideBarFilmLibrary";
-import Carousel from "./carousel/Carousel";
-import CategoryWidget from "./category/CategoryWidget";
-import MainPlayer from "./main-player/MainPlayer";
-// import "./components.css";
+import Carousel from "../../components/carousel/Carousel";
+import CategoryWidget from "../../components/category/CategoryWidget";
+import MainPlayer from "../../components/main-player/MainPlayer";
+
 import "./scouting-tool.css";
-import "../index.css";
+import "../../../index.css";
 
 const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
 
 const FeedList = () => {
-  const history = useNavigate();
   const loader = document.querySelector("#loading");
   const [token, setToken] = useState("");
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [uiMainPlayerClipId, setUiMainPlayerClipId] = useState(null);
-  const [defaultLink, setDefaultLink] = useState("");
+
   const [index, setIndex] = useState(0);
   const [light, setLight] = useState(true);
   const [controls, setControls] = useState(false);
@@ -35,10 +32,6 @@ const FeedList = () => {
   const mainPlayerWidth = "200%";
   const lightLoad = true;
 
-  useEffect(() => {
-    handleGetFeed();
-  }, [token]);
-
   const loadVimeo = () => {
     if (localStorage.getItem("accessToken")) {
       setToken(localStorage.getItem("accessToken"));
@@ -48,11 +41,12 @@ const FeedList = () => {
   };
 
   const handleGetFeed = async () => {
-    // displayLoading();
     setLoading(true);
     setLoaded(false);
-    // displayLoading();
-    // console.log(loading);
+
+    //TODO: refacror if offline
+    // if (localStorage.getItem("feed").length === 0) {
+    loadVimeo();
     axios
       .get(await FEED_ENDPOINT, {
         headers: {
@@ -63,21 +57,22 @@ const FeedList = () => {
         setData(res.data);
         setLoading(false);
         setLoaded(true);
-        localStorage.setItem("localStorageData", data);
+        localStorage.setItem("feed", JSON.stringify(res.data));
       })
       .catch((err) => {
         console.log(err);
       });
+
+    //TODO: refactor to if offline
+    //else {
+    //   localStorage.getItem("feed");
+    // }
   };
-  // console.log(data.data);
-  useEffect(
-    () => {
-      loadVimeo();
-      setHide(true);
-    },
-    // setData(handleGetFeed()),
-    []
-  );
+
+  useEffect(() => {
+    setHide(true);
+    handleGetFeed();
+  }, [token]);
 
   const getClipIndex = (clipLink) => {
     setUiMainPlayerClipId(clipLink);
@@ -100,9 +95,6 @@ const FeedList = () => {
         document.querySelector(".category-widet").classlist.add(".small-widge")
       : setHide(true) &&
         document.querySelector(".smal-widget").classlist.add(".category-wid");
-    // console.log(document.classList.contains("foo"));
-    // console.log(hide);
-
     // openCategoryWidget ? setWidth("15vw") : setWidth("20vw");
   };
   const selectCategory = (selectedElementID, cateName) => {

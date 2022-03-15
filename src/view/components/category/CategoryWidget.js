@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import Form from "../form/Form";
 import CategoryTable from "./CategoryTable";
 import CategoryForm from "./CategoryForm";
-import { CategoryContext } from "../../context/CategoryContext";
+import { CategoryContext } from "../../../context/CategoryContext";
 import "./category.css";
 
 function CategoryWidget({

@@ -1,21 +1,21 @@
 import React, { useState, useContext, useEffect } from "react";
 // import filmDetails from "./UniversitiyDetails";
-import { FilmContext } from "../../context/FilmContext";
+import { FilmContext } from "../../../context/FilmContext";
 import Tile from "../tile/Tile";
 import { Link, useNavigate } from "react-router-dom";
-import * as ROUTES from "../../constants/routes";
+import * as ROUTES from "../../../constants/routes";
 import "../components.css";
 
-const FilmLibrary = () => {
+const FilmLibrary = ({ filteredFilmDB }) => {
   // useEffect(() => {
 
   // }, []);
-  const [films, setFilms] = useContext(FilmContext);
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [films, setFilms] = useContext(FilmContext);
+  // const [searchTerm, setSearchTerm] = useState("");
   const [FilteredFilmList, setFilteredFilmList] = useState([]);
   const [error, setError] = useState(null);
   // const [id, setid] = useState();
-  const data = films;
+  const data = filteredFilmDB;
   const history = useNavigate();
   const tileWidth = "30vw";
 
@@ -52,7 +52,7 @@ const FilmLibrary = () => {
         // console.log(includesSearchTerm);
         return includesSearchTerm;
       }
-      multiplyAll([films]);
+      multiplyAll([filteredFilmDB]);
     }
     // multiplyAll([films]);
 
@@ -77,7 +77,7 @@ const FilmLibrary = () => {
     // }
 
     // const elementName = category;
-    if (JSON.stringify(films) !== -1) {
+    if (JSON.stringify(filteredFilmDB) !== -1) {
       setError("prevent redundancy");
 
       var filteredArray = FilteredFilmList.filter(
@@ -88,7 +88,7 @@ const FilmLibrary = () => {
       // console.log(filteredArray);
       // console.log(element);
       setFilteredFilmList(filteredArray);
-      setSearchTerm(searchTerm);
+      // setSearchTerm(searchTerm);
       setError(null);
     } else {
       // setFilteredFilmList((FilteredFilmList) => [
@@ -113,13 +113,13 @@ const FilmLibrary = () => {
             searchCategory(e.target.value);
           }}
         /> */}
-        {searchTerm}
+        {/* {searchTerm} */}
         {/* <div className="tools">
           <Accordion />
         </div>{" "} */}
         {/* <ul className="list-container"> */}
         <ul className="film-library-container">
-          {films.slice(0, 9).map((film, index) => {
+          {filteredFilmDB.slice(0, 9).map((film, index) => {
             /* console.log(films[index].film.link); */
 
             return (

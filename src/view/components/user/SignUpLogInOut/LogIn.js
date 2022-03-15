@@ -4,7 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 // import { useAuth } from "../../../../contexts/AuthContext";
 import { Navigate, useNavigate } from "react-router-dom";
-import { auth } from "../../../firebase/firebase-config";
+import { auth } from "../../../../firebase/firebase-config";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import "./auth.css";
 

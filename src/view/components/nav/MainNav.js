@@ -1,11 +1,10 @@
-import logo from "../../images/p00l glow Square small.png";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import * as ROUTES from "../../constants/routes";
-
-import "./main-nav.css";
+import * as ROUTES from "../../../constants/routes";
+import logo from "../../../images/p00l glow Square small.png";
 import SignUpLogIn from "../user/SignUpLogInOut/SignUpLogIn";
 import { VimeoLogIn } from "../VimeoLogIn";
+import "./main-nav.css";
 
 export default function MainNav() {
   const [isShrunk, setShrunk] = useState(false);

@@ -1,13 +1,13 @@
 import React from "react";
-import Category from "../../components/category/Category";
-import CategoryWidget from "../../components/category/CategoryWidget";
-import ScoutingTool from "../../components/ScoutingTool";
-import Film from "../../components/film/Film";
-import GroupList from "../../components/group/GroupList";
+import Category from "../components/category/CategoryWidget";
+import CategoryWidget from "../components/category/CategoryWidget";
+import ScoutingTool from "../components/scouting-tool/ScoutingTool";
+import Film from "../components/film/Film";
+import GroupList from "../components/group/GroupList";
 import "./pageLayout.css";
-import FilmLibrary from "../../components/film/FilmLibrary";
-import FkFilmXfkCateLibrary from "../../components/FkFilmXfkCateLibrary";
-import MainPlayer from "../../components/main-player/MainPlayer";
+import FilmLibrary from "../components/film/FilmLibrary";
+import FkFilmXfkCateLibrary from "../components/FkFilmXfkCateLibrary";
+import MainPlayer from "../components/main-player/MainPlayer";
 
 function Section() {
   return (

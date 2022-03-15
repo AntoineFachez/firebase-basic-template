@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainNav from "../components/nav";
+import MainNav from "../view/components/nav/index";
 import Home from "../view/pages/Home";
 import Scouting from "../view/pages/Scouting";
-import VimeoFeed from "../components/ScoutingTool";
-import Film from "../components/film/Film";
-import Category from "../components/category/Category";
-import CategoryTable from "../components/category/CategoryTable";
-import FkFilmXfkCateLibrary from "../components/FkFilmXfkCateLibrary";
-import Profile from "../components/group/Profile";
-import GroupList from "../components/group/GroupList";
+import VimeoFeed from "../view/components/scouting-tool/ScoutingTool";
+import Film from "../view/components/film/Film";
+import Category from "../view/components/category/Category";
+import CategoryTable from "../view/components/category/CategoryTable";
+import FkFilmXfkCateLibrary from "../view/components/FkFilmXfkCateLibrary";
+import Profile from "../view/components/group/Profile";
+import GroupList from "../view/components/group/GroupList";
 import FilmLibrary from "../view/pages/Films";
 import * as ROUTES from "./routes";
 
