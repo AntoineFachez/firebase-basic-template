@@ -22,8 +22,8 @@ function Films() {
   const startUpFilms = (filmData) => {
     setDefaultFilmDB(filmData);
   };
-  //TODO: build filteredFilmIDs: go through filmDB, search for selectedCategories[i], collect id_film matching selectedCategories
-  //TODO: build filteredFilmDB: go through filmDB, search for filteredFilmIDs[j], collect filmDB[k].film
+  //TODO: remove duplicates from Array to player
+
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     console.log("--- 2 --selected Categories: ", selectedCategories);
     if (selectedCategories) {
@@ -32,22 +32,22 @@ function Films() {
         const filmData = film;
         // console.log("--- 3 --FilmDB Element filmData ", filmData);
         filmCategories.forEach((filmCategoryID) => {
-          // if (!filteredFilmDB.indexOf(film) === undefined) {
-          console.log("--- each filmCategory", filmCategoryID);
-          selectedCategories.forEach((categoryID) => {
-            console.log(filmCategoryID.cate.id_cate, categoryID);
-            if (filmCategoryID.cate.id_cate === categoryID) {
-              const found = filmData;
-              console.log("YEAH", found);
-              // const foundFilm = filmData;
-              // return filteredDB(filmData);
-              filteredFilmDB.push(found);
-              removeDuplicates(filteredFilmDB);
-              // return found;
-              // filteredFilmDB.push(foundFilm);
-            }
-          });
-          // }
+          if (filteredFilmDB.indexOf(film) === -1) {
+            console.log("--- each filmCategory", filmCategoryID);
+            selectedCategories.forEach((categoryID) => {
+              console.log(filmCategoryID.cate.id_cate, categoryID);
+              if (filmCategoryID.cate.id_cate === categoryID) {
+                const found = filmData;
+                console.log("YEAH", found);
+                // const foundFilm = filmData;
+                // return filteredDB(filmData);
+                filteredFilmDB.push(found);
+                removeDuplicates(filteredFilmDB);
+                // return found;
+                // filteredFilmDB.push(foundFilm);
+              }
+            });
+          }
         });
         console.log("--- 4 --Film Categories", filmCategories);
         // setFilteredFilmDBIDs((filteredFilmDBIDs) => [
