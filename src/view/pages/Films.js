@@ -19,21 +19,54 @@ function Films() {
   const getSelectedCategories = (e) => {
     setSelectedCategories(e);
   };
-
+  const startUpFilms = (filmData) => {
+    setDefaultFilmDB(filmData);
+  };
   //TODO: build filteredFilmIDs: go through filmDB, search for selectedCategories[i], collect id_film matching selectedCategories
   //TODO: build filteredFilmDB: go through filmDB, search for filteredFilmIDs[j], collect filmDB[k].film
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     console.log("--- 2 --selected Categories: ", selectedCategories);
-    filmDB.forEach((element) => {
-      const checkElement = element.film.categories;
-      const id_film = element.film.id_film;
-      console.log("--- 3 --FilmDB Element id_film ", id_film);
-      selectedCategories.forEach((element) => {
-        console.log("--- each selectedCategory", element);
+    if (selectedCategories) {
+      filmDB.forEach((film) => {
+        const filmCategories = film.film.categories;
+        const filmData = film;
+        // console.log("--- 3 --FilmDB Element filmData ", filmData);
+        filmCategories.forEach((filmCategoryID) => {
+          // if (!filteredFilmDB.indexOf(film) === undefined) {
+          console.log("--- each filmCategory", filmCategoryID);
+          selectedCategories.forEach((categoryID) => {
+            console.log(filmCategoryID.cate.id_cate, categoryID);
+            if (filmCategoryID.cate.id_cate === categoryID) {
+              const found = filmData;
+              console.log("YEAH", found);
+              // const foundFilm = filmData;
+              // return filteredDB(filmData);
+              filteredFilmDB.push(found);
+              removeDuplicates(filteredFilmDB);
+              // return found;
+              // filteredFilmDB.push(foundFilm);
+            }
+          });
+          // }
+        });
+        console.log("--- 4 --Film Categories", filmCategories);
+        // setFilteredFilmDBIDs((filteredFilmDBIDs) => [
+        //   ...filteredFilmDBIDs,
+        //   id_film,
+        // ]);
       });
-      console.log("--- 4 --Film Categories", checkElement);
-    });
+    }
   };
+  const removeDuplicates = (arr) => {
+    arr.filter((item, index) => arr.indexOf(item) === index);
+  };
+
+  useEffect(() => {
+    setFilteredFilmDB([]);
+
+    return () => {};
+  }, [selectedCategories]);
+
   filteredFilmsByCatgory(filmDB, selectedCategories);
   console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
   console.log("--- 7 --filtered DB: ", filteredFilmDB);
