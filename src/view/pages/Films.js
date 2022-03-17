@@ -11,8 +11,8 @@ function Films() {
   const [filteredFilmDB, setFilteredFilmDB] = useState([]);
   const [defaultFilmDB, setDefaultFilmDB] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
-  console.log("-------------");
-  console.log("--- 1 --filmDB: ", filmDB);
+  // console.log("-------------");
+  // console.log("--- 1 --filmDB: ", filmDB);
   // console.log("--- 5 --filteredFilmDBIDList[i]", filteredFilmDBIDList[i]);
   // console.log("--- 6 --filmDB[j].film.id_film", filmDB[j].film.id_film);
   //  console.log("******** MATCH **********", element);
@@ -25,7 +25,7 @@ function Films() {
   //TODO: remove duplicates from Array to player
 
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
-    console.log("--- 2 --selected Categories: ", selectedCategories);
+    // console.log("--- 2 --selected Categories: ", selectedCategories);
     if (selectedCategories) {
       filmDB.forEach((film) => {
         const filmCategories = film.film.categories;
@@ -33,12 +33,12 @@ function Films() {
         // console.log("--- 3 --FilmDB Element filmData ", filmData);
         filmCategories.forEach((filmCategoryID) => {
           if (filteredFilmDB.indexOf(film) === -1) {
-            console.log("--- each filmCategory", filmCategoryID);
+            // console.log("--- each filmCategory", filmCategoryID);
             selectedCategories.forEach((categoryID) => {
               console.log(filmCategoryID.cate.id_cate, categoryID);
               if (filmCategoryID.cate.id_cate === categoryID) {
                 const found = filmData;
-                console.log("YEAH", found);
+                // console.log("YEAH", found);
                 // const foundFilm = filmData;
                 // return filteredDB(filmData);
                 filteredFilmDB.push(found);
@@ -49,7 +49,7 @@ function Films() {
             });
           }
         });
-        console.log("--- 4 --Film Categories", filmCategories);
+        // console.log("--- 4 --Film Categories", filmCategories);
         // setFilteredFilmDBIDs((filteredFilmDBIDs) => [
         //   ...filteredFilmDBIDs,
         //   id_film,
@@ -68,8 +68,8 @@ function Films() {
   }, [selectedCategories]);
 
   filteredFilmsByCatgory(filmDB, selectedCategories);
-  console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
-  console.log("--- 7 --filtered DB: ", filteredFilmDB);
+  // console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
+  // console.log("--- 7 --filtered DB: ", filteredFilmDB);
 
   return (
     <div>
@@ -79,8 +79,8 @@ function Films() {
         setCategoriesDB={setCategoriesDB}
         getSelectedCategories={getSelectedCategories}
       />
-      <p>{JSON.stringify(selectedCategories)}</p>
-      <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p>
+      {/* <p>{JSON.stringify(selectedCategories)}</p> */}
+      {/* <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p> */}
       {/* <p>filtered Film DB List {JSON.stringify(filteredFilmDB)}</p> */}
       <FilmWidget filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} />
     </div>

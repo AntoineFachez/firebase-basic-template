@@ -1,5 +1,12 @@
 import React, { useState, useEffect, createContext } from "react";
-import { collection, getDocs, onSnapshot } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  onSnapshot,
+  doc,
+  query,
+  where,
+} from "firebase/firestore";
 import { db } from "../firebase/firebase-config";
 
 export const FilmContext = createContext();
@@ -24,6 +31,49 @@ export const FilmProvider = (props) => {
   };
   //TODO: refactor: if offline, use local storage
   localStorage.setItem("filmDB", JSON.stringify(filmDB));
+  //FIXME: refactor: limit fetch
+
+  //TODO: refactor local storage if offline
+
+  const getEntireLibrary = async () => {
+    const dataIn = await filmsCollectionRef;
+    // .orderBy("id")
+    // .limit(10)
+    // .get();
+    setFilmDB(dataIn.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  };
+
+  const getSomeRandomThreenEntries = async () => {
+    const dataIn = await filmsCollectionRef;
+    setFilmDB(dataIn.docs.mao((doc) => ({ ...doc.data(), id: doc.id })));
+  };
+  const getSpecificEntry = async () => {
+    const dataIn = await filmsCollectionRef
+      .where("id", "==", "001E3886-32F8-4A2D-97D9-A4E2CC1F1A1B")
+      .get();
+    setFilmDB(dataIn.docs.mao((doc) => ({ ...doc.data(), id: doc.id })));
+    console.log(dataIn);
+  };
+  const getSomeOtherSpecificEntry = async () => {
+    const dataIn = await filmsCollectionRef
+      .doc("00028E8C-CDC7-418F-AA7E-D4DA76FC5D54")
+      .get();
+    // .where("id", "==", "001E3886-32F8-4A2D-97D9-A4E2CC1F1A1B")
+    // .get()
+    // .then((querySnapshot) => {
+    //   querySnapshot.forEach((doc) =>
+    //     doc.update({
+    //       active: false,
+    //     })
+    //   );
+    // });
+    setFilmDB(dataIn.docs.mao((doc) => ({ ...doc.data(), id: doc.id })));
+    console.log(dataIn);
+  };
+  //TODO: refactor: if offline, use local storage
+
+  getEntireLibrary();
+
   // const getFilmDB = JSON.parse(localStorage.getItem("filmDB"));
   useEffect(() => {
     getFilms();
