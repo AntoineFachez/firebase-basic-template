@@ -89,6 +89,7 @@ const FeedList = () => {
       });
     }, 1500);
   };
+
   const openWidget = () => {
     hide
       ? setHide(false) &&
