@@ -1,9 +1,10 @@
 import React from "react";
 // import Accordion from "../accordionPopup/Accordion";
 import "./tile.css";
-function TileMenu({ key, footer, getClipIndex, clipLink }) {
+function TileMenu({ key, id, data, footer, getClipIndex, clipLink }) {
   // const handleClick = () => {};
-  // console.log(clipLink);
+  console.log(key);
+  // console.log(data[key].film.reel[0].prof);
   return (
     <div className="tile-menu">
       {/* <menu> */}
@@ -17,6 +18,10 @@ function TileMenu({ key, footer, getClipIndex, clipLink }) {
 
       <button className="btn-tile-menu">save</button>
       {/* </menu> */}
+      <ul>
+        <li>{data[0].film.reel[0].prof}</li>
+        <li>{data[0].film.reel[0].name}</li>
+      </ul>
     </div>
   );
 }

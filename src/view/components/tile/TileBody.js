@@ -31,7 +31,7 @@ function TileBody({ data, index, lightLoad, clipLink, width, height }) {
       <div className="player-wrapper">
         <Player
           // height={mainPlayerHeight}
-          // height={height}
+          height={height}
           width={width}
           light={false}
           data={data}

@@ -12,6 +12,7 @@ import TileFoot from "./TileFoot";
 import "./tile.css";
 
 const Tile = ({
+  key,
   id,
   width,
   height,
@@ -24,7 +25,7 @@ const Tile = ({
   index,
 }) => {
   // console.log(clipLink);
-  // console.log(head);
+  console.log(key);
   const history = useNavigate();
 
   return (
@@ -35,10 +36,12 @@ const Tile = ({
         {/* <h3>{footer}</h3> */}
         <TileHead head={head} />
         <TileMenu
-          key={id}
+          key={key}
+          id={id}
           getClipIndex={getClipIndex}
           clipLink={clipLink}
           footer={footer}
+          data={data}
         />
         <TileBody
           clipLink={clipLink}

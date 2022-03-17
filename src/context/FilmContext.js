@@ -9,6 +9,8 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase/firebase-config";
 
+//TODO: refactor: if offline, use local storage
+//TODO: build: defaultFilmList
 export const FilmContext = createContext();
 
 export const FilmProvider = (props) => {
@@ -16,7 +18,6 @@ export const FilmProvider = (props) => {
   const filmsCollectionRef = collection(db, "films");
   const [data, setData] = useState([]);
   const [filmDB, setFilmDB] = useState(
-    //TODO: refactor local storage if offline
     JSON.parse(localStorage.getItem("filmDB")) || []
   );
   // console.log(films[1].film.title);
@@ -29,20 +30,20 @@ export const FilmProvider = (props) => {
     const dataIn = await getDocs(filmsCollectionRef);
     setFilmDB(dataIn.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
-  //TODO: refactor: if offline, use local storage
   localStorage.setItem("filmDB", JSON.stringify(filmDB));
-  //FIXME: refactor: limit fetch
 
-  //TODO: refactor local storage if offline
-
-  const getEntireLibrary = async () => {
-    const dataIn = await filmsCollectionRef;
-    // .orderBy("id")
-    // .limit(10)
-    // .get();
-    setFilmDB(dataIn.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  const defaultFilmList = () => {
+    filmDB.slice(0, 9).map((film, index) => "");
   };
 
+  // const getEntireLibrary = async () => {
+  //   const dataIn = await filmsCollectionRef;
+  //   // .orderBy("id")
+  //   // .limit(10)
+  //   // .get();
+  //   setFilmDB(dataIn.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  // };
+  //FIXME: non of these work. the only get that works, is the getEntireLibrary
   const getSomeRandomThreenEntries = async () => {
     const dataIn = await filmsCollectionRef;
     setFilmDB(dataIn.docs.mao((doc) => ({ ...doc.data(), id: doc.id })));
@@ -72,10 +73,10 @@ export const FilmProvider = (props) => {
   };
   //TODO: refactor: if offline, use local storage
 
-  getEntireLibrary();
-
   // const getFilmDB = JSON.parse(localStorage.getItem("filmDB"));
   useEffect(() => {
+    // getEntireLibrary();
+    // defaultFilmList();
     getFilms();
   }, []);
 

@@ -42,39 +42,6 @@ export const VimeoProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [redirectURL, setRedirectURL] = useState(SERVER_REDIRECT_URL);
 
-  // useEffect(() => {
-  //   if (user) {
-  //     const handleLogIn = () => {
-  //       window.location = `${AUTH_URL}?response_type=token&client_id=${CLIENT_ID}&redirect_uri=${redirectURL}&state=${STATE}&scope=${SCOPES}`;
-  //     };
-  //   }
-  // }, [user]);
-
-  // useEffect(() => {
-  //   chooseHost();
-  // }, [redirectURL]);
-  function selectCategory(id, category) {
-    console.log(id);
-    const elementID = id;
-    const elementName = category;
-    if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
-      setError("prevent redundancy");
-
-      var filteredArray = filmCategories.filter(
-        (ele) => ele.trim() !== elementID.trim()
-      );
-
-      setFilmCategories(filteredArray);
-      setSearchTerm("");
-      setError(null);
-    } else {
-      setFilmCategories((filmCategories) => [
-        ...filmCategories,
-        elementID + " ",
-      ]);
-    }
-  }
-
   return (
     <VimeoContext.Provider
       value={[

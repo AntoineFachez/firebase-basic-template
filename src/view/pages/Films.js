@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import CategoryWidget from "../components/category/CategoryWidget";
-import FilmWidget from "../components/film/FilmLibrary";
+import FilmLibrary from "../components/film/FilmLibrary";
 import { FilmContext } from "../../context/FilmContext";
 import { CategoryContext } from "../../context/CategoryContext";
+import Carousel from "../components/carousel/Carousel";
 
 function Films() {
   const [filmDB, setFilmDB] = useContext(FilmContext);
@@ -11,6 +12,9 @@ function Films() {
   const [filteredFilmDB, setFilteredFilmDB] = useState([]);
   const [defaultFilmDB, setDefaultFilmDB] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
+  const [index, setIndex] = useState(0);
+
+  const [playing, setPlaying] = useState();
   // console.log("-------------");
   // console.log("--- 1 --filmDB: ", filmDB);
   // console.log("--- 5 --filteredFilmDBIDList[i]", filteredFilmDBIDList[i]);
@@ -35,7 +39,7 @@ function Films() {
           if (filteredFilmDB.indexOf(film) === -1) {
             // console.log("--- each filmCategory", filmCategoryID);
             selectedCategories.forEach((categoryID) => {
-              console.log(filmCategoryID.cate.id_cate, categoryID);
+              // console.log(filmCategoryID.cate.id_cate, categoryID);
               if (filmCategoryID.cate.id_cate === categoryID) {
                 const found = filmData;
                 // console.log("YEAH", found);
@@ -70,10 +74,26 @@ function Films() {
   filteredFilmsByCatgory(filmDB, selectedCategories);
   // console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
   // console.log("--- 7 --filtered DB: ", filteredFilmDB);
-
+  const loadClipIntoPlayer = (e, index) => {
+    e.preventDefault();
+    setIndex(index);
+    setPlaying(true);
+    setTimeout(() => {
+      window.scrollTo({
+        top: 350,
+        behavior: "smooth",
+      });
+    }, 1500);
+  };
   return (
     <div>
       <h1>FilmLibrary</h1>
+      <div className="carousel">
+        <Carousel
+          data={filteredFilmDB.data}
+          loadClipIntoPlayer={loadClipIntoPlayer}
+        />
+      </div>
       <CategoryWidget
         categoriesDB={categoriesDB}
         setCategoriesDB={setCategoriesDB}
@@ -82,7 +102,7 @@ function Films() {
       {/* <p>{JSON.stringify(selectedCategories)}</p> */}
       {/* <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p> */}
       {/* <p>filtered Film DB List {JSON.stringify(filteredFilmDB)}</p> */}
-      <FilmWidget filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} />
+      <FilmLibrary filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} />
     </div>
   );
 }

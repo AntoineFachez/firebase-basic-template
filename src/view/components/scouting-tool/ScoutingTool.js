@@ -5,7 +5,7 @@ import CategoryWidget from "../../components/category/CategoryWidget";
 import MainPlayer from "../../components/main-player/MainPlayer";
 
 import "./scouting-tool.css";
-import "../../../index.css";
+// import "../../../index.css";
 
 const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
 
@@ -92,9 +92,13 @@ const FeedList = () => {
   const openWidget = () => {
     hide
       ? setHide(false) &&
-        document.querySelector(".category-widet").classlist.add(".small-widge")
+        document
+          .querySelector(".category-widget")
+          .classlist.add(".small-widget")
       : setHide(true) &&
-        document.querySelector(".smal-widget").classlist.add(".category-wid");
+        document
+          .querySelector(".small-widget")
+          .classlist.add(".category-widget");
     // openCategoryWidget ? setWidth("15vw") : setWidth("20vw");
   };
   const selectCategory = (selectedElementID, cateName) => {

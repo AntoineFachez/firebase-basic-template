@@ -1,21 +1,22 @@
 /* @import "../../../P00l.css"; */
 :root {
   --width-stand-tile: 30vw;
-  /* --height-stand-tile: 10vh; */
+  --height-stand-tile: 8vh;
   --width-focus-stand-tile: 13rem;
   --develop: #f04df0;
 }
 .article {
-  /* margin-top: 0.5vw;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  margin-bottom: 0.5vw; */
+  /* margin: 1rem 1rem 1rem 1rem; */
   /* width: var(--width-stand-tile); */
   /* height: var(--height-stand-tile); */
+
   /* width: 10vw; */
 }
 .article > * {
   list-style-type: none;
+  width: var(--width-stand-tile);
+  background-color: black;
+  height: 40%;
 }
 .gradient {
   z-index: var(--z-index-object-overlay);
@@ -26,14 +27,7 @@
 
 .tile:nth-child(-n + 3) > .iframe {
 }
-.tile {
-  /* position: relative; */
-  /* margin: 2rem; */
-  width: var(--width-stand-tile);
-  background-color: black;
-  /* width: var(--width-stand-tile); */
-  /* height: 18vw; */
-}
+
 .tile-head {
   box-shadow: -10px -10px -10px rgba(189, 188, 188, 0.5),
     0 0 10px rgba(182, 177, 177, 0.5) inset;
@@ -60,18 +54,18 @@
 }
 
 .tile-menu {
-  position: absolute;
+  /* position: absolute; */
 
   /* top: 50%; */
   /* left: 50%; */
-  transform: translate(-50%, -20%);
+  /* transform: translate(-50%, -20%); */
 
   /* top: -100; */
   z-index: var(--z-index-object-menu);
   display: flex;
   flex-direction: column;
   border-radius: 0rem 0rem 0rem var(--tile-border-radius);
-  visibility: hidden;
+  /* visibility: hidden; */
   /* border-style: hidden; */
 }
 .tile-menu > * {

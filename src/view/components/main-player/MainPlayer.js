@@ -16,7 +16,7 @@ function MainPlayer({
   loadClipIntoPlayer,
 }) {
   // console.log(data[index].clip.link);
-  // console.log(data);
+  console.log(data);
   const mainPlayerWidth = "20vw";
   // const cateWidgetWidth = "20vw";
   const [targetClip, setTargetClip] = useState("");
@@ -43,7 +43,7 @@ function MainPlayer({
 
   return (
     <div className="main-player-container">
-      {/* <CategoryWidget /> */}
+      <li>{}</li>
       <div className="player-wrapper">
         <Player
           width={width}

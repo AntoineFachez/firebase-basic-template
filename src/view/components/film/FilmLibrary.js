@@ -1,10 +1,16 @@
+//
+//
+//
+//Clones Tutorial
+//https://www.youtube.com/watch?v=6qf3_KAAVQA&list=PLvW9K-r9avwr-bXLAEbiHN_V9UbpZfcfc&index=201
+
 import React, { useState, useContext, useEffect } from "react";
 // import filmDetails from "./UniversitiyDetails";
 import { FilmContext } from "../../../context/FilmContext";
 import Tile from "../tile/Tile";
 import { Link, useNavigate } from "react-router-dom";
 import * as ROUTES from "../../../constants/routes";
-import "../components.css";
+import "./film-library.css";
 
 const FilmLibrary = ({ filteredFilmDB }) => {
   // useEffect(() => {
@@ -16,13 +22,99 @@ const FilmLibrary = ({ filteredFilmDB }) => {
   const [error, setError] = useState(null);
   // const [id, setid] = useState();
   const data = filteredFilmDB;
+
   const history = useNavigate();
   const tileWidth = "30vw";
+  const tileHeight = "30vw";
+
+  //FIXME:endless Scroll
+  // const setUpEndlessScroll = () => {
+  let filmGrid = document.querySelector(".film-library-container");
+  let tileInGrid = document.querySelector(".tileInGrid");
+  let clones = [];
+  let disableScroll = 0;
+  let scrollHeight = 0;
+  let scrollpos = 0;
+  let clonesHeight = 0;
+
+  function getScrollPos() {
+    return filmGrid.scrollTop;
+  }
+  function setScrolPos(pos) {
+    filmGrid.scrolTopPos = pos;
+  }
+  function getClonesHeight() {
+    clonesHeight = 0;
+
+    clones.forEach((clone) => {
+      clonesHeight += clones.offSetHeight;
+    });
+    return clonesHeight;
+  }
+  function reCalc() {
+    scrollpos = getScrollPos();
+    scrollHeight = filmGrid.scrollHeight;
+    clonesHeight = getClonesHeight();
+
+    if (scrollpos <= 0) {
+      setScrolPos(1);
+    }
+  }
+  function scrollUpDate() {
+    if (!disableScroll) {
+      scrollpos = getScrollPos();
+      if (clonesHeight + scrollpos >= scrollHeight) {
+        setScrolPos(1);
+        disableScroll = true;
+      } else if (scrollpos <= 0) {
+        setScrolPos(scrollHeight - clonesHeight);
+        disableScroll = true;
+      }
+    }
+    if (disableScroll) {
+      window.setTimeout(() => {
+        disableScroll = false;
+      }, 40);
+    }
+  }
+  function onLoad() {
+    tileInGrid.forEach((tileInGrid) => {
+      const clone = tileInGrid.cloneNode(true);
+      filmGrid.appendChild(clone);
+      clone.classList.add("js-clone");
+    });
+    clones = filmGrid.querySelectorAll("js-clone");
+    reCalc();
+
+    filmGrid.addEventListener(
+      "scroll",
+      () => {
+        window.requestAnimationFrame(scrollUpDate);
+      },
+      false
+    );
+    window.addEventListener(
+      "resize",
+      () => {
+        window.requestAnimationFrame(reCalc);
+      },
+      false
+    );
+  }
+  // };
+  // window.onload = onLoad();
+  //FIXME:endless Scroll
+
+  useEffect(() => {
+    // setUpEndlessScroll();
+
+    return () => {};
+  }, []);
 
   const searchCategory = (searchTerm) => {
     console.log(searchTerm);
     if (searchTerm) {
-      function multiplyAll(arr) {
+      function buildList(arr) {
         let element;
         let result = [];
         let includesSearchTerm = [];
@@ -52,41 +144,15 @@ const FilmLibrary = ({ filteredFilmDB }) => {
         // console.log(includesSearchTerm);
         return includesSearchTerm;
       }
-      multiplyAll([filteredFilmDB]);
+      buildList([filteredFilmDB]);
     }
-    // multiplyAll([films]);
-
-    // console.log(films[0].film.filmXcate[0].cate[0].cateName);
-    // console.log(films[0].film.filmXcate[0]);
-    // let filmArray = films.film;
-    // let amountFilms = films.length;
-    // for (let i = 0; i < amountFilms; i++) {
-    //   let amountFilmXCate = filmArray[i];
-    //   console.log(amountFilmXCate);
-    // }
-    // useEffect(() => {
-
-    // }, []);
-    // for (let i = 0; i < films.length; i++) {
-    //   let filmsArray = films[i].length;
-    //   console.log(i, filmsArray);
-    //   for (let j = 0; j < filmsArray; j++) {
-    //     console.log(filmsArray[i][j].filmXcate[0].cate[0].cateName);
-    //   }
-    //   const filmCate = films[i].film;
-    // }
-
-    // const elementName = category;
     if (JSON.stringify(filteredFilmDB) !== -1) {
       setError("prevent redundancy");
 
       var filteredArray = FilteredFilmList.filter(
         (ele) => ele.trim() !== searchTerm.trim()
       );
-      // console.log(element);
-      // console.log(FilteredFilmList[0]);
-      // console.log(filteredArray);
-      // console.log(element);
+
       setFilteredFilmList(filteredArray);
       // setSearchTerm(searchTerm);
       setError(null);
@@ -123,7 +189,7 @@ const FilmLibrary = ({ filteredFilmDB }) => {
             /* console.log(films[index].film.link); */
 
             return (
-              <div className="tile" key={index}>
+              <div className="tileInGrid" key={index}>
                 {/* <div className="tile" key={films.film.id}> */}
                 {/* <Link
                   to={`/films/${id}`}
@@ -131,14 +197,16 @@ const FilmLibrary = ({ filteredFilmDB }) => {
                 /> */}
 
                 <Tile
+                  key={index}
                   id={film.id_film}
                   head={film.film.title}
                   clipLink={film.film.link}
                   // latLng={film.film.latLng}
                   // clipLink={"https://vimeo.com/532350645"}
                   width={tileWidth}
+                  height={tileHeight}
                   data={data}
-                  index={index}
+                  // index={key}
                 />
               </div>
             );

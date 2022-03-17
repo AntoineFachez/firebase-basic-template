@@ -1,0 +1,27 @@
+.film-library-container {
+  /* display: flex; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  /* width: 80vw; */
+  overflow: scroll;
+  will-change: transform;
+  /* background-color: aqua; */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tileInGrid {
+  margin: 2rem 2rem 2rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin-bottom: 3rem; */
+  height: 40%;
+  /* height: 15rem; */
+}
