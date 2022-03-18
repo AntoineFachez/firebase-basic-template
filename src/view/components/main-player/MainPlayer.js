@@ -6,7 +6,7 @@ import "./main-player.css";
 function MainPlayer({
   load,
   loaded,
-  data,
+  feed,
   index,
   clipLink,
   controls,
@@ -15,8 +15,8 @@ function MainPlayer({
   pause,
   loadClipIntoPlayer,
 }) {
-  // console.log(data[index].clip.link);
-  console.log(data);
+  // console.log(feed[index].clip.link);
+  console.log(feed);
   const mainPlayerWidth = "20vw";
   // const cateWidgetWidth = "20vw";
   const [targetClip, setTargetClip] = useState("");
@@ -47,7 +47,7 @@ function MainPlayer({
       <div className="player-wrapper">
         <Player
           width={width}
-          data={data}
+          feed={feed}
           index={index}
           // height={mainPlayerHeight}
           // height={height}
@@ -56,7 +56,7 @@ function MainPlayer({
           controls={controls}
           playing={playing}
           volume={0.0}
-          clipLink={data[index].clip.link}
+          clipLink={feed[index].clip.link}
         />
       </div>
       {playing ? (

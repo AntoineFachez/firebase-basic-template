@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./carousel.css";
 
 function Carousel({ data, loadClipIntoPlayer }) {
-  // console.log(data);
+  console.log(data);
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState();
   const [controls, setControls] = useState(false);

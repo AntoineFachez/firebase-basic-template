@@ -13,7 +13,9 @@ const FeedList = () => {
   const loader = document.querySelector("#loading");
   const [token, setToken] = useState("");
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState([]);
+  const [feed, setFeed] = useState(
+    JSON.parse(localStorage.getItem("feed")) || []
+  );
   const [loaded, setLoaded] = useState(false);
   const [uiMainPlayerClipId, setUiMainPlayerClipId] = useState(null);
 
@@ -36,7 +38,7 @@ const FeedList = () => {
     if (localStorage.getItem("accessToken")) {
       setToken(localStorage.getItem("accessToken"));
     } else {
-      setData("");
+      setFeed("");
     }
   };
 
@@ -54,7 +56,7 @@ const FeedList = () => {
         },
       })
       .then((res) => {
-        setData(res.data);
+        setFeed(res.data);
         setLoading(false);
         setLoaded(true);
         localStorage.setItem("feed", JSON.stringify(res.data));
@@ -71,7 +73,12 @@ const FeedList = () => {
 
   useEffect(() => {
     setHide(true);
-    handleGetFeed();
+    if (!localStorage.getItem("feed")) {
+      handleGetFeed();
+    } else {
+      //TODO: make dependent on last pull from Vimeo. Otherwise the localStorage stays the same.SetTimeOut 15 Minutes or so. Or trigger API @Vimeo as soon as a new video appears in feed…
+      localStorage.getItem("feed");
+    }
   }, [token]);
 
   const getClipIndex = (clipLink) => {
@@ -141,7 +148,7 @@ const FeedList = () => {
     <div className="scout-container">
       {/* //TODO: pull out LOADING and into NavBar next to Vimeo or around the VimeoLogo */}
       <div className="loader">
-        {data.data || loading ? (
+        {feed.data || loading ? (
           ""
         ) : (
           <button className="btn-get-feed" onClick={handleGetFeed}>
@@ -158,12 +165,12 @@ const FeedList = () => {
         getClipIndex={getClipIndex}
         lightLoad={lightLoad}
       /> */}
-      {data.data ? (
+      {feed.data ? (
         <>
           <section className="high">
             <div className="carousel">
               <Carousel
-                data={data.data}
+                data={feed.data}
                 loadClipIntoPlayer={loadClipIntoPlayer}
               />
             </div>
@@ -182,7 +189,7 @@ const FeedList = () => {
                 //   load={load}
                 playing={playing}
                 // play={play}
-                data={data.data}
+                feed={feed.data}
                 index={index}
                 light={false}
                 controls={controls}

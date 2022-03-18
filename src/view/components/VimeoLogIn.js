@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { VimeoContext } from "../../context/VimeoContext";
 import vimeoLogoLoggedIn from "../../images/vimeologgedIn.png";
 import vimeoLogoLoggedOut from "../../images/vimeologgedOut.png";
+
 export const VimeoLogIn = () => {
   //TODO: refactor to a Context API
   //   const {

@@ -16,7 +16,8 @@ const CategoryTable = ({
 }) => {
   // console.log(hide);
   // const [filmDB, setfilmDB] = useContext(ScoutingContext);
-  const [categories, setCategories] = useContext(CategoryContext);
+  const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
+  // console.log(categoriesDB);
   const { categoryAction } = useContext(CategoryContext);
   const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
   const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
@@ -104,7 +105,7 @@ const CategoryTable = ({
               }}
             />
             <CategoryMajLibrary
-              categories={categories}
+              categories={categoriesDB}
               searchTerm={searchTerm}
               id={id}
               filterCateByCateMaj={filterCateByCateMaj}
@@ -112,7 +113,7 @@ const CategoryTable = ({
             />
             {searchTerm ? (
               <CategoryLibrary
-                categories={categories}
+                categories={categoriesDB}
                 selectCategory={selectCategory}
                 setSelectedid_cate={setSelectedid_cate}
                 searchTerm={searchTerm}

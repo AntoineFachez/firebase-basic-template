@@ -11,7 +11,10 @@ import {
   connectAuthEmulator,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+// import { getAnalytics, logEvent } from "firebase/analytics";
 
+// const analytics = getAnalytics();
+// logEvent(analytics, "notification_received");
 //Mit diesem Object verbinden wir die App mit dem Firebase Backend
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,

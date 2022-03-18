@@ -5,6 +5,7 @@ import { FilmContext } from "../../context/FilmContext";
 import { CategoryContext } from "../../context/CategoryContext";
 import Carousel from "../components/carousel/Carousel";
 
+//TODO: create defaultFilmList to load
 function Films() {
   const [filmDB, setFilmDB] = useContext(FilmContext);
   const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
@@ -26,7 +27,6 @@ function Films() {
   const startUpFilms = (filmData) => {
     setDefaultFilmDB(filmData);
   };
-  //TODO: remove duplicates from Array to player
 
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     // console.log("--- 2 --selected Categories: ", selectedCategories);
@@ -74,6 +74,7 @@ function Films() {
   filteredFilmsByCatgory(filmDB, selectedCategories);
   // console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
   // console.log("--- 7 --filtered DB: ", filteredFilmDB);
+
   const loadClipIntoPlayer = (e, index) => {
     e.preventDefault();
     setIndex(index);
@@ -85,8 +86,9 @@ function Films() {
       });
     }, 1500);
   };
+
   return (
-    <div>
+    <div className="">
       <h1>FilmLibrary</h1>
       <div className="carousel">
         <Carousel

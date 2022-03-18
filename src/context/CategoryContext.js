@@ -6,20 +6,27 @@ import { categoryAction, categoryAction2 } from "../actions/CategoryActions";
 export const CategoryContext = createContext();
 
 export const CategoryProvider = (props) => {
-  // const [categories, setcategories] = useState([
   const categoriesCollectionRef = collection(db, "categories");
-  const [categoriesDB, setCategoriesDB] = useState([]);
+  const [categoriesDB, setCategoriesDB] = useState(
+    JSON.parse(localStorage.getItem("categoriesDB")) || []
+  );
   const [alert, setAlert] = useState({
     open: false,
     message: "",
     type: "success",
   });
   // console.log(categories);
-  useEffect(() => {
-    const getcategories = async () => {
+  const getcategories = async () => {
+    if (!localStorage.getItem("categoriesDB")) {
       const data = await getDocs(categoriesCollectionRef);
       setCategoriesDB(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
+      console.log(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    } else {
+      localStorage.getItem("categoriesDB");
+    }
+  };
+  localStorage.setItem("categoriesDB", JSON.stringify(categoriesDB));
+  useEffect(() => {
     getcategories();
   }, []);
 
