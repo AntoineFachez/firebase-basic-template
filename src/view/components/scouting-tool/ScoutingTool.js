@@ -64,11 +64,6 @@ const FeedList = () => {
       .catch((err) => {
         console.log(err);
       });
-
-    //TODO: refactor to if offline
-    //else {
-    //   localStorage.getItem("feed");
-    // }
   };
 
   useEffect(() => {

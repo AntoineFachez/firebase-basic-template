@@ -6,7 +6,7 @@ import { UserAuthContext } from "../../../../context/AuthContext";
 import { ClickAwayListener } from "@mui/base";
 
 const SignUpLogIn = () => {
-  const [openSignInLogInOut, setOpenSignInLogInOut] = useState(false);
+  const [openSignInLogInOut, setOpenSignInLogInOut] = useState(true);
   const logInRef = useRef();
   const [loggedIn, setLoggedIn] = useState("");
   const [uiSignUp, setUiSignUp] = useState(true);

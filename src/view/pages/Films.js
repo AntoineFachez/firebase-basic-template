@@ -14,7 +14,8 @@ function Films() {
   const [defaultFilmDB, setDefaultFilmDB] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [index, setIndex] = useState(0);
-
+  // console.log(filmDB);
+  // console.log(filteredFilmDB);
   const [playing, setPlaying] = useState();
   // console.log("-------------");
   // console.log("--- 1 --filmDB: ", filmDB);
@@ -24,12 +25,17 @@ function Films() {
   const getSelectedCategories = (e) => {
     setSelectedCategories(e);
   };
-  const startUpFilms = (filmData) => {
-    setDefaultFilmDB(filmData);
+
+  const defaultFilmList = () => {
+    setFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
+    console.log(filmDB);
   };
+
+  useEffect(() => {}, [selectedCategories]);
 
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     // console.log("--- 2 --selected Categories: ", selectedCategories);
+    // if (!filteredFilmDB) {
     if (selectedCategories) {
       filmDB.forEach((film) => {
         const filmCategories = film.film.categories;
@@ -42,22 +48,12 @@ function Films() {
               // console.log(filmCategoryID.cate.id_cate, categoryID);
               if (filmCategoryID.cate.id_cate === categoryID) {
                 const found = filmData;
-                // console.log("YEAH", found);
-                // const foundFilm = filmData;
-                // return filteredDB(filmData);
                 filteredFilmDB.push(found);
                 removeDuplicates(filteredFilmDB);
-                // return found;
-                // filteredFilmDB.push(foundFilm);
               }
             });
           }
         });
-        // console.log("--- 4 --Film Categories", filmCategories);
-        // setFilteredFilmDBIDs((filteredFilmDBIDs) => [
-        //   ...filteredFilmDBIDs,
-        //   id_film,
-        // ]);
       });
     }
   };
@@ -66,6 +62,9 @@ function Films() {
   };
 
   useEffect(() => {
+    if (!selectedCategories) {
+      defaultFilmList();
+    }
     setFilteredFilmDB([]);
 
     return () => {};

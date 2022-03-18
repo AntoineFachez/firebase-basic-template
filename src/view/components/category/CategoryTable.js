@@ -104,13 +104,17 @@ const CategoryTable = ({
                 setSearchTerm(e.target.value);
               }}
             />
-            <CategoryMajLibrary
-              categories={categoriesDB}
-              searchTerm={searchTerm}
-              id={id}
-              filterCateByCateMaj={filterCateByCateMaj}
-              clearCategories={clearCategories}
-            />
+            {searchTerm ? (
+              ""
+            ) : (
+              <CategoryMajLibrary
+                categories={categoriesDB}
+                searchTerm={searchTerm}
+                id={id}
+                filterCateByCateMaj={filterCateByCateMaj}
+                clearCategories={clearCategories}
+              />
+            )}
             {searchTerm ? (
               <CategoryLibrary
                 categories={categoriesDB}

@@ -51,10 +51,6 @@ export const FilmProvider = (props) => {
     }
   };
 
-  const defaultFilmList = () => {
-    filmDB.slice(0, 9).map((film, index) => "");
-  };
-
   // const getNextFilmBatch = async () => {
   //   const filmsCollectionRef = query(
   //     collection(db, "cities"),
@@ -142,7 +138,7 @@ export const FilmProvider = (props) => {
   useEffect(() => {
     // getEntireLibrary();
     getFilms();
-    getNextFilmBatch();
+    // getNextFilmBatch();
     // defaultFilmList();
     // getSpecificEntry();
   }, []);
