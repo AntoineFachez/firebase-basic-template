@@ -12,6 +12,8 @@ const CategoryTable = ({
   // filterCateByCateMaj,
   clearCategories,
   getSelectedCategories,
+  selectedFilmCategoriesNames,
+  setSelectedFilmCategoriesNames,
   // selectCategory,
 }) => {
   // console.log(hide);
@@ -20,8 +22,7 @@ const CategoryTable = ({
   // console.log(categoriesDB);
   const { categoryAction } = useContext(CategoryContext);
   const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
-  const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
-    useState([]);
+
   // const [selectedElementID, setSelectedElementID] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedid_cate, setSelectedid_cate] = useState();
@@ -34,6 +35,10 @@ const CategoryTable = ({
   const filterCateByCateMaj = (e) => {
     const cateMaj = e.trim();
     setSearchTerm(cateMaj);
+  };
+  const clearInput = () => {
+    document.getElementById("searchCateInput").value = "";
+    setSearchTerm("");
   };
 
   const selectCategory = (selectedElementID, cateName) => {
@@ -50,6 +55,9 @@ const CategoryTable = ({
       var filteredArrayNames = selectedFilmCategoriesNames.filter(
         (ele) => ele.trim() !== cateName.trim()
       );
+      document
+        .getElementById(selectedElementID)
+        .classList.remove("element-highlighted");
       getSelectedCategories(filteredArrayID);
       setSelectedFilmCategoriesID(filteredArrayID);
       setSelectedFilmCategoriesNames(filteredArrayNames);
@@ -80,11 +88,21 @@ const CategoryTable = ({
     console.log(selectedFilmCategoriesID.includes(selectedid_cate));
   }
   // ;
+  const removeCatefromSelectedCateList = (e, selectedFilmCategoriesID) => {
+    // e.preventDefault();
 
+    for (var i = 0; i < selectedFilmCategoriesID.length; i++) {
+      if (selectedFilmCategoriesID[i] === e) {
+        selectedFilmCategoriesID.splice(i, 1);
+      }
+    }
+    console.log("clicked");
+  };
   return (
     <div className="category-table">
+      {/* {categoryAction} */}
+
       {/* <p className="dev-note">hello from categoriesProvider</p> */}
-      {categoryAction}
       {hide ? (
         ""
       ) : (
@@ -95,7 +113,19 @@ const CategoryTable = ({
         </div>{" "} */}
           {error}
           <div className="">
+            <li
+              onClick={clearInput}
+              // onClick={(e) =>
+              //   removeCatefromSelectedCateList(
+              //     selectedFilmCategoriesID,
+              //     e.target.value
+              //   )
+              // }
+            >
+              {searchTerm}
+            </li>
             <input
+              id="searchCateInput"
               className="input"
               type="text"
               placeholder="search"

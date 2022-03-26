@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import "./auth.css";
 import Signup from "./SignUp";
 import LogIn from "./LogIn";
 import { UserAuthContext } from "../../../../context/AuthContext";
 import { ClickAwayListener } from "@mui/base";
+import "./auth.css";
 
 const SignUpLogIn = () => {
   const [openSignInLogInOut, setOpenSignInLogInOut] = useState(true);

@@ -16,6 +16,9 @@
 .open-signUp-widget {
 }
 .signUp-logIn {
+  z-index: 99;
+  position: absolute;
+  right: 0;
   background-color: #4e554e;
   z-index: 99;
   border: solid 1px rgb(253, 253, 253);

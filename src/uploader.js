@@ -20,14 +20,14 @@ fs.readdir(directoryPath, function (err, files) {
     var lastDotIndex = file.lastIndexOf(".");
 
     var menu = require("./files/" + file);
-
     menu.forEach(function (obj) {
+      // console.log(obj.pers.id_pers);
       firestore
         .collection(file.substring(0, lastDotIndex))
-        .doc(obj.film.id_film)
+        .doc(obj.pers.id_pers)
         .set(obj)
         .then(function (docRef) {
-          console.log("Document written");
+          console.log("Document written", obj.pers.id_pers);
         })
         .catch(function (error) {
           console.error("Error adding document: ", error);

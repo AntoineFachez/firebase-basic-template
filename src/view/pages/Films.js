@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import CategoryWidget from "../components/category/CategoryWidget";
-import FilmLibrary from "../components/film/FilmLibrary";
+import FilmLibrary from "../components/film-library/FilmLibrary";
 import { FilmContext } from "../../context/FilmContext";
 import { CategoryContext } from "../../context/CategoryContext";
 import Carousel from "../components/carousel/Carousel";
+import MainPlayer from "../components/main-player/MainPlayer";
+import ScoutingTool from "../components/scouting-tool/ScoutingTool";
 
 //TODO: create defaultFilmList to load
 function Films() {
@@ -14,6 +16,11 @@ function Films() {
   const [defaultFilmDB, setDefaultFilmDB] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [index, setIndex] = useState(0);
+  const [hide, setHide] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [feed, setFeed] = useState(
+    JSON.parse(localStorage.getItem("feed")) || []
+  );
   // console.log(filmDB);
   // console.log(filteredFilmDB);
   const [playing, setPlaying] = useState();
@@ -33,6 +40,18 @@ function Films() {
 
   useEffect(() => {}, [selectedCategories]);
 
+  const openWidget = () => {
+    hide
+      ? setHide(false) &&
+        document
+          .querySelector(".category-widget")
+          .classlist.add(".small-widget")
+      : setHide(true) &&
+        document
+          .querySelector(".small-widget")
+          .classlist.add(".category-widget");
+    // openCategoryWidget ? setWidth("15vw") : setWidth("20vw");
+  };
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     // console.log("--- 2 --selected Categories: ", selectedCategories);
     // if (!filteredFilmDB) {
@@ -72,7 +91,7 @@ function Films() {
 
   filteredFilmsByCatgory(filmDB, selectedCategories);
   // console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
-  // console.log("--- 7 --filtered DB: ", filteredFilmDB);
+  console.log("--- 7 --filtered DB: ", filteredFilmDB);
 
   const loadClipIntoPlayer = (e, index) => {
     e.preventDefault();
@@ -85,25 +104,51 @@ function Films() {
       });
     }, 1500);
   };
-
+  const getThumbnail = () => {
+    filteredFilmDB.forEach();
+  };
+  localStorage.setItem("filteredDB", JSON.stringify(filteredFilmDB));
   return (
     <div className="">
       <h1>FilmLibrary</h1>
       <div className="carousel">
-        <Carousel
-          data={filteredFilmDB.data}
+        <ScoutingTool loading={loading} setLoading={setLoading} />
+        {/* <Carousel
+          filteredFilmDB={filteredFilmDB}
+          // data={feed.data}
           loadClipIntoPlayer={loadClipIntoPlayer}
-        />
+        /> */}
       </div>
+      {/* <MainPlayer
+        // clipLink={uiMainPlayerClipId}
+        //   load={load}
+        playing={playing}
+        // play={play}
+        filteredFilmDB={filteredFilmDB}
+        index={index}
+        light={false}
+        // controls={controls}
+        //   loaded={loaded}
+      /> */}
+      {/* <button
+        className="btn"
+        onClick={() => {
+          openWidget();
+        }}
+      >
+        X
+      </button>
       <CategoryWidget
         categoriesDB={categoriesDB}
         setCategoriesDB={setCategoriesDB}
         getSelectedCategories={getSelectedCategories}
-      />
+        hide={hide}
+        openWidget={openWidget}
+      /> */}
       {/* <p>{JSON.stringify(selectedCategories)}</p> */}
       {/* <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p> */}
       {/* <p>filtered Film DB List {JSON.stringify(filteredFilmDB)}</p> */}
-      <FilmLibrary filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} />
+      {/* <FilmLibrary filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} /> */}
     </div>
   );
 }

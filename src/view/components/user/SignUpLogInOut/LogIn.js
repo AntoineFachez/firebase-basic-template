@@ -38,6 +38,7 @@ export default function LogIn() {
       // console.log(loggedIn);
       setErrorLogin("");
       setUser(loginEmail);
+      localStorage.setItem("userLoggedInMail", loginEmail);
       Redirect();
       // navigate.push("/profil");
       // return <Navigate to="/profil" />;

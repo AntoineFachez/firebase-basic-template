@@ -1,28 +1,33 @@
 import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
-import Carousel from "../../components/carousel/Carousel";
-import CategoryWidget from "../../components/category/CategoryWidget";
-import MainPlayer from "../../components/main-player/MainPlayer";
+import Carousel from "../carousel/Carousel";
+import CategoryWidget from "../category/CategoryWidget";
+import MainPlayer from "../main-player/MainPlayer";
+import ParticlesCircle from "../../sketches/ParticlesCircle";
+import { CategoryContext } from "../../../context/CategoryContext";
+import { FilmContext } from "../../../context/FilmContext";
 
 import "./scouting-tool.css";
+import FilmLibrary from "../film-library/FilmLibrary";
 // import "../../../index.css";
 
 const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
-
-const FeedList = () => {
+const FeedList = ({ loading, setLoading }) => {
+  const [filmDB, setFilmDB] = useContext(FilmContext);
   const loader = document.querySelector("#loading");
   const [token, setToken] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
   const [feed, setFeed] = useState(
     JSON.parse(localStorage.getItem("feed")) || []
   );
   const [loaded, setLoaded] = useState(false);
   const [uiMainPlayerClipId, setUiMainPlayerClipId] = useState(null);
-
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [filteredFilmDB, setFilteredFilmDB] = useState([]);
   const [index, setIndex] = useState(0);
+  const [playing, setPlaying] = useState();
   const [light, setLight] = useState(true);
   const [controls, setControls] = useState(false);
-  const [playing, setPlaying] = useState();
   const [hide, setHide] = useState(true);
   const [selectedFilmCategoriesID, setSelectedFilmCategoriesID] = useState([]);
   const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
@@ -33,6 +38,8 @@ const FeedList = () => {
   const tileHeight = "7vh";
   const mainPlayerWidth = "200%";
   const lightLoad = true;
+  const [filmCategories, setFilmCategories] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const loadVimeo = () => {
     if (localStorage.getItem("accessToken")) {
@@ -41,6 +48,8 @@ const FeedList = () => {
       setFeed("");
     }
   };
+  const VIMEO_THUMBNAIL_ENDPOINT =
+    "https://api.vimeo.com/videos/{video_id}/pictures";
 
   const handleGetFeed = async () => {
     setLoading(true);
@@ -139,18 +148,80 @@ const FeedList = () => {
     }
   };
 
+  const getSelectedCategories = (e) => {
+    setSelectedCategories(e);
+  };
+  const defaultFilmList = () => {
+    setFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
+    console.log(filmDB);
+  };
+  useEffect(() => {
+    if (!selectedCategories) {
+      defaultFilmList();
+    }
+    setFilteredFilmDB([]);
+
+    return () => {};
+  }, [selectedCategories]);
+
+  function clearCategories() {
+    setFilmCategories("");
+    setSearchTerm("");
+    console.log("clicked");
+    // setError(null);
+  }
+
+  const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
+    // console.log("--- 2 --selected Categories: ", selectedCategories);
+    // if (!filteredFilmDB) {
+    if (selectedCategories) {
+      filmDB.forEach((film) => {
+        const filmCategories = film.film.categories;
+        const filmData = film;
+        // console.log("--- 3 --FilmDB Element filmData ", filmData);
+        filmCategories.forEach((filmCategoryID) => {
+          if (filteredFilmDB.indexOf(film) === -1) {
+            // console.log("--- each filmCategory", filmCategoryID);
+            selectedCategories.forEach((categoryID) => {
+              // console.log(filmCategoryID.cate.id_cate, categoryID);
+              if (filmCategoryID.cate.id_cate === categoryID) {
+                const found = filmData;
+                filteredFilmDB.push(found);
+                removeDuplicates(filteredFilmDB);
+              }
+            });
+          }
+        });
+      });
+    }
+  };
+  const removeDuplicates = (arr) => {
+    arr.filter((item, index) => arr.indexOf(item) === index);
+  };
+
+  useEffect(() => {
+    if (!selectedCategories) {
+      defaultFilmList();
+    }
+    setFilteredFilmDB([]);
+
+    return () => {};
+  }, [selectedCategories]);
+
+  filteredFilmsByCatgory(filmDB, selectedCategories);
   return (
     <div className="scout-container">
       {/* //TODO: pull out LOADING and into NavBar next to Vimeo or around the VimeoLogo */}
       <div className="loader">
-        {feed.data || loading ? (
+        {/* {feed.data || loading ? (
           ""
         ) : (
           <button className="btn-get-feed" onClick={handleGetFeed}>
             get Feed
           </button>
-        )}
-        {loading ? <div id="loading" onClick={handleGetFeed}></div> : ""}
+        )} */}
+        {/* <div id="loading" onClick={handleGetFeed}></div> */}
+        {/* {loading ? <ParticlesCircle /> : ""} */}
       </div>
 
       {/* <SideBarFilmLibrary
@@ -171,13 +242,6 @@ const FeedList = () => {
             </div>
           </section>
           <section className="low">
-            <div className="category-widget">
-              <CategoryWidget
-                hide={hide}
-                openWidget={openWidget}
-                selectedFilmCategoriesID={selectedFilmCategoriesID}
-              />
-            </div>
             <div className="main-player">
               <MainPlayer
                 //   clipLink={uiMainPlayerClipId}
@@ -191,6 +255,30 @@ const FeedList = () => {
                 //   loaded={loaded}
               />
             </div>
+            <button
+              className="btn"
+              onClick={() => {
+                openWidget
+                  ? openWidget().setOpenCategoryWidget(false)
+                  : openWidget().setOpenCategoryWidget(true);
+              }}
+            >
+              X
+            </button>
+            <div className="category-widget">
+              <CategoryWidget
+                categoriesDB={categoriesDB}
+                setCategoriesDB={setCategoriesDB}
+                getSelectedCategories={getSelectedCategories}
+                hide={hide}
+                openWidget={openWidget}
+                // selectedFilmCategoriesID={selectedFilmCategoriesID}
+              />
+            </div>
+            <FilmLibrary
+              filteredFilmDB={filteredFilmDB}
+              setFilmDB={setFilmDB}
+            />
           </section>
         </>
       ) : (

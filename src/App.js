@@ -8,6 +8,7 @@ import { FkFilmXfkCateProvider } from "./context/FkFilmXfkCateContext";
 import { FilmProvider } from "./context/FilmContext";
 import { CategoryProvider } from "./context/CategoryContext";
 import { MainPlayerProvider } from "./context/MainPlayerContext";
+// import { CategoryStateProvider } from "./state/CategorySearchState";
 
 //FIXME: AuthProvider via getAuth() from firebase-config
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <VimeoProvider>
       <UserAuthContextProvider>
         <ScoutingProvider>
+          {/* <CategoryStateProvider> */}
           <FkFilmXfkCateProvider>
             <FilmProvider>
               <CategoryProvider>
@@ -24,6 +26,7 @@ function App() {
               </CategoryProvider>
             </FilmProvider>
           </FkFilmXfkCateProvider>
+          {/* </CategoryStateProvider> */}
         </ScoutingProvider>
       </UserAuthContextProvider>
     </VimeoProvider>

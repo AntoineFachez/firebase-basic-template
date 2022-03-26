@@ -18,7 +18,7 @@ function CategoryWidget({
   setSelectedFilmCategoriesID,
   selectedid_cate,
   setSelectedid_cate,
-  selectedFilmCategoriesNames,
+  // selectedFilmCategoriesNames,
   error,
 }) {
   // const [categories, setCategories] = useContext(CategoryContext);
@@ -30,6 +30,8 @@ function CategoryWidget({
   const [searchTerm, setSearchTerm] = useState("");
   // const [error, setError] = useState(null);
   // const width = "10vw";
+  const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
+    useState([]);
 
   const openForm = () => {
     showForm ? setShowForm(false) : setShowForm(true);
@@ -38,50 +40,24 @@ function CategoryWidget({
   function clearCategories() {
     setFilmCategories("");
     setSearchTerm("");
+    console.log("clicked");
     // setError(null);
   }
 
-  // const filterCateByCateMaj = (e) => {
-  //   const cateMaj = e.trim();
-  //   setSearchTerm(cateMaj);
-  // };
-
-  // const selectCategory = (id, category) => {
-  //   // console.log(id);
-  //   const elementID = id;
-  //   const elementName = category;
-  //   if (JSON.stringify(filmCategories).indexOf(elementID) !== -1) {
-  //     setError("prevent redundancy");
-
-  //     var filteredArray = filmCategories.filter(
-  //       (ele) => ele.trim() !== elementID.trim()
-  //     );
-  //     // console.log(element);
-  //     // console.log(filmCategories[0]);
-  //     // console.log(filteredArray);
-  //     // console.log(element);
-  //     setFilmCategories(filteredArray);
-  //     setSearchTerm("");
-  //     setError(null);
-  //   } else {
-  //     setFilmCategories((filmCategories) => [
-  //       ...filmCategories,
-  //       elementID + " ",
-  //     ]);
-  //   }
-  // };
-
   return (
     <div className="category-widget">
+      {JSON.stringify(selectedFilmCategoriesNames)}
       {/* {categoryAction[2]} */}
-      <button
+      {/* <button
         className="btn"
         onClick={() => {
-          openWidget().setOpenCategoryWidget(false);
+          openWidget
+            ? openWidget().setOpenCategoryWidget(false)
+            : openWidget().setOpenCategoryWidget(true);
         }}
       >
         X
-      </button>
+      </button> */}
 
       {hide ? (
         ""
@@ -103,14 +79,13 @@ function CategoryWidget({
         </div>
       ) : (
         <div className="">
-          <button className="btn" onClick={clearCategories}>
-            clear
-          </button>
           <CategoryTable
             hide={hide}
             selectCategory={selectCategory}
             clearCategories={clearCategories}
             getSelectedCategories={getSelectedCategories}
+            selectedFilmCategoriesNames={selectedFilmCategoriesNames}
+            setSelectedFilmCategoriesNames={setSelectedFilmCategoriesNames}
           />
           <Link to="/category-library"></Link>
           {/* <li className="nav-links">Category Library</li> */}

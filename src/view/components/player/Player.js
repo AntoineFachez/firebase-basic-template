@@ -15,6 +15,7 @@ const Player = ({
   volume,
   data,
   index,
+  filteredFilmDB,
 }) => {
   // console.log(clipLink);
   // const link = data[index].clip.link;

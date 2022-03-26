@@ -4,7 +4,7 @@ import MainNav from "../view/components/nav/index";
 import Home from "../view/pages/Home";
 import Scouting from "../view/pages/Scouting";
 import VimeoFeed from "../view/components/scouting-tool/ScoutingTool";
-import Film from "../view/components/film/Film";
+import Film from "../view/components/film-library/Film";
 import Category from "../view/components/category/Category";
 import CategoryTable from "../view/components/category/CategoryTable";
 import FkFilmXfkCateLibrary from "../view/components/FkFilmXfkCateLibrary";

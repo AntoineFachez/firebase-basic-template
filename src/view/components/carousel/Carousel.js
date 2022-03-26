@@ -1,9 +1,15 @@
 import React, { useState } from "react";
+import Player from "../player/Player";
 
 import "./carousel.css";
 
-function Carousel({ data, loadClipIntoPlayer }) {
-  console.log(data);
+function Carousel({
+  data,
+  dataFilmLibrary,
+  loadClipIntoPlayer,
+  filteredFilmDB,
+}) {
+  // console.log(filteredFilmDB[0].film.thumbnail);
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState();
   const [controls, setControls] = useState(false);
@@ -26,6 +32,7 @@ function Carousel({ data, loadClipIntoPlayer }) {
     playing ? setPlaying(true) : setPlaying(false);
     console.log(playing);
   };
+
   // console.log(data.clip.user.name);
   return (
     <div className="carousel">
@@ -55,7 +62,42 @@ function Carousel({ data, loadClipIntoPlayer }) {
                 </div>
               );
             })
-          : ""}
+          : filteredFilmDB?.map((film, index) => {
+              return (
+                <div key={index} className="slider-item">
+                  <div
+                    className="img-wrapper"
+                    //TODO: onClick switch between CategoryLibrary & Carousel
+                    onClick={(e) => loadClipIntoPlayer(e, index)}
+                  >
+                    <div className="menu">
+                      <li className="user">{film.film.postingAccount}</li>
+                      {/* <button className="menu-btn">watch later</button> */}
+                      {/* <button className="menu-btn">share</button> */}
+                    </div>
+                    <Player
+                      width={width}
+                      // feed={feed}
+                      index={index}
+                      // height={mainPlayerHeight}
+                      // height={height}
+                      light={false}
+                      autoPlay={playing}
+                      controls={controls}
+                      playing={playing}
+                      volume={0.0}
+                      clipLink={film.film.link}
+                    />
+                    {/* <img
+                      //   key={index}
+                      className="img"
+                      alt="img"
+                      src={image.film.thumbnail}
+                    /> */}
+                  </div>
+                </div>
+              );
+            })}
       </div>
     </div>
   );

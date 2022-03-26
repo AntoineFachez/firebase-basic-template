@@ -5,11 +5,11 @@
 
 import React from "react";
 import p5 from "p5";
-import fontFile from "../sketches/fonts/AvenirNextLTPro-Demi.otf";
+import fontFile from "../sketches/fonts/Muli-Black.ttf";
 
 const string = "C O D E  B O X"; //words to be displayed
 const size = 100; //font size
-const fontFile = "Muli-Black.ttf";
+// const fontFile = "Muli-Black.ttf";
 const showText = true; //whether or not to have an overlay of the original text (in the background color)
 const textAlpha = 100; //the alpha of the text if displayed (low value will make it slowly fade in)
 const backgroundColor = 255; //kinda self-explanatory
@@ -43,53 +43,62 @@ class Sketch extends React.Component {
 
   // This uses p5's instance mode for sketch creation and namespacing
   Sketch = (p) => {
-    function preload() {
-      font = loadFont(fontFile);
-    }
     // Native p5 functions work as they would normally but prefixed with
     // a p5 object "p"
+    function preload() {
+      font = p.loadFont(fontFile);
+    }
     p.setup = () => {
+      preload();
       //Everyhting that normally happens in setup works
-      createCanvas(windowWidth, windowHeight);
-      background(backgroundColor);
-      textFont(font);
-      textSize(size);
-      fill(backgroundColor, textAlpha);
-      stroke(strokeColor, strokeAlpha);
-      noiseDetail(noiseOctaves, noiseFalloff);
+      p.createCanvas(p.windowWidth, p.windowHeight);
+      p.background(backgroundColor);
+      p.textFont(font);
+      p.textSize(size);
+      p.fill(backgroundColor, textAlpha);
+      p.stroke(strokeColor, strokeAlpha);
+      p.noiseDetail(noiseOctaves, noiseFalloff);
 
       startingPoints = font.textToPoints(
         string,
-        width / 2 - textWidth(string) / 2,
-        height / 2,
+        p.width / 2 - p.textWidth(string) / 2,
+        p.height / 2,
         size,
         { sampleFactor: fontSampleFactor }
       );
 
       for (let p = 0; p < startingPoints.length; p++) {
         points[p] = startingPoints[p];
-        points[p].zOffset = random();
+        points[p].zOffset = p.random();
       }
     };
 
     p.draw = () => {
       // And everything that normally goes in draw in here
       if (showText) {
-        noStroke();
-        text(string, width / 2 - textWidth(string) / 2, height / 2);
-        stroke(strokeColor, strokeAlpha);
+        p.noStroke();
+        p.text(string, p.width / 2 - p.textWidth(string) / 2, p.height / 2);
+        p.stroke(strokeColor, strokeAlpha);
       }
       for (let pt = 0; pt < points.length; pt++) {
         let p = points[pt];
         let noiseX = p.x * noiseZoom;
         let noiseY = p.y * noiseZoom;
-        let noiseZ = frameCount * zOffsetChange + p.zOffset * individualZOffset;
+        let noiseZ =
+          p.frameCount * zOffsetChange + p.zOffset * individualZOffset;
         let newPX =
-          p.x + map(noise(noiseX, noiseY, noiseZ), 0, 1, -lineSpeed, lineSpeed);
+          p.x +
+          p.map(p.noise(noiseX, noiseY, noiseZ), 0, 1, -lineSpeed, lineSpeed);
         let newPY =
           p.y +
-          map(noise(noiseX, noiseY, noiseZ + 214), 0, 1, -lineSpeed, lineSpeed);
-        line(p.x, p.y, newPX, newPY);
+          p.map(
+            p.noise(noiseX, noiseY, noiseZ + 214),
+            0,
+            1,
+            -lineSpeed,
+            lineSpeed
+          );
+        p.line(p.x, p.y, newPX, newPY);
         p.x = newPX;
         p.y = newPY;
       }

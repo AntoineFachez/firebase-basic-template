@@ -18,10 +18,14 @@ function TileMenu({ key, id, data, footer, getClipIndex, clipLink }) {
 
       <button className="btn-tile-menu">save</button>
       {/* </menu> */}
-      <ul>
-        <li>{data[0].film.reel[0].prof}</li>
-        <li>{data[0].film.reel[0].name}</li>
-      </ul>
+      {data ? (
+        <ul>
+          {/* <li>{data[0].film.reel[0].prof}</li>
+          <li>{data[0].film.reel[0].name}</li> */}
+        </ul>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

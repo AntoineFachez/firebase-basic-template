@@ -1,7 +1,10 @@
 import React, { useState, useEffect, createContext } from "react";
 import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase/firebase-config";
-import { categoryAction, categoryAction2 } from "../actions/CategoryActions";
+// import {
+//   filteredFilmsByCatgory,
+//   categoryAction2,
+// } from "../actions/CategoryActions";
 
 export const CategoryContext = createContext();
 
@@ -32,7 +35,12 @@ export const CategoryProvider = (props) => {
 
   return (
     <CategoryContext.Provider
-      value={[categoriesDB, setCategoriesDB, categoryAction, categoryAction2]}
+      value={[
+        categoriesDB,
+        setCategoriesDB,
+        // filteredFilmsByCatgory,
+        // categoryAction2,
+      ]}
     >
       {props.children}
     </CategoryContext.Provider>

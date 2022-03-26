@@ -15,6 +15,11 @@
   text-align: center;
 }
 .signUp {
+  z-index: 99;
+  /* justify-self: end; */
+  /* margin-top: 5rem; */
+}
+.sketch {
   margin-top: 5rem;
 }
 .vimeo- {

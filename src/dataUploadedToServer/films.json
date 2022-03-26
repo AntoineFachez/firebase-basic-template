@@ -1,93 +1,6 @@
 [
   {
     "film": {
-      "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/1290324767-855ff52c9e2bea32386041d841e5983e4c27d199c6e969d17_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/1290324767-855ff52c9e2bea32386041d841e5983e4c27d199c6e969d17_380x214\"\r\"width\":190\r\"height\":107\r\"id\":1290324767\r\rduration: \r\"raw\":32\r\"formatted\":\"00:32\"\r\rclip: \r\"id\":641419018\r\"title\":\"BMW: iDRIVE EXPERIENCE [ DIRECTORS CUT ]\"\r\"description\":null\r\"uploaded_on\":\"2021-11-02 04:12:47\"\r\"uploaded_on_relative\":\"1 month ago\"\r\"uploaded_on_full\":\"Tuesday\r November 2\r 2021 at 4:12 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Juliane Taudt\"\r\"url\":\"https://vimeo.com/julianetaudt\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/641419018\"}\r\"duration\":\"PT00H00M32S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":10\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/julianetaudt\"\r\"name\":\"Juliane Taudt\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/julianetaudt/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
-      "categories": [
-        {
-          "cate": {
-            "cateMaj": "Dramaturgy",
-            "cateMaj_ranking": "20",
-            "cateName": "Build Up",
-            "cate_ranking": "02",
-            "id_cate": "7EEA7E52-0AEF-4414-A2DB-ED4D0C96A0FB",
-            "originalTimeCreation": "07.11.2016 10:31:14"
-          }
-        },
-        {
-          "cate": {
-            "cateMaj": "Style",
-            "cateMaj_ranking": "21",
-            "cateName": "Design",
-            "cate_ranking": "03",
-            "id_cate": "9CAE32EE-FDE0-4182-9AA8-EDDF32B7EF3D",
-            "originalTimeCreation": "19.11.2016 23:40:32"
-          }
-        },
-        {
-          "cate": {
-            "cateMaj": "Cast",
-            "cateMaj_ranking": "40",
-            "cateName": "Family",
-            "cate_ranking": "02",
-            "id_cate": "D72E479E-D8F7-4A22-96E2-C0792FA03F2A",
-            "originalTimeCreation": "19.05.2016 16:28:30"
-          }
-        },
-        {
-          "cate": {
-            "cateMaj": "Genre",
-            "cateMaj_ranking": "01",
-            "cateName": "Collage",
-            "cate_ranking": "",
-            "id_cate": "A3993D51-B9C2-4B89-8695-3EFF141BA5A2",
-            "originalTimeCreation": "20.05.2016 18:26:06"
-          }
-        },
-        {
-          "cate": {
-            "cateMaj": "Location",
-            "cateMaj_ranking": "41",
-            "cateName": "Studio",
-            "cate_ranking": "01",
-            "id_cate": "2FF4F6FA-27B8-44D6-8711-28B28EE1DE45",
-            "originalTimeCreation": "08.11.2016 00:25:37"
-          }
-        },
-        {
-          "cate": {
-            "cateMaj": "Product Range",
-            "cateMaj_ranking": "00",
-            "cateName": "Car/ Automotiv",
-            "cate_ranking": "01",
-            "id_cate": "47A4DEB8-1E9A-480B-8A03-62167ADBB771",
-            "originalTimeCreation": "18.05.2016 20:31:28"
-          }
-        }
-      ],
-      "dateUpload": "2021-11-02 04:12:47",
-      "description": "",
-      "id_film": "741396E9-DBFD-4B32-830E-A337CD7B307C",
-      "length": "00:32",
-      "link": "http://www.vimeo.com/641419018",
-      "reel": [
-        {
-          "active": "",
-          "brof": "",
-          "fk_brof": "",
-          "fk_comp": "",
-          "fk_fipe": "36B2B2B8-4619-4371-9384-9DF61E179EA6",
-          "fk_prof": "019DABD3-2CEF-4413-9DF1-78B7F947E249",
-          "id_group": "5AD765B5-0EE2-4C6C-BBF1-E98ED513C8FF",
-          "name": "Juliane Taudt",
-          "prof": "Director"
-        }
-      ],
-      "title": "",
-      "vimeoID": "641419018"
-    }
-  },
-  {
-    "film": {
       "attributes": "thumbnail: \r\"src\":\"https://i.vimeocdn.com/video/1283959837-c4cde2c00cd07ee014b863cfbad8ae8e695c21255e60ed2b4_190x107\"\r\"src_2x\":\"https://i.vimeocdn.com/video/1283959837-c4cde2c00cd07ee014b863cfbad8ae8e695c21255e60ed2b4_380x214\"\r\"width\":190\r\"height\":107\r\"id\":1283959837\r\rduration: \r\"raw\":52\r\"formatted\":\"00:52\"\r\rclip: \r\"id\":638574865\r\"title\":\"ALLIANZ SPARK CONFIDENCE: DENISE SCHINDLER [ DIRECTORS CUT ]\"\r\"description\":\"\rClient // Allianz\rAgency // Media Monks\rProduction Company // SuperCine\rDirector // Juliane Taudt\r\rn\r\rExecutive Producer // Rogier Dorant\r Luis Pietsch\r\rn\r\rGlobal Senior Creative // Rodrigo da Silva Linhares\rCreative // Andres Rincon\rProduction Manager // Lea Volke\r Christoph Wong\rProducer // Arndt Widmann\rDOP // Marco Lowes\rEditor & Sound Design // David Herbst\rColorist // Toni Karsch\rStyling // Kathrin Stich\rHair & Make Up // Sabine Gludowacz\r\rn\r\r1st AC // Tobias Bloier\r2nd AC // Marc Heinemann\rPrecision Driver // Thomas Roim\rSound Operator // Erwin Mayer\rGaffer // Toni Müller\rBest Boy // Florian Klodner\rRunner & Driver 1 // Raul Dragalina\rRunner & Driver 2 // Fabian Weißenborn\r\r\"\r\"uploaded_on\":\"2021-10-25 05:05:47\"\r\"uploaded_on_relative\":\"2 months ago\"\r\"uploaded_on_full\":\"Monday\r October 25\r 2021 at 5:05 AM EST\"\r\"is_spatial\":false\r\"is_hdr\":false\r\"is_dolby_vision\":false\r\"privacy\"\r\rauthor: \r\"@type\":\"Person\"\r\"name\":\"Juliane Taudt\"\r\"url\":\"https://vimeo.com/julianetaudt\"}\r\"potentialAction\"\r\"@type\":\"ViewAction\"\r\"target\":\"vimeo://app.vimeo.com/videos/638574865\"}\r\"duration\":\"PT00H00M52S\"\r\"interactionStatistic\":[\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/CommentAction\"\r\"userInteractionCount\":0}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/LikeAction\"\r\"userInteractionCount\":1}\r\r\"@type\":\"InteractionCounter\"\r\"interactionType\":\"http://schema.org/WatchAction\"\r\"userInteractionCount\":24\r\r\"@type\":\"VideoObject\"\r\"@context\":\"http://schema.org\"}\r\r\"itemListElement\":[\r\"@type\":\"ListItem\"\r\"position\":1\r\"item\"\r\"@id\":\"https://vimeo.com/julianetaudt\"\r\"name\":\"Juliane Taudt\"}}\r\r\"@type\":\"ListItem\"\r\"position\":2\r\"item\"\r\"@id\":\"https://vimeo.com/julianetaudt/videos\"\r\"name\":\"Videos\"}\r\r\"@type\":\"BreadcrumbList\"\r\"@context\":\"http://schema.org\"\r    </script>\r\rowner: \r<end>\r",
       "categories": [
         {
@@ -156,6 +69,7 @@
       "id_film": "242E0683-11F2-4020-9418-576857976DE2",
       "length": "00:52",
       "link": "http://www.vimeo.com/638574865",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -202,6 +116,7 @@
           "prof": "DoP"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1283959837_760x428.jpg",
       "title": "",
       "vimeoID": "638574865"
     }
@@ -276,6 +191,7 @@
       "id_film": "BCCBC707-886B-44DC-9C69-0504546643B6",
       "length": "00:30",
       "link": "http://www.vimeo.com/605955266",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -344,6 +260,7 @@
           "prof": "Editor"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1242949684_760x428.jpg",
       "title": "",
       "vimeoID": "605955266"
     }
@@ -448,6 +365,7 @@
       "id_film": "450AA188-14D0-419A-8706-DE1535135EA9",
       "length": "10:25",
       "link": "http://www.vimeo.com/547124993",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -494,6 +412,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1132765258_760x428.jpg",
       "title": "",
       "vimeoID": "547124993"
     }
@@ -578,6 +497,7 @@
       "id_film": "48AD3EEF-757C-4C75-AD85-17C322958E8B",
       "length": "01:41",
       "link": "http://www.vimeo.com/491149475",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -624,6 +544,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1015881322_760x428.jpg",
       "title": "",
       "vimeoID": "491149475"
     }
@@ -698,6 +619,7 @@
       "id_film": "F14A992D-A554-4320-A7A0-EC8E7360C57A",
       "length": "01:24",
       "link": "http://www.vimeo.com/483305076",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -766,6 +688,7 @@
           "prof": "Producer"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1001969007_760x428.jpg",
       "title": "",
       "vimeoID": "483305076"
     }
@@ -840,6 +763,7 @@
       "id_film": "6D10279D-0089-438F-920D-BAC94CE61F47",
       "length": "01:38",
       "link": "http://www.vimeo.com/480974596",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -908,6 +832,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/997741338_760x428.jpg",
       "title": "",
       "vimeoID": "480974596"
     }
@@ -1002,6 +927,7 @@
       "id_film": "C6E18102-3266-4135-A031-6C48EC271B2B",
       "length": "03:19",
       "link": "http://www.vimeo.com/424781544",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -1048,6 +974,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/997743122_760x428.jpg",
       "title": "",
       "vimeoID": "424781544"
     }
@@ -1102,6 +1029,7 @@
       "id_film": "31D216FA-0EDB-44C2-8937-9E20BD2D49FD",
       "length": "03:35",
       "link": "http://www.vimeo.com/424778001",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -1148,6 +1076,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/901934221_760x428.jpg",
       "title": "",
       "vimeoID": "424778001"
     }
@@ -1212,6 +1141,7 @@
       "id_film": "8E895E1D-676D-4FE0-A782-8589FA4EF413",
       "length": "04:12",
       "link": "http://www.vimeo.com/424773893",
+      "postingAccount": "https://vimeo.com/julianetaudt",
       "reel": [
         {
           "active": "",
@@ -1269,6 +1199,7 @@
           "prof": "Editor"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/901929012_760x428.jpg",
       "title": "",
       "vimeoID": "424773893"
     }
@@ -1333,6 +1264,7 @@
       "id_film": "E852E368-B95D-4ECE-8F64-359FF893FF54",
       "length": "01:22",
       "link": "http://www.vimeo.com/624438902",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -1346,6 +1278,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1266734389_760x428.jpg",
       "title": "",
       "vimeoID": "624438902"
     }
@@ -1410,6 +1343,7 @@
       "id_film": "4B1BB23D-080D-4557-87FE-9B565934CC1D",
       "length": "01:03",
       "link": "http://www.vimeo.com/590968081",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -1533,6 +1467,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1221945979_760x428.jpg",
       "title": "",
       "vimeoID": "590968081"
     }
@@ -1617,6 +1552,7 @@
       "id_film": "E8F26012-B118-42C1-922E-655B8A59A9EA",
       "length": "02:26",
       "link": "http://www.vimeo.com/543561509",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -1718,6 +1654,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1125183422_760x428.jpg",
       "title": "",
       "vimeoID": "543561509"
     }
@@ -1822,6 +1759,7 @@
       "id_film": "F344A985-DC2F-4372-9C65-288B32215248",
       "length": "02:15",
       "link": "http://www.vimeo.com/542225714",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -1868,6 +1806,7 @@
           "prof": "Producer"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1122548834_760x428.jpg",
       "title": "",
       "vimeoID": "542225714"
     }
@@ -1922,6 +1861,7 @@
       "id_film": "209A09A0-0D7E-4071-BD82-56CE2EEA8390",
       "length": "00:43",
       "link": "http://www.vimeo.com/521843676",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -1957,6 +1897,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1080765093_760x428.jpg",
       "title": "",
       "vimeoID": "521843676"
     }
@@ -2031,6 +1972,7 @@
       "id_film": "72F33BD1-AB2F-4E14-BBFD-A6645BE06562",
       "length": "00:45",
       "link": "http://www.vimeo.com/520571219",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2165,6 +2107,7 @@
           "prof": "Creative Art"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/1078331844_760x428.jpg",
       "title": "",
       "vimeoID": "520571219"
     }
@@ -2239,6 +2182,7 @@
       "id_film": "8422C920-D4EF-42DA-A518-D958CE21E52D",
       "length": "01:00",
       "link": "http://www.vimeo.com/478126172",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2373,6 +2317,7 @@
           "prof": "Producer"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/992900722_760x428.jpg",
       "title": "",
       "vimeoID": "478126172"
     }
@@ -2417,6 +2362,7 @@
       "id_film": "6AC4CDA7-B506-431C-9A67-8AE74A16038D",
       "length": "14:19",
       "link": "http://www.vimeo.com/435053903",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2430,6 +2376,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/953434157_760x428.jpg",
       "title": "",
       "vimeoID": "435053903"
     }
@@ -2494,6 +2441,7 @@
       "id_film": "9175C4F5-A307-4DBA-906D-E0828F0DC639",
       "length": "01:13",
       "link": "http://www.vimeo.com/398538070",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2573,6 +2521,7 @@
           "prof": "Producer"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/866225580_760x428.jpg",
       "title": "",
       "vimeoID": "398538070"
     }
@@ -2647,6 +2596,7 @@
       "id_film": "3F6E716A-6F3A-437E-9DCD-8027D7275760",
       "length": "01:02",
       "link": "http://www.vimeo.com/382581842",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2660,6 +2610,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/843772585_760x428.jpg",
       "title": "",
       "vimeoID": "382581842"
     }
@@ -2714,6 +2665,7 @@
       "id_film": "F8D1690A-F55C-475D-BEBF-214D432655D1",
       "length": "00:37",
       "link": "http://www.vimeo.com/363831936",
+      "postingAccount": "https://vimeo.com/ajschiller",
       "reel": [
         {
           "active": "",
@@ -2738,6 +2690,7 @@
           "prof": "Director"
         }
       ],
+      "thumbnail": "https://i.vimeocdn.com/video/819627701_760x428.jpg",
       "title": "",
       "vimeoID": "363831936"
     }

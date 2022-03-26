@@ -33,7 +33,7 @@ const CategoryLibrary = ({
 
   const pickCategory = (id_cate, cateName) => {
     selectCategory(id_cate, cateName);
-
+    // document.getElementById(id_cate).classList.add("element-highlighted");
     // setId_cate(id_cate);
     // console.log(id_cate);
     // highLightedCategory();
@@ -129,7 +129,7 @@ const CategoryLibrary = ({
                   );
                 })}
             </ul>
-            {JSON.stringify(selectedFilmCategoriesNames)}
+
             {/* {JSON.stringify(selectedFilmCategoriesID)} */}
           </div>
         </div>
