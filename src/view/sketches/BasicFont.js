@@ -1,6 +1,7 @@
 import React from "react";
 import Sketch from "react-p5";
-import Roboto from "../../fonts/Muli-Black.ttf";
+// import Roboto from "../../fonts/digitalDotBold.ttf";
+import font from "../../fonts/FuturaLT-Light.ttf";
 
 class TitleCanvas extends React.Component {
   constructor(props) {
@@ -15,16 +16,16 @@ class TitleCanvas extends React.Component {
 
   preload = (p5) => {
     // loading a font to be able to convert text to points
-    let myfont = p5.loadFont(Roboto);
+    let myfont = p5.loadFont(font);
     this.setState({ font: myfont });
-    console.log(myfont);
+    // console.log(myfont);
   };
 
   setup = (p5, canvasParentRef) => {
     const { font } = this.state;
     p5.createCanvas(600, 400).parent(canvasParentRef);
     // convert the text to points (x, y)
-    let txtPoints = font.textToPoints("poo1", 50, 50, 100, {});
+    let txtPoints = font.textToPoints("p o o1", 50, 50, 100, {});
     this.setState({ points: txtPoints });
   };
 

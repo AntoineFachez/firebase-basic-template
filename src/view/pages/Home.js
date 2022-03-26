@@ -15,6 +15,7 @@ import RasterizeImage from "../sketches/RasterizeImage";
 import NoizyCircle from "../sketches/NoizyCircle";
 import BasicImage from "../sketches/BasicImage";
 import BasicFont from "../sketches/BasicFont";
+import NeonText from "../sketches/NeonText";
 import "./pages.css";
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         {/* <BasicImage /> */}
         <BasicFont />
         {/* <ExplodingTypo /> */}
+        <NeonText />
         {/* <AnxietyExplosion /> */}
         {/* <FireSparks /> */}
         {/* <Tree /> */}
