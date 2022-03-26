@@ -13,6 +13,8 @@ import MovingTypoGenerative from "../sketches/MovingTypoGenerative";
 import RasterizeImage from "../sketches/RasterizeImage";
 
 import NoizyCircle from "../sketches/NoizyCircle";
+import BasicImage from "../sketches/BasicImage";
+import BasicFont from "../sketches/BasicFont";
 import "./pages.css";
 function Home() {
   return (
@@ -23,18 +25,20 @@ function Home() {
       {/* <div className="signUp">
         <SignUpLogIn />
       </div> */}
-      {/* <AnxietyExplosion /> */}
-      {/* <ExplodingTypo /> */}
-      {/* <FireSparks /> */}
-      {/* <Tree /> */}
-      {/* <NoizyText /> */}
-      {/* <MovingTypoGenerative /> */}
-      {/* <RasterizeImage /> */}
       <div className="signUp">
         <SignUpLogIn />
       </div>
       <div className="sketch">
-        <NoizyCircle />
+        {/* <BasicImage /> */}
+        <BasicFont />
+        {/* <ExplodingTypo /> */}
+        {/* <AnxietyExplosion /> */}
+        {/* <FireSparks /> */}
+        {/* <Tree /> */}
+        {/* <MovingTypoGenerative /> */}
+        {/* <NoizyText /> */}
+        {/* <NoizyCircle /> */}
+        {/* <RasterizeImage /> */}
       </div>
 
       {/* <Body /> */}

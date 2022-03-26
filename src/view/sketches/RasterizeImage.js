@@ -5,8 +5,9 @@
 
 import React from "react";
 import p5 from "p5";
+import imgRD from "../../images/p00l glow Square.png";
 
-const URL = "../../images/p00l glow Square.png";
+// const URL = "../../images/p00l glow Square.png";
 
 const BG = "#FEFEFE";
 
@@ -28,11 +29,12 @@ class Sketch extends React.Component {
   // This uses p5's instance mode for sketch creation and namespacing
   Sketch = (p) => {
     function preload() {
-      img = p.loadImage(URL);
+      img = p.loadImage(imgRD);
     }
     // Native p5 functions work as they would normally but prefixed with
     // a p5 object "p"
     p.setup = () => {
+      preload();
       //Everyhting that normally happens in setup works
       p.createCanvas(p.windowWidth, p.windowHeight);
 
@@ -62,7 +64,7 @@ class Sketch extends React.Component {
     };
 
     p.draw = () => {
-      preload();
+      // preload();
       // And everything that normally goes in draw in here
 
       if (count >= maxCount) {

@@ -23,6 +23,9 @@ class Sketch extends React.Component {
     let particles = [];
     // Native p5 functions work as they would normally but prefixed with
     // a p5 object "p"
+    // font = p.loadFont(
+    //   "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+    // );
     p.setup = () => {
       //Everyhting that normally happens in setup works
       p.createCanvas(1020, 1920);

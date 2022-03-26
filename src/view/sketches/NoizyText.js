@@ -5,7 +5,8 @@
 
 import React from "react";
 import p5 from "p5";
-import fontFile from "../sketches/fonts/Muli-Black.ttf";
+
+// import fontFile from "../../../public/fonts/Muli-Black.ttf";
 
 const string = "C O D E  B O X"; //words to be displayed
 const size = 100; //font size
@@ -46,7 +47,7 @@ class Sketch extends React.Component {
     // Native p5 functions work as they would normally but prefixed with
     // a p5 object "p"
     function preload() {
-      font = p.loadFont(fontFile);
+      // font = p.loadFont(fontFile);
     }
     p.setup = () => {
       preload();
