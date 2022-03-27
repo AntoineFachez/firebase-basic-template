@@ -5,3 +5,17 @@
   /* overflow: scroll; */
   will-change: transform;
 }
+main {
+  position: relative;
+  width: 100vw;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+#defaultCanvas0 {
+  position: absolute;
+  width: 100vw;
+  align-self: center;
+  justify-self: center;
+}

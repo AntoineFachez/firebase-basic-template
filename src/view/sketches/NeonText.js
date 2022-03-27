@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sketch from "react-p5";
-// import Roboto from "../../fonts/digitalDotBold.ttf";
+// import font from "../../fonts/digitalDotBold.ttf";
 import font from "../../fonts/FuturaLT-Light.ttf";
 
 function TitleCanvas(props) {
@@ -12,7 +12,7 @@ function TitleCanvas(props) {
     txt: "p 0 0 1",
   };
   const [state, setState] = useState(initialState);
-  const txt = "p o o1";
+  const txt = "log in";
   const width = 350;
   const height = 180;
   const size = 80;
@@ -29,7 +29,7 @@ function TitleCanvas(props) {
     // p5.background(80, 80, 80);
     // convert the text to points (x, y)
     let txtPoints = font.textToPoints(txt, -50, 70, size, {
-      sampleFactor: 0.3,
+      sampleFactor: 0.2,
       // simplifyThreshold: 0.1,
     });
     let txtPoints2ndLine = font.textToPoints("scouting", 30, 30, 100, {});
@@ -41,7 +41,7 @@ function TitleCanvas(props) {
     // set background and text color
 
     p5.translate(p5.width / 4, p5.height / 3.5);
-    p5.rotate(-0.21);
+    p5.rotate(-0.2);
     let baseDotColor;
     let shadowBlur;
     let shadowOffsetX;
@@ -58,18 +58,18 @@ function TitleCanvas(props) {
       let rate = seconds / 500;
       if (i % (rate % 100) === 0) {
         baseDotColor = "#fff";
-        shadowBlur = 12;
-        shadowOffsetX = 6;
-        shadowOffsetY = 4;
+        shadowBlur = 3;
+        shadowOffsetX = 2;
+        shadowOffsetY = 5;
         shadowColor = "#EF0CE8";
-        circleSize = 6;
+        circleSize = 3;
       } else {
         baseDotColor = "#f7c6f4";
-        shadowBlur = 15;
-        shadowOffsetX = 4;
-        shadowOffsetY = 1;
+        shadowBlur = 10;
+        shadowOffsetX = 5;
+        shadowOffsetY = 2;
         shadowColor = "#594558";
-        circleSize = 5;
+        circleSize = 4;
         // stroke = "#594558";
       }
 
@@ -86,7 +86,12 @@ function TitleCanvas(props) {
   };
 
   return (
-    <Sketch className="home" setup={setup} draw={draw} preload={preload} />
+    <Sketch
+      // className="poo1-animation"
+      setup={setup}
+      draw={draw}
+      preload={preload}
+    />
   );
 }
 

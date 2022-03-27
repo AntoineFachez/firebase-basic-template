@@ -18,6 +18,9 @@ import BasicFont from "../sketches/BasicFont";
 import NeonText from "../sketches/NeonText";
 import "./pages.css";
 function Home() {
+  const clicked = () => {
+    console.log("clicked");
+  };
   return (
     <div className="page">
       {/* <h1 className="page-title">Welcome to <code>p00l</code></h1> */}
@@ -29,7 +32,7 @@ function Home() {
       <div className="signUp">
         <SignUpLogIn />
       </div>
-      <div className="sketch">
+      <div className="sketch" onClick={clicked}>
         {/* <BasicImage /> */}
         {/* <BasicFont /> */}
         {/* <ExplodingTypo /> */}

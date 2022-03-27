@@ -2,8 +2,8 @@
   will-change: transform;
 }
 .page {
-  display: flex;
-  flex-direction: column;
+  /* position: relative; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -21,8 +21,18 @@
   /* margin-top: 5rem; */
 }
 .sketch {
-  margin-top: 5rem;
+  /* width: 100vw;
+  height: 10rem;
+  background-color: aqua; */
 }
+#defaultCanvas0 {
+  /* position: relative; */
+  /* left: 35%; */
+  /* margin-top: 5rem; */
+
+  /* width: 100vw; */
+}
+
 .vimeo- {
   color: #8dbddb;
   font-weight: 800;
