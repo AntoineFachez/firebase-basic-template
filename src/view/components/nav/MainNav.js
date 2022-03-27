@@ -4,10 +4,15 @@ import * as ROUTES from "../../../constants/routes";
 import logo from "../../../images/p00l glow Square small.png";
 import SignUpLogIn from "../user/SignUpLogInOut/SignUpLogIn";
 import { VimeoLogIn } from "../VimeoLogIn";
+import NeonText from "../../sketches/NeonText";
 import "./main-nav.css";
 
 export default function MainNav() {
   const [isShrunk, setShrunk] = useState(false);
+
+  const clicked = () => {
+    console.log("clicked");
+  };
 
   // useEffect(() => {
   //   const handler = () => {
@@ -36,6 +41,7 @@ export default function MainNav() {
     <nav className="main-nav">
       <div className="logo">
         <Link to={ROUTES.HOME}>
+          {/* <NeonText onClick={clicked} /> */}
           <img className="logo" src={logo} alt="" />
         </Link>
       </div>

@@ -31,7 +31,7 @@ function Home() {
       </div>
       <div className="sketch">
         {/* <BasicImage /> */}
-        <BasicFont />
+        {/* <BasicFont /> */}
         {/* <ExplodingTypo /> */}
         <NeonText />
         {/* <AnxietyExplosion /> */}
@@ -42,7 +42,6 @@ function Home() {
         {/* <NoizyCircle /> */}
         {/* <RasterizeImage /> */}
       </div>
-
       {/* <Body /> */}
       <Footer />
     </div>
