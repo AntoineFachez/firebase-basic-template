@@ -74,11 +74,7 @@ export const FilmProvider = (props) => {
 
       // Keep adding query clauses in query()
       // like chaining them in name-spaced V8 version
-      const q = query(
-        colRef,
-        // orderBy("dateUpload"),
-        limit(200)
-      );
+      const q = query(colRef, orderBy("film.dateUpload", "desc"), limit(200));
 
       const data = await getDocs(q);
       setNextBatch(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
