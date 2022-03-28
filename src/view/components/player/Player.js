@@ -64,6 +64,9 @@ const Player = ({
     setPlayedTime(playedSeconds);
     setDuration(onDuration);
   };
+  useEffect(() => {
+    setWatchComplete(false);
+  }, [clipLink]);
 
   const playClip = () => {
     playing ? setPlaying(false) : setPlaying(true);

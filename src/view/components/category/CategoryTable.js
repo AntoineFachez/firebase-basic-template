@@ -78,7 +78,10 @@ const CategoryTable = ({
         ...filmCategoriesNames,
         cateName,
       ]);
-      // .classList.add("element-highlighted");
+      localStorage.setItem(
+        "selectedFilmCategoriesID",
+        JSON.stringify(selectedFilmCategoriesID)
+      );
     }
   };
   if (selectedFilmCategoriesID.includes(selectedid_cate)) {
@@ -96,6 +99,7 @@ const CategoryTable = ({
         selectedFilmCategoriesID.splice(i, 1);
       }
     }
+
     console.log("clicked");
   };
   return (

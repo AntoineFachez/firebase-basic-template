@@ -12,9 +12,9 @@ function TitleCanvas(props) {
     txt: "p 0 0 1",
   };
   const [state, setState] = useState(initialState);
-  const txt = "log in";
-  const width = 350;
-  const height = 180;
+  const txt = "welcome";
+  const width = 400;
+  const height = 170;
   const size = 80;
   const preload = (p5) => {
     // loading a font to be able to convert text to points

@@ -113,14 +113,22 @@ function Films() {
       <h1>FilmLibrary</h1>
       <div className="carousel">
         {/* <ScoutingTool loading={loading} setLoading={setLoading} /> */}
-        <Carousel
-          filteredFilmDB={filteredFilmDB}
-          // data={feed.data}
-          loadClipIntoPlayer={loadClipIntoPlayer}
-        />
+        {filteredFilmDB ? (
+          <Carousel
+            filteredFilmDB={filteredFilmDB}
+            // data={feed.data}
+            loadClipIntoPlayer={loadClipIntoPlayer}
+          />
+        ) : (
+          <Carousel
+            filteredFilmDB={filmDB}
+            // data={feed.data}
+            loadClipIntoPlayer={loadClipIntoPlayer}
+          />
+        )}
       </div>
-      {/* <MainPlayer
-        // clipLink={uiMainPlayerClipId}
+      <MainPlayer
+        // clipLink={clipLink}
         //   load={load}
         playing={playing}
         // play={play}
@@ -129,7 +137,7 @@ function Films() {
         light={false}
         // controls={controls}
         //   loaded={loaded}
-      /> */}
+      />
       <button
         className="btn"
         onClick={() => {

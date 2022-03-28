@@ -20,17 +20,11 @@
   /* justify-self: end; */
   /* margin-top: 5rem; */
 }
-.sketch {
-  /* width: 100vw;
-  height: 10rem;
-  background-color: aqua; */
-}
-#defaultCanvas0 {
-  /* position: relative; */
-  /* left: 35%; */
-  /* margin-top: 5rem; */
-
-  /* width: 100vw; */
+.loading-circle {
+  display: flex;
+  /* height: 2rem; */
+  justify-content: space-around;
+  align-items: center;
 }
 
 .vimeo- {

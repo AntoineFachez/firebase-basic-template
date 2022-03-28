@@ -6,16 +6,10 @@
   will-change: transform;
 }
 main {
-  position: relative;
+  display: flex;
+  margin-top: 8rem;
   width: 100vw;
-  background-color: aqua;
+  /* background-color: rgb(71, 175, 62); */
   align-items: center;
   justify-content: center;
-}
-
-#defaultCanvas0 {
-  position: absolute;
-  width: 100vw;
-  align-self: center;
-  justify-self: center;
 }

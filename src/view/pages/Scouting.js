@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import ScoutingTool from "../components/scouting-tool/ScoutingTool";
 import { FilmContext } from "../../context/FilmContext";
 import ParticlesCircle from "../../view/sketches/ParticlesCircle";
+import { VimeoLogIn } from "../components/VimeoLogIn";
 // import Category from "../components/category/Category";
 // import CategoryWidget from "../components/category/CategoryWidget";
 // import Film from "../components/film-library/Film";
@@ -20,6 +21,7 @@ function Section() {
   //   JSON.parse(localStorage.getItem("feed")) || []
   // );
   const [loading, setLoading] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [filteredFilmDB, setFilteredFilmDB] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   // const [index, setIndex] = useState(0);
@@ -97,9 +99,27 @@ function Section() {
 
   return (
     <div className="">
-      <h1>Scouting Vimeo</h1>
-      {loading ? <ParticlesCircle /> : ""}
-      <ScoutingTool loading={loading} setLoading={setLoading} />
+      {/* <h1>Scouting Vimeo</h1> */}
+      {/* <div className="vimeo-container"> */}
+      <div className="loading-circle">
+        {loading ? <ParticlesCircle /> : ""}
+        {/* <ParticlesCircle /> */}
+      </div>
+      {/* {loaded ? (
+        ""
+      ) : (
+        <div className="">
+          <div className="vimeo">
+            <VimeoLogIn />
+          </div>
+        </div>
+      )} */}
+      <ScoutingTool
+        loading={loading}
+        setLoading={setLoading}
+        loaded={loaded}
+        setLoaded={setLoaded}
+      />
       <section className="section1">
         {/* <div className="carousel">
           <Carousel data={feed.data} loadClipIntoPlayer={loadClipIntoPlayer} />

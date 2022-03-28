@@ -12,7 +12,7 @@ import "./scouting-tool.css";
 // import "../../../index.css";
 
 const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
-const FeedList = ({ loading, setLoading }) => {
+const FeedList = ({ loading, setLoading, loaded, setLoaded }) => {
   const [filmDB, setFilmDB] = useContext(FilmContext);
   const loader = document.querySelector("#loading");
   const [token, setToken] = useState("");
@@ -20,7 +20,7 @@ const FeedList = ({ loading, setLoading }) => {
   const [feed, setFeed] = useState(
     JSON.parse(localStorage.getItem("feed")) || []
   );
-  const [loaded, setLoaded] = useState(false);
+
   const [uiMainPlayerClipId, setUiMainPlayerClipId] = useState(null);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [filteredFilmDB, setFilteredFilmDB] = useState([]);
