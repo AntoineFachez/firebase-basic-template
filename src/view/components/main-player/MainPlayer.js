@@ -8,7 +8,6 @@ function MainPlayer({
   loaded,
   feed,
   index,
-
   controls,
   playing,
   play,

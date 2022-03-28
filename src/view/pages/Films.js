@@ -112,12 +112,12 @@ function Films() {
     <div className="">
       <h1>FilmLibrary</h1>
       <div className="carousel">
-        <ScoutingTool loading={loading} setLoading={setLoading} />
-        {/* <Carousel
+        {/* <ScoutingTool loading={loading} setLoading={setLoading} /> */}
+        <Carousel
           filteredFilmDB={filteredFilmDB}
           // data={feed.data}
           loadClipIntoPlayer={loadClipIntoPlayer}
-        /> */}
+        />
       </div>
       {/* <MainPlayer
         // clipLink={uiMainPlayerClipId}
@@ -130,7 +130,7 @@ function Films() {
         // controls={controls}
         //   loaded={loaded}
       /> */}
-      {/* <button
+      <button
         className="btn"
         onClick={() => {
           openWidget();
@@ -144,7 +144,7 @@ function Films() {
         getSelectedCategories={getSelectedCategories}
         hide={hide}
         openWidget={openWidget}
-      /> */}
+      />
       {/* <p>{JSON.stringify(selectedCategories)}</p> */}
       {/* <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p> */}
       {/* <p>filtered Film DB List {JSON.stringify(filteredFilmDB)}</p> */}

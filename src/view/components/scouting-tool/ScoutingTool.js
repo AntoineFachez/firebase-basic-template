@@ -3,12 +3,12 @@ import axios from "axios";
 import Carousel from "../carousel/Carousel";
 import CategoryWidget from "../category/CategoryWidget";
 import MainPlayer from "../main-player/MainPlayer";
-import ParticlesCircle from "../../sketches/ParticlesCircle";
 import { CategoryContext } from "../../../context/CategoryContext";
 import { FilmContext } from "../../../context/FilmContext";
-
-import "./scouting-tool.css";
 import FilmLibrary from "../film-library/FilmLibrary";
+
+import ParticlesCircle from "../../sketches/ParticlesCircle";
+import "./scouting-tool.css";
 // import "../../../index.css";
 
 const FEED_ENDPOINT = "https://api.vimeo.com/me/feed";
@@ -69,12 +69,12 @@ const FeedList = ({ loading, setLoading }) => {
         setLoading(false);
         setLoaded(true);
         localStorage.setItem("feed", JSON.stringify(res.data));
+        console.log(localStorage.getItem("feed"));
       })
       .catch((err) => {
         console.log(err);
       });
   };
-
   useEffect(() => {
     setHide(true);
     if (!localStorage.getItem("feed")) {
@@ -275,9 +275,14 @@ const FeedList = ({ loading, setLoading }) => {
                 // selectedFilmCategoriesID={selectedFilmCategoriesID}
               />
             </div>
-            <FilmLibrary
+            {/* <FilmLibrary
               filteredFilmDB={filteredFilmDB}
               setFilmDB={setFilmDB}
+            /> */}
+            <Carousel
+              filteredFilmDB={filteredFilmDB}
+              // data={feed.data}
+              loadClipIntoPlayer={loadClipIntoPlayer}
             />
           </section>
         </>

@@ -1,17 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
+import ScoutingTool from "../components/scouting-tool/ScoutingTool";
+import { FilmContext } from "../../context/FilmContext";
+import ParticlesCircle from "../../view/sketches/ParticlesCircle";
 // import Category from "../components/category/Category";
 // import CategoryWidget from "../components/category/CategoryWidget";
-import ScoutingTool from "../components/scouting-tool/ScoutingTool";
 // import Film from "../components/film-library/Film";
 // import GroupList from "../components/group/GroupList";
-import FilmLibrary from "../components/film-library/FilmLibrary";
+// import FilmLibrary from "../components/film-library/FilmLibrary";
 // import FkFilmXfkCateLibrary from "../components/FkFilmXfkCateLibrary";
 // import MainPlayer from "../components/main-player/MainPlayer";
 // import { CategoryContext } from "../../context/CategoryContext";
 // import Feed from "../components/scouting-tool/ScoutingTool";
-import { FilmContext } from "../../context/FilmContext";
 // import Carousel from "../components/carousel/Carousel";
-import ParticlesCircle from "../../view/sketches/ParticlesCircle";
 // import "./pageLayout.css";
 function Section() {
   // const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
