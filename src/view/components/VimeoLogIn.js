@@ -27,11 +27,25 @@ export const VimeoLogIn = () => {
   const SCOPES = ["me"];
   const vimeoLoggedIn = vimeoLogoLoggedIn;
   const vimeoLoggedOut = vimeoLogoLoggedOut;
+  const [localHost, setLocalHost] = useState(false);
 
   const [redirectURL, setRedirectURL] = useState(SERVER_REDIRECT_URL);
   const handleLogIn = () => {
     window.location = `${AUTH_URL}?response_type=token&client_id=${CLIENT_ID}&redirect_uri=${redirectURL}&state=${STATE}&scope=${SCOPES}`;
   };
+
+  const getWindowLocation = () => {
+    if (window.location.port === "3000") {
+      setLocalHost(true);
+      console.log(localHost);
+    } else {
+      setLocalHost(false);
+      console.log(localHost);
+    }
+  };
+  useEffect(() => {
+    getWindowLocation();
+  }, []);
 
   const paramSplit = window.location.hash
     .substring(1)
@@ -101,7 +115,7 @@ export const VimeoLogIn = () => {
             onClick={handleLogIn}
           /> */}
           {/* <li>redirect</li> */}
-          {/* {redirectURL === LOCALHOST_REDIRECT_URL ? (
+          {localHost ? (
             <button
               className="server"
               style={{
@@ -131,7 +145,7 @@ export const VimeoLogIn = () => {
             >
               backend
             </button>
-          )} */}
+          )}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

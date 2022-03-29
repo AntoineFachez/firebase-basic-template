@@ -29,9 +29,7 @@ function Home() {
       {/* <div className="signUp">
         <SignUpLogIn />
       </div> */}
-      <div className="signUp">
-        <SignUpLogIn />
-      </div>
+
       <div className="sketch" onClick={clicked}>
         {/* <BasicImage /> */}
         {/* <BasicFont /> */}

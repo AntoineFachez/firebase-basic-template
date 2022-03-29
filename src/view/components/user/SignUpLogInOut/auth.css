@@ -6,10 +6,10 @@
   height: fit-content;
 }
 .container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* padding: 4rem; */
   /* background-color: #470d49; */
 }
@@ -19,9 +19,9 @@
   z-index: 99;
   position: absolute;
   right: 0;
-  background-color: #4e554e;
-  z-index: 99;
-  border: solid 1px rgb(253, 253, 253);
+  background-color: rgba(41, 41, 41, 0.7);
+
+  border: solid 0.5px rgb(253, 253, 253);
   /* display: flex; */
   /* justify-content: center; */
   /* top: 25%;
@@ -59,8 +59,8 @@
 }
 
 .header {
-  margin: 2rem;
-  color: rgba(250, 218, 78, 0.931);
+  margin-top: 1rem;
+  color: rgba(184, 184, 184, 0.931);
 }
 .user-creds {
   font-size: 1rem;
@@ -76,7 +76,7 @@
   -webkit-appearance: none;
   border-style: none;
   text-align: center;
-  width: 25ch;
+  width: 20ch;
   height: 2rem;
   /* width: 10rem; */
 }
@@ -94,8 +94,9 @@ select:focus {
   padding: 1rem;
   background-color: black;
   color: white;
-  border: solid 1px white;
+  border: solid 0.5px white;
   margin: 1rem;
+  border-style: none;
 }
 .btn-submit,
 .btn-switch {
@@ -106,15 +107,18 @@ select:focus {
   align-self: center;
   margin: 1rem;
   /* border-style: none; */
-  background-color: rgba(175, 61, 61, 0);
   width: fit-content;
   color: white;
   text-align: center;
-  border: solid 1px white;
+  border: solid 0.5px white;
   font-size: 1rem;
   padding: 0.3rem;
 }
 .btn-switch {
+  background-color: rgb(55, 56, 55);
   align-self: start;
   justify-content: start;
+}
+.btn-submit {
+  background-color: rgb(8, 168, 8);
 }

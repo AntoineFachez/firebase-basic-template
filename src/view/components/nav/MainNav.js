@@ -10,10 +10,21 @@ import "./main-nav.css";
 
 export default function MainNav() {
   const [isShrunk, setShrunk] = useState(false);
-
+  const [loggedIn, setLoggedIn] = useState(false);
   const clicked = () => {
     console.log("clicked");
   };
+  const userMail = () => {
+    if (localStorage.getItem("userLoggedInMail")) {
+      setLoggedIn(true);
+    }
+    //  else {
+    //   setLoggedin(false);
+    // }
+  };
+  useEffect(() => {
+    userMail();
+  }, []);
 
   // useEffect(() => {
   //   const handler = () => {
@@ -47,7 +58,7 @@ export default function MainNav() {
         </Link>
       </div>
 
-      {/* <SignUpLogIn /> */}
+      {/* {loggedIn ? ( */}
       <ul className="nav-container">
         <Link className="nav-links" to={ROUTES.SCOUTING}>
           {/* <li>Scouting</li> */}
@@ -98,6 +109,11 @@ export default function MainNav() {
           <li className="nav-links">Categorization</li>
         </Link> */}
       </ul>
+      {/* ) : ( */}
+      <div className="signUp">
+        <SignUpLogIn />
+      </div>
+      {/* )} */}
       <div className="background"></div>
     </nav>
   );
