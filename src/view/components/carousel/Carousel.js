@@ -8,6 +8,7 @@ function Carousel({
   dataFilmLibrary,
   loadClipIntoPlayer,
   filteredFilmDB,
+  defaultFilmDB,
 }) {
   // console.log(filteredFilmDB[0].film.thumbnail);
   const [index, setIndex] = useState(0);
@@ -62,7 +63,7 @@ function Carousel({
                 </div>
               );
             })
-          : filteredFilmDB?.map((film, index) => {
+          : defaultFilmDB?.map((film, index) => {
               return (
                 <div key={index} className="slider-item">
                   <div

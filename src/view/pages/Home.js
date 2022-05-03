@@ -31,10 +31,10 @@ function Home() {
       </div> */}
 
       <div className="sketch" onClick={clicked}>
-        {/* <BasicImage /> */}
+        <BasicImage />
         {/* <BasicFont /> */}
         {/* <ExplodingTypo /> */}
-        <NeonText />
+        {/* <NeonText /> */}
         {/* <AnxietyExplosion /> */}
         {/* <FireSparks /> */}
         {/* <Tree /> */}

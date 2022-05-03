@@ -146,8 +146,8 @@ export const FilmProvider = (props) => {
   localStorage.setItem("filmDB", JSON.stringify(filmDB));
   localStorage.setItem("nextBatch", JSON.stringify(nextBatch));
   localStorage.setItem("singleFilm", JSON.stringify(singleFilm));
-  console.log(nextBatch);
-  console.log(localStorage.length);
+  // console.log(nextBatch);
+  // console.log(localStorage.length);
 
   return (
     <FilmContext.Provider value={[filmDB, setFilmDB]}>

@@ -33,12 +33,22 @@ function Films() {
     setSelectedCategories(e);
   };
 
-  const defaultFilmList = () => {
-    setFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
-    console.log(filmDB);
-  };
+  // const defaultFilmList = () => {
+  //   if (selectedCategories.length === 0) {
+  //     // setFilteredFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
+  //     setFilteredFilmDB(filmDB);
+  //   } else {
+  //     setFilteredFilmDB(filteredFilmDB);
+  //   }
+  // };
+  // console.log(filmDB);
+  // console.log(filteredFilmDB);
+  // console.log(selectedCategories.length);
 
-  useEffect(() => {}, [selectedCategories]);
+  useEffect(() => {
+    setFilteredFilmDB([]);
+    return () => {};
+  }, [selectedCategories]);
 
   const openWidget = () => {
     hide
@@ -55,7 +65,12 @@ function Films() {
   const filteredFilmsByCatgory = (filmDB, selectedCategories) => {
     // console.log("--- 2 --selected Categories: ", selectedCategories);
     // if (!filteredFilmDB) {
-    if (selectedCategories) {
+    // if (selectedCategories.length == 0) {
+    //   // setFilteredFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
+    //   setFilteredFilmDB(filmDB.slice(0, 9));
+    //   // setFilteredFilmDB(filmDB);
+    // } else {
+    if (selectedCategories.length > 0) {
       filmDB.forEach((film) => {
         const filmCategories = film.film.categories;
         const filmData = film;
@@ -74,24 +89,19 @@ function Films() {
           }
         });
       });
+    } else {
+      // setDefaultFilmDB(filmDB);
+      console.log("null selectedCategories");
     }
+    // }
   };
   const removeDuplicates = (arr) => {
     arr.filter((item, index) => arr.indexOf(item) === index);
   };
 
-  useEffect(() => {
-    if (!selectedCategories) {
-      defaultFilmList();
-    }
-    setFilteredFilmDB([]);
-
-    return () => {};
-  }, [selectedCategories]);
-
   filteredFilmsByCatgory(filmDB, selectedCategories);
   // console.log("--- 5 --filtered ID List: ", filteredFilmDBIDs);
-  console.log("--- 7 --filtered DB: ", filteredFilmDB);
+  // console.log("--- 7 --filtered DB: ", filteredFilmDB);
 
   const loadClipIntoPlayer = (e, index) => {
     e.preventDefault();
@@ -121,7 +131,7 @@ function Films() {
           />
         ) : (
           <Carousel
-            filteredFilmDB={filmDB}
+            defaultFilmDB={defaultFilmDB}
             // data={feed.data}
             loadClipIntoPlayer={loadClipIntoPlayer}
           />
