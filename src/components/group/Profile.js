@@ -1,5 +1,5 @@
 import React from "react";
-import DynamicLandscape from "../../sketches/DynamicLandscape";
+import DynamicLandscape from "../../view/sketches/DynamicLandscape";
 import SignUpLogIn from "../user/SignUpLogInOut/SignUpLogIn";
 
 function Profile() {
@@ -12,9 +12,7 @@ function Profile() {
         <SignUpLogIn />
       </div> */}
       <div className="widget"></div>
-      <div className="sketch">
-        <DynamicLandscape />
-      </div>
+      <div className="sketch">{/* <DynamicLandscape /> */}</div>
     </div>
   );
 }

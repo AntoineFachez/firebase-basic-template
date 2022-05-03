@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { CategoryContext } from "../../../context/CategoryContext";
-import { ScoutingContext } from "../../../context/ScoutingContext";
+import { CategoryContext } from "../../context/CategoryContext";
+import { ScoutingContext } from "../../context/ScoutingContext";
 import CategoryMajLibrary from "./CategoryMajLibrary";
 import CategoryLibrary from "./CategoryLibrary";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";

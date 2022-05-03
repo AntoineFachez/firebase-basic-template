@@ -1,15 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
-import CategoryWidget from "../components/category/CategoryWidget";
-import FilmLibrary from "../components/film-library/FilmLibrary";
+import CategoryWidget from "../../components/category/CategoryWidget";
+import FilmLibrary from "../../components/film-library/FilmLibrary";
 import { FilmContext } from "../../context/FilmContext";
 import { CategoryContext } from "../../context/CategoryContext";
-import Carousel from "../components/carousel/Carousel";
-import MainPlayer from "../components/main-player/MainPlayer";
-import ScoutingTool from "../components/scouting-tool/ScoutingTool";
+import Carousel from "../../components/carousel/Carousel";
+import MainPlayer from "../../components/main-player/MainPlayer";
+import ScoutingTool from "../../components/scouting-tool/ScoutingTool";
 
 //TODO: create defaultFilmList to load
 function Films() {
   const [filmDB, setFilmDB] = useContext(FilmContext);
+  console.log(filmDB);
   const [categoriesDB, setCategoriesDB] = useContext(CategoryContext);
   const [filteredFilmDBIDs, setFilteredFilmDBIDs] = useState([]);
   const [filteredFilmDB, setFilteredFilmDB] = useState([]);
@@ -21,29 +22,10 @@ function Films() {
   const [feed, setFeed] = useState(
     JSON.parse(localStorage.getItem("feed")) || []
   );
-  // console.log(filmDB);
-  // console.log(filteredFilmDB);
   const [playing, setPlaying] = useState();
-  // console.log("-------------");
-  // console.log("--- 1 --filmDB: ", filmDB);
-  // console.log("--- 5 --filteredFilmDBIDList[i]", filteredFilmDBIDList[i]);
-  // console.log("--- 6 --filmDB[j].film.id_film", filmDB[j].film.id_film);
-  //  console.log("******** MATCH **********", element);
   const getSelectedCategories = (e) => {
     setSelectedCategories(e);
   };
-
-  // const defaultFilmList = () => {
-  //   if (selectedCategories.length === 0) {
-  //     // setFilteredFilmDB(filmDB.slice(0, 9).map((film, index) => ""));
-  //     setFilteredFilmDB(filmDB);
-  //   } else {
-  //     setFilteredFilmDB(filteredFilmDB);
-  //   }
-  // };
-  // console.log(filmDB);
-  // console.log(filteredFilmDB);
-  // console.log(selectedCategories.length);
 
   useEffect(() => {
     setFilteredFilmDB([]);
@@ -126,13 +108,13 @@ function Films() {
         {filteredFilmDB ? (
           <Carousel
             filteredFilmDB={filteredFilmDB}
-            // data={feed.data}
+            data={feed.data}
             loadClipIntoPlayer={loadClipIntoPlayer}
           />
         ) : (
           <Carousel
             defaultFilmDB={defaultFilmDB}
-            // data={feed.data}
+            data={feed.data}
             loadClipIntoPlayer={loadClipIntoPlayer}
           />
         )}

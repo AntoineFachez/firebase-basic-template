@@ -3,11 +3,11 @@ import axios from "axios";
 import Carousel from "../carousel/Carousel";
 import CategoryWidget from "../category/CategoryWidget";
 import MainPlayer from "../main-player/MainPlayer";
-import { CategoryContext } from "../../../context/CategoryContext";
-import { FilmContext } from "../../../context/FilmContext";
+import { CategoryContext } from "../../context/CategoryContext";
+import { FilmContext } from "../../context/FilmContext";
 import FilmLibrary from "../film-library/FilmLibrary";
 
-import ParticlesCircle from "../../sketches/ParticlesCircle";
+import ParticlesCircle from "../../view/sketches/ParticlesCircle";
 import "./scouting-tool.css";
 // import "../../../index.css";
 

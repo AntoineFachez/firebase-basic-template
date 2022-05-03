@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import * as ROUTES from "../../../constants/routes";
-import logo from "../../../images/p00l glow Square small.png";
+import * as ROUTES from "../../constants/routes";
+import logo from "../../images/p00l glow Square small.png";
 
 import SignUpLogIn from "../user/SignUpLogInOut/SignUpLogIn";
 import { VimeoLogIn } from "../VimeoLogIn";
-import NeonText from "../../sketches/NeonText";
+import NeonText from "../../view/sketches/NeonText";
 import "./main-nav.css";
 
 export default function MainNav() {

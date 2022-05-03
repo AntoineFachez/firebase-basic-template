@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Signup from "./SignUp";
 import LogIn from "./LogIn";
-import { UserAuthContext } from "../../../../context/AuthContext";
+import { UserAuthContext } from "../../../context/AuthContext";
 import { ClickAwayListener } from "@mui/base";
 import "./auth.css";
 

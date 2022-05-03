@@ -6,10 +6,10 @@
 
 import React, { useState, useContext, useEffect } from "react";
 // import filmDetails from "./UniversitiyDetails";
-import { FilmContext } from "../../../context/FilmContext";
+import { FilmContext } from "../../context/FilmContext";
 import Tile from "../tile/Tile";
 import { Link, useNavigate } from "react-router-dom";
-import * as ROUTES from "../../../constants/routes";
+import * as ROUTES from "../../constants/routes";
 import "./film-library.css";
 import Carousel from "../carousel/Carousel";
 

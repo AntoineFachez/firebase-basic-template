@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import { CategoryContext } from "../../../context/CategoryContext";
+import { CategoryContext } from "../../context/CategoryContext";
 import { Link, useNavigate } from "react-router-dom";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import "./category.css";

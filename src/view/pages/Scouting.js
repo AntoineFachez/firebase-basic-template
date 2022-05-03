@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import ScoutingTool from "../components/scouting-tool/ScoutingTool";
+import ScoutingTool from "../../components/scouting-tool/ScoutingTool";
 import { FilmContext } from "../../context/FilmContext";
 import ParticlesCircle from "../../view/sketches/ParticlesCircle";
-import { VimeoLogIn } from "../components/VimeoLogIn";
+import { VimeoLogIn } from "../../components/VimeoLogIn";
 // import Category from "../components/category/Category";
 // import CategoryWidget from "../components/category/CategoryWidget";
 // import Film from "../components/film-library/Film";

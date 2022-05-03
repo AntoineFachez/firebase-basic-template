@@ -5,8 +5,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
-import { useAuth, useUserAuth } from "../../../../context/AuthContext";
-import { auth } from "../../../../firebase/firebase-config";
+import { useAuth, useUserAuth } from "../../../context/AuthContext";
+import { auth } from "../../../firebase/firebase-config";
 import "./auth.css";
 
 export default function Signup() {

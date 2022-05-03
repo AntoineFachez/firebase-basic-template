@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { FilmContext } from "../../../context/FilmContext";
+import { FilmContext } from "../../context/FilmContext";
 
 function Film() {
   const [data, setDatas] = useContext(FilmContext);

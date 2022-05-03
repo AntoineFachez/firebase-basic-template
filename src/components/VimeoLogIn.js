@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import { VimeoContext } from "../../context/VimeoContext";
-import vimeoLogoLoggedIn from "../../images/vimeologgedIn.png";
-import vimeoLogoLoggedOut from "../../images/vimeologgedOut.png";
+import { VimeoContext } from "../context/VimeoContext";
+import vimeoLogoLoggedIn from "../images/vimeologgedIn.png";
+import vimeoLogoLoggedOut from "../images/vimeologgedOut.png";
 
 export const VimeoLogIn = () => {
   //TODO: refactor to a Context API
@@ -21,7 +21,7 @@ export const VimeoLogIn = () => {
   const CLIENT_ID = process.env.REACT_APP_VIMEO_CLIENT_ID;
   const AUTH_URL = process.env.REACT_APP_VIMEO_AUTH_URL;
   const LOCALHOST_REDIRECT_URL = "http://localhost:3000/scouting/";
-  const SERVER_REDIRECT_URL = "https://fir-basic-template.web.app/scouting/";
+  const SERVER_REDIRECT_URL = "https://scout-your-pool.web.app/scouting/";
   //   const SERVER_REDIRECT_URL = "http://localhost:3000/scouting/";
   const STATE = [0];
   const SCOPES = ["me"];
