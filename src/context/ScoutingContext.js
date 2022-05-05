@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { CategoryContext } from "./CategoryContext";
 import { FilmContext } from "./FilmContext";
-import { categoryAction, categoryAction2 } from "../actions/CategoryActions";
+// import { categoryAction, categoryAction2 } from "../actions/CategoryActions";
 
 export const ScoutingContext = createContext();
 

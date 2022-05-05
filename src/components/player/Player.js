@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import Button from "../button/Button";
+
 import Spinner from "./Spinner";
 // import "./vimeo-player.css";
 // import RestAPI from "./RestAPI";
@@ -78,7 +78,7 @@ const Player = ({
 
   return (
     <div className="player">
-      <Button
+      <button
         className="btn-play"
         buttonAction={playClip}
         buttonText={buttonTexts[0]}

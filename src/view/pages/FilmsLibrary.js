@@ -103,22 +103,7 @@ function Films() {
   return (
     <div className="">
       <h1>FilmLibrary</h1>
-      <div className="carousel">
-        {/* <ScoutingTool loading={loading} setLoading={setLoading} /> */}
-        {filteredFilmDB ? (
-          <Carousel
-            filteredFilmDB={filteredFilmDB}
-            data={feed.data}
-            loadClipIntoPlayer={loadClipIntoPlayer}
-          />
-        ) : (
-          <Carousel
-            defaultFilmDB={defaultFilmDB}
-            data={feed.data}
-            loadClipIntoPlayer={loadClipIntoPlayer}
-          />
-        )}
-      </div>
+
       <MainPlayer
         // clipLink={clipLink}
         //   load={load}
@@ -148,7 +133,7 @@ function Films() {
       {/* <p>{JSON.stringify(selectedCategories)}</p> */}
       {/* <p>filteredFilmDBIDs</p> <p> {JSON.stringify(filteredFilmDBIDs)}</p> */}
       {/* <p>filtered Film DB List {JSON.stringify(filteredFilmDB)}</p> */}
-      {/* <FilmLibrary filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} /> */}
+      <FilmLibrary filteredFilmDB={filteredFilmDB} setFilmDB={setFilmDB} />
     </div>
   );
 }

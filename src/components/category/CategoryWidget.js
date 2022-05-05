@@ -21,15 +21,13 @@ function CategoryWidget({
   // selectedFilmCategoriesNames,
   error,
 }) {
-  // const [categories, setCategories] = useContext(CategoryContext);
   const categoryAction = useContext(CategoryContext);
-  // console.log(categoryAction[2]);
+
   const [showForm, setShowForm] = useState(false);
-  // const [openCategoryWidget, setOpenCategoryWidget] = useState(false);
+
   const [filmCategories, setFilmCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const [error, setError] = useState(null);
-  // const width = "10vw";
+
   const [selectedFilmCategoriesNames, setSelectedFilmCategoriesNames] =
     useState([]);
 
@@ -41,23 +39,11 @@ function CategoryWidget({
     setFilmCategories("");
     setSearchTerm("");
     console.log("clicked");
-    // setError(null);
   }
 
   return (
     <div className="category-widget">
       {JSON.stringify(selectedFilmCategoriesNames)}
-      {/* {categoryAction[2]} */}
-      {/* <button
-        className="btn"
-        onClick={() => {
-          openWidget
-            ? openWidget().setOpenCategoryWidget(false)
-            : openWidget().setOpenCategoryWidget(true);
-        }}
-      >
-        X
-      </button> */}
 
       {hide ? (
         ""
@@ -71,10 +57,8 @@ function CategoryWidget({
           {
             //TODO: generic Form with generative entries
           }
-          <CategoryForm
-          // filterCateByCateMaj={filterCateByCateMaj}
-          />
-          {/* <input type="text" placeholder="new category" /> */}
+          <CategoryForm />
+
           <button className="btn">add category</button>
         </div>
       ) : (
